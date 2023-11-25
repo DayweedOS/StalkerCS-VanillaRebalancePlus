@@ -1,5 +1,0 @@
-
-function campfire_init(cf)
-	db.campfire				= cf:get_campfire()
-	db.campfire:turn_off	()
-end
