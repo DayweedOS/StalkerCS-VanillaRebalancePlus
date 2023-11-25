@@ -20,7 +20,7 @@ control_inertion_factor = 1.0
 
 ;---DOF-------------------------------------------------------------------------
 zoom_dof						= 0.5, 1.0, 180
-reload_dof					= 0.0, 0.5, 5, 1.7
+reload_dof					= 0.0, 0.5, 5, 2.85
 ;-------------------------------------------------------------------------------
 
 ;-------------------------------------------------------------------------------
@@ -184,12 +184,13 @@ snd_draw                = weapons\ak74_draw
 snd_holster             = weapons\generic_holster
 snd_shoot		= weapons\n_sig550_shot
 
-snd_empty               = weapons\gen_empty, 0.5
+snd_empty               = weapons\gen_empty
 snd_reload              = weapons\sig550_reload
 snd_shoot_grenade       = weapons\gen_grenshoot
-snd_reload_grenade      = weapons\sig550_grenload
-snd_switch              = weapons\groza_switch, 1.0, 0.5
-
+snd_reload_grenade      = weapons\l85_grenload
+snd_switch              = weapons\groza_switch
+snd_bore1				= weapons\mp5_bore
+snd_bore				= weapons\draw_silent
 
 ;настройки для глушителя
 silencer_hit_power      = 0.55, 0.55, 0.55, 0.55
@@ -214,14 +215,14 @@ zoom_hide_crosshair	= true
 attach_place_idx	= 0
 item_visual		= dynamics\weapons\wpn_sig550\wpn_sig550_hud
 
-hands_position				= -0.050000,-0.151000,0.092500
-hands_orientation			= -0.500000,-0.750000,-2.000000
+hands_position					= -0.050000,-0.151000,0.092500
+hands_orientation				= -0.500000,-0.750000,-2.000000
 
-hands_position_16x9     = -0.044000,-0.156000,0.100000
-hands_orientation_16x9  = -0.500000,1.000000,-2.000000
+hands_position_16x9				= -0.044000,-0.156000,0.100000
+hands_orientation_16x9			= -0.500000,1.000000,-2.000000
 
-item_position		= 0.002866,-0.006395,0.000780
-item_orientation	= 0.642900,0.520562,361.843872
+item_position					= 0.002866,-0.006395,0.000780
+item_orientation				= 0.642900,0.520562,361.843872
 
 shell_point		= 0.028,0.075,0.156
 shell_dir               = 0.0, 1.0, 0.0
@@ -265,23 +266,17 @@ anm_idle_sprint_g	= sig550_idle_sprint_grenade
 anm_idle_moving_g	= sig550_idle_moving_grenade
 anm_bore_g		= sig550_idle_bore_grenade
 
-;aim_hud_offset_pos				= -0.112000,0.034000,-0.018000
-;aim_hud_offset_rot				= 0.017500,0.002500,-0.010000
+aim_hud_offset_pos				= -0.106000, 0.024500,-0.047000
+aim_hud_offset_rot				= -0.019500, 0.002000,-0.010000
 
-aim_hud_offset_pos				= -0.106000,0.025000,-0.047000
-aim_hud_offset_rot				= -0.015000,0.002500,-0.010000
+aim_hud_offset_pos_16x9			= -0.111900, 0.032300, 0.000500
+aim_hud_offset_rot_16x9			=  0.010000, 0.001800,-0.010000
 
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
 
-aim_hud_offset_pos_16x9				= -0.112000,0.031500,0.000500
-aim_hud_offset_rot_16x9				= 0.015000,0.002500,-0.010000
-
-gl_hud_offset_pos	= 0,0,0
-gl_hud_offset_rot	= 0,0,0
-;gl_hud_offset_pos	= -0.053000,-0.059000,0.000000
-;gl_hud_offset_rot	= -0.145000,0.000000,0.000000
-
-gl_hud_offset_pos_16x9	= 0,0,0
-gl_hud_offset_rot_16x9	= 0,0,0
+gl_hud_offset_pos_16x9			= 0,0,0
+gl_hud_offset_rot_16x9			= 0,0,0
 
 lean_hud_offset_pos	= 0,0,0
 lean_hud_offset_rot	= 0,0,0

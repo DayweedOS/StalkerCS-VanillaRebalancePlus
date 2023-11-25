@@ -1,89 +1,65 @@
-----------------------------------------------------------------------------------------------------
--- Disable actor's weapon
-----------------------------------------------------------------------------------------------------
-function printf()
-end
-local state_nowhere = 0 -- схема только что включилась
-local state_inside = 1 -- актер внутри
-local state_outside = 2 -- актер снаружи
+local state_inside = 1
+local state_outside = 2
+
+--------------------------------------------------------------------------------
 
 class "action_no_weapon"
 
-function action_no_weapon:__init( obj, storage )
-	self.object = obj
-	self.st = storage
+function action_no_weapon:__init(zone, st)
+	self.zone = zone
+	self.st = st
 end
 
 function action_no_weapon:reset_scheme()
-	--printf("_bp: sr_idle: action_no_weapon:reset_scheme: self.object:name()='%s'", self.object:name())
-	
-	self.state = state_nowhere -- еще неясно, в зоне он, или нет
-	
-	self:switch_state(db.actor)
+	if self.zone:inside(db.actor:center()) then
+		self:zone_enter()
+	else
+		self.state = state_outside
+	end
 end
 
-function action_no_weapon:update( delta )
-	--printf("_br: sr_idle: action_no_weapon:update()")
-
-	--if not xr_logic.is_active( self.object, self.st ) then
-	--	return
-	--end
-
+function action_no_weapon:update()
 	local actor = db.actor
-
-	if xr_logic.try_switch_to_another_section( self.object, self.st, actor ) then
+	if xr_logic.try_switch_to_another_section(self.zone, self.st, actor) then
 		if self.state == state_inside then
 			self:zone_leave()
 		end
-		return
-	end	
-	
-	self:switch_state( actor )
+	else
+		self:switch_state(actor)
+	end
 end
 
-function action_no_weapon:switch_state( actor )
-	local state = self.state
-	printf("on_update state[%s]", tostring(self.state))	
-	if state == state_outside or state == state_nowhere then
-		if self.object:inside( actor:center() ) then
+function action_no_weapon:switch_state(actor)
+	if self.state == state_outside then
+		if self.zone:inside(actor:center()) then
 			self:zone_enter()
-			--printf("on_update1 state[%s]", tostring(self.state))
-			return
 		end
-	end
-	
-	if state == state_inside or state == state_nowhere then
-		if not self.object:inside( actor:center() ) then
-			
+	else
+		if not self.zone:inside(actor:center()) then
 			self:zone_leave()
-			--printf("on_update2 state[%s]", tostring(self.state))
-			return
 		end
 	end
 end
 
 function action_no_weapon:zone_enter()
 	self.state = state_inside
-	bind_stalker.hide_weapon(self.object:id())
+	bind_stalker.hide_weapon()
 end
 
 function action_no_weapon:zone_leave()
 	self.state = state_outside
-	bind_stalker.restore_weapon(self.object:id())
+	bind_stalker.restore_weapon()
 end
 
----------------------------------------------------------------------------------------------------------------------
-function add_to_binder(npc, ini, scheme, section, storage)
-	printf("DEBUG: add_to_binder: scheme='%s', section='%s'", scheme, section)
+--------------------------------------------------------------------------------
+-- Binder
+--------------------------------------------------------------------------------
 
-	local new_action = action_no_weapon(npc, storage)
-
-	-- Зарегистрировать все actions, в которых должен быть вызван метод reset_scheme при изменении настроек схемы:
-	xr_logic.subscribe_action_for_events(npc, storage, new_action)
+function add_to_binder(zone, _, _, _, st)
+	xr_logic.subscribe_action_for_events(nil, st, action_no_weapon(zone, st))
 end
 
-function set_scheme(npc, ini, scheme, section, gulag_name)
-	local st = xr_logic.assign_storage_and_bind(npc, ini, scheme, section)
-	st.logic = xr_logic.cfg_get_switch_conditions(ini, section, npc)
+function set_scheme(zone, ini, scheme, section)
+	local st = xr_logic.assign_storage_and_bind(zone, ini, scheme, section)
+	st.logic = xr_logic.cfg_get_switch_conditions(ini, section, zone)
 end
-

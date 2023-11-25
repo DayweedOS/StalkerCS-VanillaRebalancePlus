@@ -1,205 +1,208 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
 	<string id="st_stuff">
-		<text>Создатели игры</text>
+		<text>РЎРѕР·РґР°С‚РµР»Рё РёРіСЂС‹</text>
+	</string>
+	<string id="st_game_world">
+		<text>GSC GAME WORLD</text>
 	</string>
 	<string id="st_producer">
-		<text>Продюсер</text>
+		<text>РџСЂРѕРґСЋСЃРµСЂ</text>
 	</string>
 	<string id="st_gsc">
-		<text>Сергей "-GSC-" Григорович</text>
+		<text>РЎРµСЂРіРµР№ "-GSC-" Р“СЂРёРіРѕСЂРѕРІРёС‡</text>
 	</string>
 	<string id="st_project_lead">
-		<text>Руководитель проекта</text>
+		<text>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ РїСЂРѕРµРєС‚Р°</text>
 	</string>
 	<string id="st_bolshakov">
-		<text>Антон Большаков</text>
+		<text>РђРЅС‚РѕРЅ Р‘РѕР»СЊС€Р°РєРѕРІ</text>
 	</string>
 	<string id="st_lead_designer">
-		<text>Ведущий дизайнер</text>
+		<text>Р’РµРґСѓС‰РёР№ РґРёР·Р°Р№РЅРµСЂ</text>
 	</string>
 	<string id="st_negrobov">
-		<text>Юрий Негробов</text>
+		<text>Р®СЂРёР№ РќРµРіСЂРѕР±РѕРІ</text>
 	</string>
 	<string id="st_art_director">
-		<text>Арт-директор</text>
+		<text>РђСЂС‚-РґРёСЂРµРєС‚РѕСЂ</text>
 	</string>
 	<string id="st_tolmachev">
-		<text>Илья Толмачев</text>
+		<text>РР»СЊСЏ РўРѕР»РјР°С‡С‘РІ</text>
 	</string>
 	<string id="st_lead_programmer">
-		<text>Главный программист</text>
+		<text>Р“Р»Р°РІРЅС‹Р№ РїСЂРѕРіСЂР°РјРјРёСЃС‚</text>
 	</string>
 	<string id="st_iassenev">
-		<text>Дмитрий Ясенев</text>
+		<text>Р”РјРёС‚СЂРёР№ РЇСЃРµРЅРµРІ</text>
 	</string>
 	<string id="st_lead_game_designer">
-		<text>Ведущий геймдизайнер</text>
+		<text>Р’РµРґСѓС‰РёР№ РіРµР№РјРґРёР·Р°Р№РЅРµСЂ</text>
 	</string>
 	<string id="st_didenko">
-		<text>Руслан Диденко</text>
+		<text>Р СѓСЃР»Р°РЅ Р”РёРґРµРЅРєРѕ</text>
 	</string>
 	<string id="st_art_department">
-		<text>Отдел графики</text>
+		<text>РћС‚РґРµР» РіСЂР°С„РёРєРё</text>
 	</string>
 	<string id="st_level_design">
-		<text>Дизайн уровней</text>
+		<text>Р”РёР·Р°Р№РЅ СѓСЂРѕРІРЅРµР№</text>
 	</string>
 	<string id="st_zaitsev">
-		<text>Евгений Зайцев</text>
+		<text>Р•РІРіРµРЅРёР№ Р—Р°Р№С†РµРІ</text>
 	</string>
 	<string id="st_mironov">
-		<text>Константин Миронов</text>
+		<text>РљРѕРЅСЃС‚Р°РЅС‚РёРЅ РњРёСЂРѕРЅРѕРІ</text>
 	</string>
 	<string id="st_kurbatov">
-		<text>Сергей Курбатов</text>
+		<text>РЎРµСЂРіРµР№ РљСѓСЂР±Р°С‚РѕРІ</text>
 	</string>
 	<string id="st_androshchuk">
-		<text>Роман Андрощук</text>
+		<text>Р РѕРјР°РЅ РђРЅРґСЂРѕС‰СѓРє</text>
 	</string>
 	<string id="st_konstantinov">
-		<text>Юрий Константинов</text>
+		<text>Р®СЂРёР№ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕРІ</text>
 	</string>
 	<string id="st_pasichniy">
-		<text>Игорь Пасичный</text>
+		<text>РРіРѕСЂСЊ РџР°СЃРёС‡РЅС‹Р№</text>
 	</string>
 	<string id="st_merkulov">
-		<text>Виктор Меркулов</text>
+		<text>Р’РёРєС‚РѕСЂ РњРµСЂРєСѓР»РѕРІ</text>
 	</string>
 	<string id="st_maistrenko">
-		<text>Сергей Майстренко</text>
+		<text>РЎРµСЂРіРµР№ РњР°Р№СЃС‚СЂРµРЅРєРѕ</text>
 	</string>
 	<string id="st_lead_animator">
-		<text>Ведущий аниматор</text>
+		<text>Р’РµРґСѓС‰РёР№ Р°РЅРёРјР°С‚РѕСЂ</text>
 	</string>
 	<string id="st_markevich">
-		<text>Павел Маркевич</text>
+		<text>РџР°РІРµР» РњР°СЂРєРµРІРёС‡</text>
 	</string>
 	<string id="st_animators">
-		<text>Аниматоры</text>
+		<text>РђРЅРёРјР°С‚РѕСЂС‹</text>
 	</string>
 	<string id="st_yablun">
-		<text>Евгений Яблонь</text>
+		<text>Р•РІРіРµРЅРёР№ РЇР±Р»РѕРЅСЊ</text>
 	</string>
 	<string id="st_korunchak">
-		<text>Владимир Корунчак</text>
+		<text>Р’Р»Р°РґРёРјРёСЂ РљРѕСЂСѓРЅС‡Р°Рє</text>
 	</string>
 	<string id="st_character_models">
-		<text>Модели персонажей</text>
+		<text>РњРѕРґРµР»Рё РїРµСЂСЃРѕРЅР°Р¶РµР№</text>
 	</string>
 	<string id="st_kovach">
-		<text>Александр Ковач</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂ РљРѕРІР°С‡</text>
 	</string>
 	<string id="st_textures">
-		<text>Текстуры</text>
+		<text>РўРµРєСЃС‚СѓСЂС‹</text>
 	</string>
 	<string id="st_starodub">
-		<text>Людмила Стародуб</text>
+		<text>Р›СЋРґРјРёР»Р° РЎС‚Р°СЂРѕРґСѓР±</text>
 	</string>
 	<string id="st_sidorenko">
-		<text>Игорь Сидоренко</text>
+		<text>РРіРѕСЂСЊ РЎРёРґРѕСЂРµРЅРєРѕ</text>
 	</string>
 	<string id="st_ui_art">
-		<text>Интерфейс и графика</text>
+		<text>РРЅС‚РµСЂС„РµР№СЃ Рё РіСЂР°С„РёРєР°</text>
 	</string>
 	<string id="st_nesin">
-		<text>Роман Несин</text>
+		<text>Р РѕРјР°РЅ РќРµСЃРёРЅ</text>
 	</string>
 	<string id="st_lead_programmers">
-		<text>Ведущие программисты</text>
+		<text>Р’РµРґСѓС‰РёРµ РїСЂРѕРіСЂР°РјРјРёСЃС‚С‹</text>
 	</string>
 	<string id="st_kolomiech">
-		<text>Андрей Коломиец</text>
+		<text>РђРЅРґСЂРµР№ РљРѕР»РѕРјРёРµС†</text>
 	</string>
 	<string id="st_kolomiech2">
 		<text>- Gameplay and UI</text>
 	</string>
 	<string id="st_lobanchikov">
-		<text>Игорь Лобанчиков</text>
+		<text>РРіРѕСЂСЊ Р›РѕР±Р°РЅС‡РёРєРѕРІ</text>
 	</string>
 	<string id="st_lobanchikov2">
 		<text>- Render</text>
 	</string>
 	<string id="st_slipchenko">
-		<text>Константин Слипченко</text>
+		<text>РљРѕРЅСЃС‚Р°РЅС‚РёРЅ РЎР»РёРїС‡РµРЅРєРѕ</text>
 	</string>
 	<string id="st_slipchenko2">
 		<text>- Physics and Animations</text>
 	</string>
 	<string id="st_programmers">
-		<text>Программисты</text>
+		<text>РџСЂРѕРіСЂР°РјРјРёСЃС‚С‹</text>
 	</string>
 	<string id="st_maniluyk">
-		<text>Александр "loopzilla" Манилюк</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂ "loopzilla" РњР°РЅРёР»СЋРє</text>
 	</string>
 	<string id="st_maniluyk2">
 		<text>- Network</text>
 	</string>
 	<string id="st_chechin">
-		<text>Сергей "Lain" Чечин</text>
+		<text>РЎРµСЂРіРµР№ "Lain" Р§РµС‡РёРЅ</text>
 	</string>
 	<string id="st_chechin2">
 		<text>- Monsters AI</text>
 	</string>
 	<string id="st_sokolov">
-		<text>Евгений "sea" Соколов</text>
+		<text>Р•РІРіРµРЅРёР№ "sea" РЎРѕРєРѕР»РѕРІ</text>
 	</string>
 	<string id="st_sokolov2">
 		<text>- Gameplay and UI</text>
 	</string>
 	<string id="st_ivanchov">
-		<text>Сергей Иванцов</text>
+		<text>РЎРµСЂРіРµР№ РРІР°РЅС†РѕРІ</text>
 	</string>
 	<string id="st_ivanchov2">
 		<text>- Optimization</text>
 	</string>
 	<string id="st_plichko">
-		<text>Александр Пличко</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂ РџР»РёС‡РєРѕ</text>
 	</string>
 	<string id="st_scriptoman">
-		<text>- скрипты и наполнение игры</text>
+		<text>- СЃРєСЂРёРїС‚С‹ Рё РЅР°РїРѕР»РЅРµРЅРёРµ РёРіСЂС‹</text>
 	</string>
 	<string id="st_prishchepa">
-		<text>Сергей Прищепа</text>
+		<text>РЎРµСЂРіРµР№ РџСЂРёС‰РµРїР°</text>
 	</string>
 	<string id="st_khimera">
-		<text>Денис Химера</text>
+		<text>Р”РµРЅРёСЃ РҐРёРјРµСЂР°</text>
 	</string>
 	<string id="st_gamedesign_department">
-		<text>Отдел гейм-дизайна</text>
+		<text>РћС‚РґРµР» РіРµР№РјРґРёР·Р°Р№РЅР°</text>
 	</string>
 	<string id="st_verpahovskiy">
-		<text>Андрей Верпаховский</text>
+		<text>РђРЅРґСЂРµР№ Р’РµСЂРїР°С…РѕРІСЃРєРёР№</text>
 	</string>
 	<string id="st_dushinskiy">
-		<text>Петр Душинский</text>
+		<text>РџС‘С‚СЂ Р”СѓС€РёРЅСЃРєРёР№</text>
 	</string>
 	<string id="st_zakolukin">
-		<text>Андрей Заколюкин</text>
+		<text>РђРЅРґСЂРµР№ Р—Р°РєРѕР»СЋРєРёРЅ</text>
 	</string>
 	<string id="st_skripal">
-		<text>Юрий Скрипаль</text>
+		<text>Р®СЂРёР№ РЎРєСЂРёРїР°Р»СЊ</text>
 	</string>
 	<string id="st_demidenko">
-		<text>Александр Демиденко</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂ Р”РµРјРёРґРµРЅРєРѕ</text>
 	</string>
 	<string id="st_sound_producer">
-		<text>Звукорежиссер</text>
+		<text>Р—РІСѓРєРѕСЂРµР¶РёСЃСЃРµСЂ</text>
 	</string>
 	<string id="st_kuzmenko">
-		<text>Дмитрий Кузьменко</text>
+		<text>Р”РјРёС‚СЂРёР№ РљСѓР·СЊРјРµРЅРєРѕ</text>
 	</string>
 	<string id="st_original_music">
-		<text>Музыка</text>
+		<text>РњСѓР·С‹РєР°</text>
 	</string>
 	<string id="st_mooze">
 		<text>MoozE</text>
 	</string>
 	<string id="st_omelchuk">
-		<text>Алексей Омельчук </text>
+		<text>РђР»РµРєСЃРµР№ РћРјРµР»СЊС‡СѓРє</text>
 	</string>
 	<string id="st_additional_music">
-		<text>Дополнительная музыка</text>
+		<text>Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РјСѓР·С‹РєР°</text>
 	</string>
 	<string id="st_firelake">
 		<text>FireLake</text>
@@ -207,288 +210,544 @@
 	<string id="st_addaraya">
 		<text>...</text>
 	</string>
+	<string id="st_actors">
+		<text>РђРєС‚С‘СЂС‹ РѕР·РІСѓС‡РєРё</text>
+	</string>
+	<string id="st_vilkov">
+		<text>РђР»РµРєСЃР°РЅРґСЂ Р’РёР»РєРѕРІ</text>
+	</string>
+	<string id="st_bogush">
+		<text>РђРЅР°С‚РѕР»РёР№ Р‘РѕРіСѓС€</text>
+	</string>
+	<string id="st_tereshchyk">
+		<text>Р’Р»Р°РґРёРјРёСЂ РўРµСЂРµСЃС‡СѓРє</text>
+	</string>
+	<string id="st_german">
+		<text>Р“СЂРёРіРѕСЂРёР№ Р“РµСЂРјР°РЅ</text>
+	</string>
+	<string id="st_stalchuk">
+		<text>РћР»РµРі РЎС‚Р°Р»СЊС‡СѓРє</text>
+	</string>
+	<string id="st_malukha">
+		<text>Р•РІРіРµРЅРёР№ РњР°Р»СѓС…Р°</text>
+	</string>
+	<string id="st_rozin">
+		<text>РРІР°РЅ Р РѕР·РёРЅ</text>
+	</string>
 	<string id="st_localization">
-		<text>Локализация</text>
+		<text>Р›РѕРєР°Р»РёР·Р°С†РёСЏ</text>
 	</string>
 	<string id="st_kuchma">
-		<text>Евгений "Smile" Кучма</text>
+		<text>Р•РІРіРµРЅРёР№ "Smile" РљСѓС‡РјР°</text>
 	</string>
 	<string id="st_dialogs">
-		<text>Составление диалогов</text>
+		<text>РЎРѕСЃС‚Р°РІР»РµРЅРёРµ РґРёР°Р»РѕРіРѕРІ</text>
 	</string>
 	<string id="st_besarab">
-		<text>Юрий Бесараб</text>
+		<text>Р®СЂРёР№ Р‘РµСЃР°СЂР°Р±</text>
 	</string>
 	<string id="st_volinech">
-		<text>Тарас "Tatarik" Волынец</text>
+		<text>РўР°СЂР°СЃ "Tatarik" Р’РѕР»С‹РЅРµС†</text>
 	</string>
 	<string id="st_lefty">
 		<text>Lefty</text>
 	</string>
 	<string id="st_texts">
-		<text>Работа с текстами</text>
+		<text>Р Р°Р±РѕС‚Р° СЃ С‚РµРєСЃС‚Р°РјРё</text>
 	</string>
 	<string id="st_litvinenko">
-		<text>Владимир Литвиненко</text>
+		<text>Р’Р»Р°РґРёРјРёСЂ Р›РёС‚РІРёРЅРµРЅРєРѕ</text>
+	</string>
+	<string id="st_eng_localization">
+		<text>РђРЅРіР»РёР№СЃРєР°СЏ Р»РѕРєР°Р»РёР·Р°С†РёСЏ</text>
+	</string>
+	<string id="st_kisin_language_services">
+		<text>Kisin Language Services</text>
+	</string>
+	<string id="st_pr_and_translator">
+		<text>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ РїСЂРѕРµРєС‚Р° Рё РїРµСЂРµРІРѕРґС‡РёРє</text>
+	</string>
+	<string id="st_kisin">
+		<text>РљРѕРЅСЃС‚Р°РЅС‚РёРЅ РљРёСЃРёРЅ</text>
+	</string>
+	<string id="st_eng_translator">
+		<text>РџРµСЂРµРІРѕРґС‡РёРє</text>
+	</string>
+	<string id="st_kropotov">
+		<text>РњРёС…Р°РёР» РљСЂРѕРїРѕС‚РѕРІ</text>
+	</string>
+	<string id="st_eng_editor">
+		<text>Р РµРґР°РєС‚РѕСЂ</text>
+	</string>
+	<string id="st_berelekhis">
+		<text>РњР°СЂРє Р‘РµСЂРµР»РµС…РёСЃ</text>
+	</string>
+	<string id="st_eng_recordings">
+		<text>Р—Р°РїРёСЃСЊ</text>
+	</string>
+	<string id="st_voiceworks">
+		<text>VoiceWorks Productions, Inc.</text>
+	</string>
+	<string id="st_casting_direction">
+		<text>Р”РёРєС‚РѕСЂСЃС‚РІРѕ Рё РєР°СЃС‚РёРЅРі Р°РєС‚С‘СЂРѕРІ РѕР·РІСѓС‡РєРё</text>
+	</string>
+	<string id="st_carrigan">
+		<text>Р”СѓРіР»Р°СЃ РљРµСЂСЂРёРіР°РЅ</text>
+	</string>
+	<string id="st_eng_engineer">
+		<text>Р—РІСѓРєРѕСЂРµР¶РёСЃСЃС‘СЂ</text>
+	</string>
+	<string id="st_johnson">
+		<text>РњРёРєР° Р”Р¶РѕРЅСЃРѕРЅ</text>
+	</string>
+	<string id="st_editor_design">
+		<text>Р РµРґР°РєС‚СѓСЂР° Рё Р·РІСѓРєРѕРІРѕР№ РґРёР·Р°Р№РЅ</text>
+	</string>
+	<string id="st_siedow">
+		<text>Р”Р¶РµР№РјРё РЎРёРґРѕСѓ</text>
+	</string>
+	<string id="st_eng_cast">
+		<text>РђРєС‚С‘СЂС‹ РѕР·РІСѓС‡РєРё</text>
+	</string>
+	<string id="st_kaplan">
+		<text>РќРёР» РљР°РїР»Р°РЅ</text>
+	</string>
+	<string id="st_blum">
+		<text>РЎС‚РёРІ Р‘Р»СѓРј</text>
+	</string>
+	<string id="st_ward">
+		<text>Р”Р¶РёРј РЈРѕСЂРґ</text>
+	</string>
+	<string id="st_pulcini">
+		<text>Р­РЅС‚РѕРЅРё РџСѓР»СЊС‡РёРЅРё</text>
+	</string>
+	<string id="st_horan">
+		<text>Р”Р¶РµР№РјСЃ РҐРѕСЂР°РЅ</text>
+	</string>
+	<string id="st_agranov">
+		<text>Р”СЌРІРёРґ РђРіСЂР°РЅРѕРІ</text>
+	</string>
+	<string id="st_atkin">
+		<text>Р РѕР±РёРЅ РђС‚РєРёРЅ</text>
+	</string>
+	<string id="st_downes">
+		<text>Р”Р°СѓРЅСЃ</text>
+	</string>
+	<string id="st_proctort">
+		<text>Р¤РёР»РёРї РџСЂРѕРєС‚РѕСЂ</text>
+	</string>
+	<string id="st_stanton">
+		<text>РЎС‚РµС„РµРЅ РЎС‚СЌРЅС‚РѕРЅ</text>
+	</string>
+	<string id="st_albrech">
+		<text>Р“СЂР°РЅС‚ РђР»СЊР±СЂРµС…С‚</text>
+	</string>
+	<string id="st_szarabajka">
+		<text>РљРёС‚ РЁР°СЂР°Р±Р°Р№РєР°</text>
+	</string>
+	<string id="st_lowenthal">
+		<text>Р®СЂРёР№ Р›РѕРІРµРЅС‚Р°Р»СЊ</text>
+	</string>
+	<string id="st_hale">
+		<text>Р”Р¶РµРЅРЅРёС„РµСЂ РҐРµР№Р»</text>
+	</string>
+	<string id="st_ger_localization">
+		<text>РќРµРјРµС†РєР°СЏ Р»РѕРєР°Р»РёР·Р°С†РёСЏ</text>
+	</string>
+	<string id="st_umlau">
+		<text>Studio Umlaut</text>
+	</string>
+	<string id="st_ger_studio">
+		<text>Р—Р°РїРёСЃС‹РІР°СЋС‰Р°СЏ СЃС‚СѓРґРёСЏ</text>
+	</string>
+	<string id="st_msm_gmbh">
+		<text>MSM GmbH</text>
+	</string>
+	<string id="st_ger_voice_actors">
+		<text>РђРєС‚С‘СЂС‹ РѕР·РІСѓС‡РєРё</text>
+	</string>
+	<string id="st_barrenstein">
+		<text>РђС…РёРј Р‘Р°СЂСЂРµРЅС€С‚РµР№РЅ</text>
+	</string>
+	<string id="st_benjamin">
+		<text>РќРёРє Р‘РµРЅРґР¶Р°РјРёРЅ</text>
+	</string>
+	<string id="st_betz">
+		<text>РњРёС…Р°СЌР»СЊ Р‘РµС†</text>
+	</string>
+	<string id="st_bornern">
+		<text>Р­СЂРёРє Р‘РѕСЂРЅРµСЂ</text>
+	</string>
+	<string id="st_evertz">
+		<text>РЎС‚РµС„Р°РЅ Р­РІРµСЂС‚С†</text>
+	</string>
+	<string id="st_grober">
+		<text>РђРЅРґСЂРµР°СЃ Р“СЂРѕР±РµСЂ</text>
+	</string>
+	<string id="st_hauf">
+		<text>РЎСЋР·Р°РЅРЅР° Р“Р°СѓС„</text>
+	</string>
+	<string id="st_heynold">
+		<text>РҐРµР»СЊРіРµ РҐСЌР№РЅРѕР»СЊРґ</text>
+	</string>
+	<string id="st_karadeniz">
+		<text>РћР·РіСЋСЂ РљР°СЂР°РґРµРЅРёР·</text>
+	</string>
+	<string id="st_lindenau">
+		<text>Р’РѕР»СЊС„ С„РѕРЅ Р›РёРЅРґРµРЅР°Сѓ</text>
+	</string>
+	<string id="st_schafer">
+		<text>РњР°СЂС‚РёРЅ РЁР°С„РµСЂ</text>
+	</string>
+	<string id="st_wachholz">
+		<text>Р“РµСЂРѕ Р’Р°С…С…РѕР»СЊС†</text>
+	</string>
+	<string id="st_fra_localization">
+		<text>Р¤СЂР°РЅС†СѓР·СЃРєР°СЏ Р»РѕРєР°Р»РёР·Р°С†РёСЏ</text>
+	</string>
+	<string id="st_fra_coordination">
+		<text>РљРѕРѕСЂРґРёРЅР°С†РёСЏ РїСЂРѕРµРєС‚Р°</text>
+	</string>
+	<string id="st_fra_deiller">
+		<text>РљР»СЌСЂ Р”РµР№Р»Рµ</text>
+	</string>
+	<string id="st_fra_recordings">
+		<text>Р—Р°РїРёСЃСЊ</text>
+	</string>
+	<string id="st_fra_productions">
+		<text>Hifi-Genie Productions</text>
+	</string>
+	<string id="st_fra_translation">
+		<text>РџРµСЂРµРІРѕРґ</text>
+	</string>
+	<string id="st_fra_bonin">
+		<text>Р”СЌРІРёРґ Р‘РѕРЅРёРЅ</text>
+	</string>
+	<string id="st_spa_localization">
+		<text>РСЃРїР°РЅСЃРєР°СЏ Рё РёС‚Р°Р»СЊСЏРЅСЃРєР°СЏ Р»РѕРєР°Р»РёР·Р°С†РёРё</text>
+	</string>
+	<string id="st_spa_translations">
+		<text>Vertigo Translations srl</text>
+	</string>
+	<string id="st_spa_recordings">
+		<text>Р—Р°РїРёСЃСЊ</text>
+	</string>
+	<string id="st_spa_synthesis">
+		<text>Synthesis US llc</text>
+	</string>
+	<string id="st_spa_manager">
+		<text>РњРµРЅРµРґР¶РµСЂ РїСЂРѕРµРєС‚Р°</text>
+	</string>
+	<string id="st_spa_solbiati">
+		<text>Р”Р°РІРёРґ РЎРѕР»Р±РёР°С‚Рё</text>
 	</string>
 	<string id="st_lead_qa_department">
-		<text>Лид тестеры</text>
+		<text>Р›РёРґ-С‚РµСЃС‚РµСЂС‹</text>
 	</string>
 	<string id="st_krivets">
-		<text>Дмитрий Кривец</text>
+		<text>Р”РјРёС‚СЂРёР№ РљСЂРёРІРµС†</text>
 	</string>
 	<string id="st_mikhailov">
-		<text>Павел "CoRR" Михайлов</text>
+		<text>РџР°РІРµР» "CoRR" РњРёС…Р°Р№Р»РѕРІ</text>
 	</string>
 	<string id="st_qa_department">
-		<text>Тестеры</text>
+		<text>РўРµСЃС‚РµСЂС‹</text>
 	</string>
 	<string id="st_shelest">
-		<text>Сергей Шелест</text>
+		<text>РЎРµСЂРіРµР№ РЁРµР»РµСЃС‚</text>
 	</string>
 	<string id="st_koval">
-		<text>Кирилл Коваль</text>
+		<text>РљРёСЂРёР»Р» РљРѕРІР°Р»СЊ</text>
 	</string>
 	<string id="st_konovaya">
-		<text>Игорь Коновал</text>
+		<text>РРіРѕСЂСЊ РљРѕРЅРѕРІР°Р»</text>
 	</string>
 	<string id="st_shevchuk">
-		<text>Глеб Шевчук</text>
+		<text>Р“Р»РµР± РЁРµРІС‡СѓРє</text>
 	</string>
 	<string id="st_gurbanov">
-		<text>Эльшан Гурбанов</text>
+		<text>Р­Р»СЊС€Р°РЅ Р“СѓСЂР±Р°РЅРѕРІ</text>
 	</string>
 	<string id="st_gaiduchenko">
-		<text>Иван Гайдученко</text>
+		<text>РРІР°РЅ Р“Р°Р№РґСѓС‡РµРЅРєРѕ</text>
 	</string>
 	<string id="st_semeniy">
-		<text>Максим Семений</text>
+		<text>РњР°РєСЃРёРј РЎРµРјРµРЅРёР№</text>
 	</string>
 	<string id="st_voskolovich">
-		<text>Анастасия Восколович</text>
+		<text>РђРЅР°СЃС‚Р°СЃРёСЏ Р’РѕСЃРєРѕР»РѕРІРёС‡</text>
 	</string>
 	<string id="st_voronin">
-		<text>Владимир Воронин</text>
+		<text>Р’Р»Р°РґРёРјРёСЂ Р’РѕСЂРѕРЅРёРЅ</text>
 	</string>
 	<string id="st_davidian">
-		<text>Дмитрий "Abe" Давидян</text>
+		<text>Р”РјРёС‚СЂРёР№ "Abe" Р”Р°РІРёРґСЏРЅ</text>
 	</string>
 	<string id="st_kirienko">
-		<text>Андрей "Darin" Кириенко</text>
+		<text>РђРЅРґСЂРµР№ "Darin" РљРёСЂРёРµРЅРєРѕ</text>
 	</string>
 	<string id="st_poperechniy">
-		<text>Данила "West" Поперечный</text>
+		<text>Р”Р°РЅРёР»Р° "West" РџРѕРїРµСЂРµС‡РЅС‹Р№</text>
 	</string>
 	<string id="st_falchenko">
-		<text>Юрий "Dark" Фальченко</text>
+		<text>Р®СЂРёР№ "Dark" Р¤Р°Р»СЊС‡РµРЅРєРѕ</text>
 	</string>
 	<string id="st_dvornikov">
-		<text>Михаил "Chips" Дворников</text>
+		<text>РњРёС…Р°РёР» "Chips" Р”РІРѕСЂРЅРёРєРѕРІ</text>
 	</string>
 	<string id="st_usupov">
-		<text>Денис "Tetri$Zz" Юсупов</text>
+		<text>Р”РµРЅРёСЃ "Tetri$Zz" Р®СЃСѓРїРѕРІ</text>
 	</string>
 	<string id="st_dovgoluk">
-		<text>Лена "redstain" Довгалюк</text>
+		<text>Р›РµРЅР° "redstain" Р”РѕРІРіР°Р»СЋРє</text>
 	</string>
 	<string id="st_mopev">
-		<text>Владимир "Hein" Морев</text>
+		<text>Р’Р»Р°РґРёРјРёСЂ "Hein" РњРѕСЂРµРІ</text>
 	</string>
 	<string id="st_kozhukhar">
-		<text>Алексей Кожухарь</text>
+		<text>РђР»РµРєСЃРµР№ РљРѕР¶СѓС…Р°СЂСЊ</text>
 	</string>
 	<string id="st_polozov">
-		<text>Николай "vortigaunt" Полозов</text>
-	</string>	
+		<text>РќРёРєРѕР»Р°Р№ "vortigaunt" РџРѕР»РѕР·РѕРІ</text>
+	</string>
 	<string id="st_pr_department">
-		<text>PR отдел</text>
+		<text>PR РѕС‚РґРµР»</text>
 	</string>
 	<string id="st_yavorsky">
-		<text>Олег Яворский</text>
+		<text>РћР»РµРі РЇРІРѕСЂСЃРєРёР№</text>
 	</string>
 	<string id="st_yeltyshev">
-		<text>Валентин Елтышев</text>
+		<text>Р’Р°Р»РµРЅС‚РёРЅ Р•Р»С‚С‹С€РµРІ</text>
 	</string>
 	<string id="st_kuzhel">
-		<text>Ольга Кужель</text>
+		<text>РћР»СЊРіР° РљСѓР¶РµР»СЊ</text>
 	</string>
 	<string id="st_promotional_material">
-		<text>Рекламные материалы</text>
+		<text>Р РµРєР»Р°РјРЅС‹Рµ РјР°С‚РµСЂРёР°Р»С‹</text>
 	</string>
 	<string id="st_troekyrova">
-		<text>Ольга Троекурова</text>
+		<text>РћР»СЊРіР° РўСЂРѕРµРєСѓСЂРѕРІР°</text>
 	</string>
 	<string id="st_khivrenko">
-		<text>Иван Хивренко</text>
+		<text>РРІР°РЅ РҐРёРІСЂРµРЅРєРѕ</text>
 	</string>
 	<string id="st_sales_department">
-		<text>Отдел продаж и развития бизнеса</text>
+		<text>РћС‚РґРµР» РїСЂРѕРґР°Р¶ Рё СЂР°Р·РІРёС‚РёСЏ Р±РёР·РЅРµСЃР°</text>
 	</string>
 	<string id="st_boyko">
-		<text>Виктория Бойко</text>
+		<text>Р’РёРєС‚РѕСЂРёСЏ Р‘РѕР№РєРѕ</text>
 	</string>
-	<!-- <string id="st_actors">
-		<text>Актеры</text>
-	</string>
-	<string id="st_borisenuk">
-		<text>Юрий Борисенок</text>
-	</string>
-	<string id="st_vilkov">
-		<text>Александр Вилков</text>
-	</string>
-	<string id="st_bogush">
-		<text>Анатолий Богуш</text>
-	</string>
-	<string id="st_girich">
-		<text>Анжелика Гирич</text>
-	</string>
-	<string id="st_tereshchyk">
-		<text>Владимир Терещук</text>
-	</string>
-	<string id="st_german">
-		<text>Григорий Герман</text>
-	</string>
-	<string id="st_stalchuk">
-		<text>Олег Стальчук</text>
-	</string>
-	<string id="st_malukha">
-		<text>Евгений Малуха</text>
-	</string>
-	<string id="st_rozin">
-		<text>Иван Розин</text>
-	</string>
-	<string id="st_timoshenko">
-		<text>Арсений Тимошенко</text>
-	</string> -->
 	<string id="st_web_programmer">
-		<text>Web-программист</text>
+		<text>Web-РїСЂРѕРіСЂР°РјРјРёСЃС‚</text>
 	</string>
 	<string id="st_terlik">
-		<text>Сергей Терлюк</text>
+		<text>РЎРµСЂРіРµР№ РўРµСЂР»СЋРє</text>
 	</string>
 	<string id="st_special_thanks">
-		<text>Отдельная благодарность</text>
+		<text>РћС‚РґРµР»СЊРЅР°СЏ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ</text>
 	</string>
 	<string id="st_thanks_chernobyl">
-		<text>Александру Новикову, Игорю Грамоткину и остальному персоналу и администрации Чернобыльской Электростанции за поддержку</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂСѓ РќРѕРІРёРєРѕРІСѓ, РРіРѕСЂСЋ Р“СЂР°РјРѕС‚РєРёРЅСѓ Рё РѕСЃС‚Р°Р»СЊРЅРѕРјСѓ РїРµСЂСЃРѕРЅР°Р»Сѓ Рё Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё Р§РµСЂРЅРѕР±С‹Р»СЊСЃРєРѕР№ Р­Р»РµРєС‚СЂРѕСЃС‚Р°РЅС†РёРё Р·Р° РїРѕРґРґРµСЂР¶РєСѓ</text>
 	</string>
 	<string id="st_thanks_chernobyl2">
-		<text>Администрации Зоны отчуждения за разрешение проводить наши сумасшедшие исследования</text>
+		<text>РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё Р—РѕРЅС‹ РѕС‚С‡СѓР¶РґРµРЅРёСЏ Р·Р° СЂР°Р·СЂРµС€РµРЅРёРµ РїСЂРѕРІРѕРґРёС‚СЊ РЅР°С€Рё СЃСѓРјР°СЃС€РµРґС€РёРµ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ</text>
 	</string>
 	<string id="st_thanks_chernobyl3">
-		<text>Персоналу агентства Чернобыльинтеринформ за содействие</text>
+		<text>РџРµСЂСЃРѕРЅР°Р»Сѓ Р°РіРµРЅС‚СЃС‚РІР° Р§РµСЂРЅРѕР±С‹Р»СЊРёРЅС‚РµСЂРёРЅС„РѕСЂРј Р·Р° СЃРѕРґРµР№СЃС‚РІРёРµ</text>
 	</string>
 	<string id="st_thanks_naumova">
-		<text>Александру Наумову за огромный информационный вклад и за его благородную миссию</text>
+		<text>РђР»РµРєСЃР°РЅРґСЂСѓ РќР°СѓРјРѕРІСѓ Р·Р° РѕРіСЂРѕРјРЅС‹Р№ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Р№ РІРєР»Р°Рґ Рё Р·Р° РµРіРѕ Р±Р»Р°РіРѕСЂРѕРґРЅСѓСЋ РјРёСЃСЃРёСЋ</text>
 	</string>
 	<string id="st_thanks_firelake">
-		<text>Группе FIRELAKE (www.firelake.in.ua)</text>
+		<text>Р“СЂСѓРїРїРµ FIRELAKE (www.firelake.in.ua)</text>
 	</string>
 	<string id="st_thanks_firelake2">
-		<text>Илье Новаку за помощь в работе над сценарием</text>
+		<text>РР»СЊРµ РќРѕРІР°РєСѓ Р·Р° РїРѕРјРѕС‰СЊ РІ СЂР°Р±РѕС‚Рµ РЅР°Рґ СЃС†РµРЅР°СЂРёРµРј</text>
 	</string>
 	<string id="st_thanks_firelake3">
-		<text>Порталу UKRGAME.NET за постоянную поддержку сетевой игры S.T.A.L.K.E.R.</text>
+		<text>РџРѕСЂС‚Р°Р»Сѓ UKRGAME.NET Р·Р° РїРѕСЃС‚РѕСЏРЅРЅСѓСЋ РїРѕРґРґРµСЂР¶РєСѓ СЃРµС‚РµРІРѕР№ РёРіСЂС‹ S.T.A.L.K.E.R.</text>
 	</string>
 	<string id="st_thanks_fanbase">
-		<text>От всего сердца благодарим Алексея "Don Reba" Бадалова, Marcos "Pixel" Duarte, Megamat, Abe, Dark, Артём "BAC9-FLCL" Зуев, Maciej "Stierlitz" Prieditis, Dennis "Siro" Tchernov, Алексей "Хеш" Белендинов, Sooltan DJ, Ygrek, NatVac, Иван "xStream" Сидоров, Eвгений "sokol_jack" Соколовский, Дмитрий "Red75" Рощин, сайт Stalker-Portal.ru (Александр "Leks" Абрамов, Игорь "Gag" Соловьёв, Алексей "DaimoN" Дронов)</text>
+		<text>РћС‚ РІСЃРµРіРѕ СЃРµСЂРґС†Р° Р±Р»Р°РіРѕРґР°СЂРёРј РђР»РµРєСЃРµСЏ "Don Reba" Р‘Р°РґР°Р»РѕРІР°, Marcos "Pixel" Duarte, Megamat, Abe, Dark, РђСЂС‚С‘Рј "BAC9-FLCL" Р—СѓРµРІ, Maciej "Stierlitz" Prieditis, Dennis "Siro" Tchernov, РђР»РµРєСЃРµР№ "РҐРµС€" Р‘РµР»РµРЅРґРёРЅРѕРІ, Sooltan DJ, Ygrek, NatVac, РРІР°РЅ "xStream" РЎРёРґРѕСЂРѕРІ, EРІРіРµРЅРёР№ "sokol_jack" РЎРѕРєРѕР»РѕРІСЃРєРёР№, Р”РјРёС‚СЂРёР№ "Red75" Р РѕС‰РёРЅ, СЃР°Р№С‚ Stalker-Portal.ru (РђР»РµРєСЃР°РЅРґСЂ "Leks" РђР±СЂР°РјРѕРІ, РРіРѕСЂСЊ "Gag" РЎРѕР»РѕРІСЊС‘РІ, РђР»РµРєСЃРµР№ "DaimoN" Р”СЂРѕРЅРѕРІ)</text>
 	</string>
 	<string id="st_thanks_fanbase2">
-		<text>Всем, кто организовывал и принимал активнейшее участие в ролевой страйкбольной игре S.T.A.L.K.E.R.: Reality, а особенно:</text>
+		<text>Р’СЃРµРј, РєС‚Рѕ РѕСЂРіР°РЅРёР·РѕРІС‹РІР°Р» Рё РїСЂРёРЅРёРјР°Р» Р°РєС‚РёРІРЅРµР№С€РµРµ СѓС‡Р°СЃС‚РёРµ РІ СЂРѕР»РµРІРѕР№ СЃС‚СЂР°Р№РєР±РѕР»СЊРЅРѕР№ РёРіСЂРµ S.T.A.L.K.E.R.: Reality, Р° РѕСЃРѕР±РµРЅРЅРѕ:</text>
 	</string>
 	<string id="st_thanks_fanbase3">
-		<text>Дмитрий "Comandor" Иванов </text>
+		<text>Р”РјРёС‚СЂРёР№ "Comandor" РРІР°РЅРѕРІ</text>
 	</string>
 	<string id="st_thanks_fanbase4">
-		<text>Евгений "Mulder" Халецкий</text>
+		<text>Р•РІРіРµРЅРёР№ "Mulder" РҐР°Р»РµС†РєРёР№</text>
 	</string>
 	<string id="st_thanks_fanbase5">
-		<text>Сергей "Тур" Лещенко</text>
+		<text>РЎРµСЂРіРµР№ "РўСѓСЂ" Р›РµС‰РµРЅРєРѕ</text>
 	</string>
 	<string id="st_thanks_fanbase6">
-		<text>Денис "Fiedel" Котляр</text>
+		<text>Р”РµРЅРёСЃ "Fiedel" РљРѕС‚Р»СЏСЂ</text>
 	</string>
 	<string id="st_thanks_fanbase7">
-		<text>Владимир "Rover" Смолькин</text>
+		<text>Р’Р»Р°РґРёРјРёСЂ "Rover" РЎРјРѕР»СЊРєРёРЅ</text>
 	</string>
 	<string id="st_thanks_fanbase8">
-		<text>Дмитрий "Профессор" Гуревич</text>
+		<text>Р”РјРёС‚СЂРёР№ "РџСЂРѕС„РµСЃСЃРѕСЂ" Р“СѓСЂРµРІРёС‡</text>
 	</string>
 	<string id="st_thanks_fanbase9">
-		<text>Станислав "Chesba" Легкобит</text>
+		<text>РЎС‚Р°РЅРёСЃР»Р°РІ "Chesba" Р›РµРіРєРѕР±РёС‚</text>
 	</string>
 	<string id="st_thanks_fanbase10">
-		<text>Константин "Инквизитор" Крюков</text>
+		<text>РљРѕРЅСЃС‚Р°РЅС‚РёРЅ "РРЅРєРІРёР·РёС‚РѕСЂ" РљСЂСЋРєРѕРІ</text>
 	</string>
 	<string id="st_thanks_fanbase11">
-		<text>Игумен Валериан (Головченко) aka oVal</text>
+		<text>РРіСѓРјРµРЅ Р’Р°Р»РµСЂРёР°РЅ (Р“РѕР»РѕРІС‡РµРЅРєРѕ) aka oVal</text>
 	</string>
 	<string id="st_thanks_fanbase12">
-		<text>Ашот, BigZ, Gild, Zeel, Андрей Паук.</text>
+		<text>РђС€РѕС‚, BigZ, Gild, Zeel, РђРЅРґСЂРµР№ РџР°СѓРє.</text>
 	</string>
 	<string id="st_thanks_fanbase13">
-		<text>и всех остальных многочисленных поклонников по всему миру, которые страстно поддерживали разработку проекта S.T.A.L.K.E.R.</text>
+		<text>Рё РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… РјРЅРѕРіРѕС‡РёСЃР»РµРЅРЅС‹С… РїРѕРєР»РѕРЅРЅРёРєРѕРІ РїРѕ РІСЃРµРјСѓ РјРёСЂСѓ, РєРѕС‚РѕСЂС‹Рµ СЃС‚СЂР°СЃС‚РЅРѕ РїРѕРґРґРµСЂР¶РёРІР°Р»Рё СЂР°Р·СЂР°Р±РѕС‚РєСѓ РїСЂРѕРµРєС‚Р° S.T.A.L.K.E.R.</text>
 	</string>
 	<string id="st_thanks_all">
-		<text>От всей команды ОГРОМНОЕ СПАСИБО всем поклонникам и фанатам проекта S.T.A.L.K.E.R.</text>
+		<text>РћС‚ РІСЃРµР№ РєРѕРјР°РЅРґС‹ РћР“Р РћРњРќРћР• РЎРџРђРЎРР‘Рћ РІСЃРµРј РїРѕРєР»РѕРЅРЅРёРєР°Рј Рё С„Р°РЅР°С‚Р°Рј РїСЂРѕРµРєС‚Р° S.T.A.L.K.E.R.</text>
+	</string>
+	<string id="st_publisher">
+		<text>РР·РґР°С‚РµР»СЊ</text>
+	</string>
+	<string id="st_koch_media">
+		<text>DEEP SILVER</text>
+	</string>
+	<string id="st_publisher_head">
+		<text>РќР°С‡Р°Р»СЊРЅРёРє РїСЂРѕРёР·РІРѕРґСЃС‚РІР°</text>
+	</string>
+	<string id="st_publisher_moriz">
+		<text>РљСЂРёСЃС‚РёР°РЅ РњРѕСЂРёС†</text>
+	</string>
+	<string id="st_publisher_management">
+		<text>РЈРїСЂР°РІР»РµРЅРёРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕРј</text>
+	</string>
+	<string id="st_publisher_stettner">
+		<text>РњР°Р№Рє РЁС‚РµС‚С‚РЅРµСЂ</text>
+	</string>
+	<string id="st_publisher_production">
+		<text>РџРѕСЃС‚РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ Рё РєРѕРЅС‚СЂРѕР»СЊ РєР°С‡РµСЃС‚РІР°</text>
+	</string>
+	<string id="st_publisher_schmidt">
+		<text>РњРёС…Р°СЌР»СЊ Рљ. РЁРјРёРґС‚</text>
+	</string>
+	<string id="st_publisher_langer">
+		<text>Р”Р°РЅРёСЌР»СЊ Р›Р°РЅРіРµСЂ</text>
+	</string>
+	<string id="st_publisher_gaitzsch">
+		<text>Р”Р°РЅРёСЌР»СЊ Р“Р°РёС‚СЃС‡</text>
+	</string>
+	<string id="st_publisher_int_marketing">
+		<text>РРЅС‚РµСЂРЅР°С†РёРѕРЅР°Р»СЊРЅС‹Р№ РјР°СЂРєРµС‚РёРЅРі</text>
+	</string>
+	<string id="st_publisher_larch">
+		<text>Р“РµРѕСЂРі Р›Р°СЂС‡</text>
+	</string>
+	<string id="st_publisher_marketing">
+		<text>РњРµРЅРµРґР¶РµСЂ РјР°СЂРєРµС‚РёРЅРіР° вЂ” Р“РµСЂРјР°РЅРёСЏ, РђРІСЃС‚СЂРёСЏ, РЁРІРµР№С†Р°СЂРёСЏ</text>
+	</string>
+	<string id="st_publisher_gerhold">
+		<text>РњР°СЂРёРѕ Р“РµСЂРѕР»СЊРґ</text>
+	</string>
+	<string id="st_publisher_beck">
+		<text>РћР»РёРІРµСЂ Р‘РµРє</text>
+	</string>
+	<string id="st_publisher_press">
+		<text>РРЅС‚РµСЂРЅР°С†РёРѕРЅР°Р»СЊРЅР°СЏ РїСЂРµСЃСЃР°</text>
+	</string>
+	<string id="st_publisher_metzler">
+		<text>РњР°СЂС‚РёРЅ РњРµС†Р»РµСЂ</text>
+	</string>
+	<string id="st_publisher_pr">
+		<text>PR-РјРµРЅРµРґР¶РµСЂ вЂ” Р“РµСЂРјР°РЅРёСЏ, РђРІСЃС‚СЂРёСЏ, РЁРІРµР№С†Р°СЂРёСЏ</text>
+	</string>
+	<string id="st_publisher_wein">
+		<text>РњР°СЂС‚РёРЅ РЈСЌР№РЅ</text>
+	</string>
+	<string id="st_publisher_design">
+		<text>Р“СЂР°С„РёРєР° Рё РґРёР·Р°Р№РЅ</text>
+	</string>
+	<string id="st_publisher_stein">
+		<text>РђР»РµРєСЃР°РЅРґСЂ РЎС‚Р°Р№РЅ</text>
+	</string>
+	<string id="st_publisher_community">
+		<text>РљРѕРјСЊСЋРЅРёС‚Рё-РјРµРЅРµРґР¶РјРµРЅС‚</text>
+	</string>
+	<string id="st_publisher_oberlerchner">
+		<text>Р”Р°РЅРёСЌР»СЊ "РћР±РµСЂР»Рµ" РћР±РµСЂР»РµС…РЅРµСЂ</text>
+	</string>
+	<string id="st_publisher_testing">
+		<text>Р›РёРЅРіРІРёСЃС‚РёС‡РµСЃРєРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ</text>
+	</string>
+	<string id="st_publisher_grobhennig">
+		<text>Р›РёРЅРґР° Р“СЂРѕСЃСЃС…РµРЅРЅРёРі</text>
+	</string>
+	<string id="st_publisher_parakhen">
+		<text>РџСЂР°С‡СЊСЏ РђР№Р·РµРє РџР°СЂР°РєС…РµРЅ</text>
+	</string>
+	<string id="st_publisher_cuinet">
+		<text>РњРёРєР°СЌР»СЊ РљСЋРёРЅРµ</text>
+	</string>
+	<string id="st_publisher_randall_mage">
+		<text>LocalSoft - Р СЌРЅРґРµР»Р» РњР°Р¶</text>
 	</string>
 	<string id="st_thanks_litconc">
-		<text>Победителям второго литконкурса по мотивам игры "*S.T.A.L.K.E.R.*"</text>
+		<text>РџРѕР±РµРґРёС‚РµР»СЏРј РІС‚РѕСЂРѕРіРѕ Р»РёС‚РєРѕРЅРєСѓСЂСЃР° РїРѕ РјРѕС‚РёРІР°Рј РёРіСЂС‹ "*S.T.A.L.K.E.R.*"</text>
 	</string>
 	<string id="st_thanks_litconc1">
-		<text>Михаил Черепанов</text>
+		<text>РњРёС…Р°РёР» Р§РµСЂРµРїР°РЅРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc2">
-		<text>Егор Песков</text>
+		<text>Р•РіРѕСЂ РџРµСЃРєРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc3">
-		<text>Гордиан Александр</text>
+		<text>Р“РѕСЂРґРёР°РЅ РђР»РµРєСЃР°РЅРґСЂ</text>
 	</string>
 	<string id="st_thanks_litconc4">
 		<text>Hitman</text>
 	</string>
 	<string id="st_thanks_litconc5">
-		<text>Кащеев</text>
+		<text>РљР°С‰РµРµРІ</text>
 	</string>
 	<string id="st_thanks_litconc6">
-		<text>Сергей Куликов</text>
+		<text>РЎРµСЂРіРµР№ РљСѓР»РёРєРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc7">
-		<text>Владислав Белогородский</text>
+		<text>Р’Р»Р°РґРёСЃР»Р°РІ Р‘РµР»РѕРіРѕСЂРѕРґСЃРєРёР№</text>
 	</string>
 	<string id="st_thanks_litconc8">
-		<text>Роман Шемякин</text>
+		<text>Р РѕРјР°РЅ РЁРµРјСЏРєРёРЅ</text>
 	</string>
 	<string id="st_thanks_litconc9">
-		<text>Дмитрий Калинин</text>
+		<text>Р”РјРёС‚СЂРёР№ РљР°Р»РёРЅРёРЅ</text>
 	</string>
 	<string id="st_thanks_litconc10">
-		<text>Сергей Берков</text>
+		<text>РЎРµСЂРіРµР№ Р‘РµСЂРєРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc11">
-		<text>Максим Ваганов</text>
+		<text>РњР°РєСЃРёРј Р’Р°РіР°РЅРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc12">
-		<text>Чистяков М.В.</text>
+		<text>Р§РёСЃС‚СЏРєРѕРІ Рњ.Р’.</text>
 	</string>
 	<string id="st_thanks_litconc13">
-		<text>Андрей Петров</text>
+		<text>РђРЅРґСЂРµР№ РџРµС‚СЂРѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc14">
-		<text>Ирина Грин и Виктор Кузнецов</text>
+		<text>РСЂРёРЅР° Р“СЂРёРЅ Рё Р’РёРєС‚РѕСЂ РљСѓР·РЅРµС†РѕРІ</text>
 	</string>
 	<string id="st_thanks_litconc15">
-		<text>Сергей Недоруб</text>
+		<text>РЎРµСЂРіРµР№ РќРµРґРѕСЂСѓР±</text>
 	</string>
 	<string id="st_thanks_litconc16">
-		<text>Вероника Аверина</text>
+		<text>Р’РµСЂРѕРЅРёРєР° РђРІРµСЂРёРЅР°</text>
 	</string>
 	<string id="st_thanks_litconc17">
-		<text>А. Лобин</text>
+		<text>Рђ. Р›РѕР±РёРЅ</text>
 	</string>
 	<string id="st_thanks_litconc18">
-		<text>Владислав Дик</text>
+		<text>Р’Р»Р°РґРёСЃР»Р°РІ Р”РёРє</text>
 	</string>
-
-
 </string_table>

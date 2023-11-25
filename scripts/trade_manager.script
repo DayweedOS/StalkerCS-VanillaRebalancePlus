@@ -1,92 +1,125 @@
+-- Decane 10.10.2014: Removed superfluous packet data writes and broken-in-vanilla delays to NPCs adjusting their prices (the wrong inequality sign was used). See also xr_motivator.script.
+--        27.04.2017: Optimizations, some of which per NatVac.
 
+local trade_manager = {}
+local generic_ini = ini_file("misc\\trade_generic.ltx")
+local generic_ini_checked = false
 
-local trade_manager = {
-}
+function trade_init(npc, ini_path)
 
-
-
-
-
-function trade_init(npc, cfg)
---'	printf("TRADE INIT[%s]", npc:name())
---'	if trade_manager[npc:id()] == nil then
-		trade_manager[npc:id()] = {}
---'	end
-
-	trade_manager[npc:id()].cfg_ltx = cfg
-	trade_manager[npc:id()].config = ini_file(cfg)
-
-	-- коэфициенты покупки
-	local str = utils.cfg_get_string(trade_manager[npc:id()].config, "trader", "buy_condition", npc, true, "")
-	if str == nil then
-		abort("Incorrect trader settings. Cannot find buy_condition. [%s]->[%s]", npc:name(), cfg)
+	local ini
+	if ini_path == "misc\\trade_generic.ltx" then
+		ini = generic_ini
+	else
+		ini = ini_file(ini_path)
 	end
-	trade_manager[npc:id()].buy_condition = xr_logic.parse_condlist(npc, "trade_manager", "buy_condition", str)
 
-	-- коэфициенты продажи
-	str = utils.cfg_get_string(trade_manager[npc:id()].config, "trader", "sell_condition", npc, true, "")
-	if str == nil then
-		abort("Incorrect trader settings. Cannot find sell_condition. [%s]->[%s]", npc:name(), cfg)
+	local trader_sect = "trader"
+
+	if generic_ini_checked == false or ini_path ~= "misc\\trade_generic.ltx" then
+--		dbglog("Checked: "..ini_path)
+		if not ini:section_exist(trader_sect) then
+			return
+		end
+		if not ini:line_exist(trader_sect, "buy_condition") or not ini:line_exist(trader_sect, "sell_condition") then
+			abort("[trade_manager.trade_init]: Missing mandatory parameter(s) 'buy_condition' and/or 'sell_condition' in trade config '%s' of NPC '%s'.", ini_path, npc:name())
+			return
+		end
 	end
-	trade_manager[npc:id()].sell_condition = xr_logic.parse_condlist(npc, "trade_manager", "sell_condition", str)
 
-	-- список закупки
-	str = utils.cfg_get_string(trade_manager[npc:id()].config, "trader", "buy_supplies", npc, false, "")
-	if str ~= nil then
-		trade_manager[npc:id()].buy_supplies = xr_logic.parse_condlist(npc, "trade_manager", "buy_supplies", str)
+	if ini_path == "misc\\trade_generic.ltx" then
+		generic_ini_checked = true
+	end
+
+	local tt = {config = ini}
+
+	trade_manager[npc:id()] = tt
+
+--	tt.cfg_ltx = ini_path
+
+	local condlist = ini:r_string(trader_sect, "buy_condition")
+	tt.buy_condition = xr_logic.parse_condlist(nil, nil, nil, condlist)
+
+	condlist = ini:r_string(trader_sect, "sell_condition")
+	tt.sell_condition = xr_logic.parse_condlist(nil, nil, nil, condlist)
+
+	condlist = ini:line_exist(trader_sect, "buy_supplies") and ini:r_string(trader_sect, "buy_supplies")
+	if condlist then
+		tt.buy_supplies = xr_logic.parse_condlist(nil, nil, nil, condlist)
 	end
 end
 
-
 function update(npc)
+
 	local tt = trade_manager[npc:id()]
 
 	if tt == nil then
 		return
 	end
+--[[
+	local time_now = time_global()
 
-	if tt.update_time ~= nil and tt.update_time < time_global() then
+	if tt.next_update_time ~= nil and time_now < tt.next_update_time then	-- the vanilla second conjunct was equivalent to 'tt.next_update_time < time_now'
 		return
 	end
-	tt.update_time = time_global() + 3600000
 
-	local str = xr_logic.pick_section_from_condlist(db.actor, npc, tt.buy_condition)
-	if tt.current_buy_condition ~= str then
-		--'printf("TRADE [%s]: buy condition = %s", npc:name(), str)
-		npc:buy_condition(tt.config, str)
-		tt.current_buy_condition = str
+	tt.next_update_time = time_now + 1000	-- the next update will be called one thousand milliseconds from now
+
+	dbglog("[trade_manager.update]: Update() called for NPC with ID "..tostring(npc:id()))
+]]
+	local act = db.actor
+	local target_sect = xr_logic.pick_section_from_condlist(act, npc, tt.buy_condition)
+
+--	dbglog("[trade_manager.update]: Current buy condition: "..tostring(tt.current_buy_condition))
+
+	if tt.current_buy_condition ~= target_sect then
+		npc:buy_condition(tt.config, target_sect)
+		tt.current_buy_condition = target_sect
+--		dbglog("[trade_manager.update]: New buy condition: "..target_sect)
 	end
 
-	str = xr_logic.pick_section_from_condlist(db.actor, npc, tt.sell_condition)
-	if tt.current_sell_condition ~= str then
-		--'printf("TRADE [%s]: sell condition = %s", npc:name(), str)
-		npc:sell_condition(tt.config, str)
-		tt.current_sell_condition = str
+	target_sect = xr_logic.pick_section_from_condlist(act, npc, tt.sell_condition)
+
+--	dbglog("[trade_manager.update]: Current sell condition: "..tostring(tt.current_sell_condition))
+
+	if tt.current_sell_condition ~= target_sect then
+		npc:sell_condition(tt.config, target_sect)
+		tt.current_sell_condition = target_sect
+--		dbglog("[trade_manager.update]: New sell condition: "..target_sect)
 	end
 
 	if tt.buy_supplies == nil then
 		return
 	end
 
-	str = xr_logic.pick_section_from_condlist(db.actor, npc, tt.buy_supplies)
-	if tt.current_buy_supplies ~= str then
-		if tt.resuply_time ~= nil and tt.resuply_time < time_global() then
+	target_sect = xr_logic.pick_section_from_condlist(act, npc, tt.buy_supplies)
+
+--	dbglog("[trade_manager.update]: Current supplies: "..tostring(tt.current_buy_supplies))
+
+	if tt.current_buy_supplies ~= target_sect then
+--[[
+		local time_now = time_global()
+
+		if tt.resupply_time ~= nil and time_now < tt.resupply_time then		-- the vanilla second conjunct was, again, written with the wrong inequality sign, so the vanilla equivalent of this block was bugged
 			return
 		end
-		--'printf("TRADE [%s]: buy_supplies = %s", npc:name(), str)
-		npc:buy_supplies(tt.config, str)
-		tt.current_buy_supplies = str
-		tt.resuply_time = time_global() + 24*3600000
+
+		tt.resupply_time = time_now + 600000	-- goods are re-stocked every 10 real minutes = 10 * 60 * 1000 milliseconds = 600000 milliseconds
+]]
+		npc:buy_supplies(tt.config, target_sect)
+		tt.current_buy_supplies = target_sect
+
+--		dbglog("[trade_manager.update]: New supplies: "..target_sect)
 	end
 end
+--[[
+function save(npc, packet)
 
-
-function save(obj, packet)
-	local tt = trade_manager[obj:id()]
 	set_save_marker(packet, "save", false, "trade_manager")
-	--' Сохраняем присутствует ли инициализированная торговля в принципе.
+
+	local tt = trade_manager[npc:id()]
+
 	if tt == nil then
-		printf("TRADE SAVE [%s]: ignored", obj:name())
 		packet:w_bool(false)
 		return
 	else
@@ -95,90 +128,88 @@ function save(obj, packet)
 
 	packet:w_stringZ(tt.cfg_ltx)
 
-	printf("TRADE SAVE [%s]: current_buy_condition = %s", obj:name(), tostring(tt.current_buy_condition))
 	if tt.current_buy_condition == nil then
 		packet:w_stringZ("")
 	else
 		packet:w_stringZ(tt.current_buy_condition)
 	end
 
-	printf("TRADE SAVE [%s]: current_sell_condition = %s", obj:name(), tostring(tt.current_sell_condition))
 	if tt.current_sell_condition == nil then
 		packet:w_stringZ("")
 	else
 		packet:w_stringZ(tt.current_sell_condition)
 	end
 
-	printf("TRADE SAVE [%s]: current_buy_supplies = %s", obj:name(), tostring(tt.current_buy_supplies))
 	if tt.current_buy_supplies == nil then
 		packet:w_stringZ("")
 	else
 		packet:w_stringZ(tt.current_buy_supplies)
 	end
 
-	local cur_tm = time_global()
+	local time_now = time_global()
 
-	if tt.update_time == nil then
+	if tt.next_update_time == nil then
 		packet:w_s32(-1)
 	else
-	 	packet:w_s32(tt.update_time - cur_tm)
+		packet:w_s32(tt.next_update_time - time_now)
 	end
 
-	if tt.resuply_time == nil then
+	if tt.resupply_time == nil then
 		packet:w_s32(-1)
 	else
-	 	packet:w_s32(tt.resuply_time - cur_tm)
+		packet:w_s32(tt.resupply_time - time_now)
 	end
+
 	set_save_marker(packet, "save", true, "trade_manager")
 end
 
-function load(obj, packet)
+function load(npc, packet)
+
 	set_save_marker(packet, "load", false, "trade_manager")
+
 	local a = packet:r_bool()
 	if a == false then
-		printf("TRADE LOAD [%s]: ignored", obj:name())
 		return
 	end
 
-	trade_manager[obj:id()] = {}
+	local npc_id = npc:id()
 
-	local tt = trade_manager[obj:id()]
+	trade_manager[npc_id] = {}
+
+	local tt = trade_manager[npc_id]
 
 	tt.cfg_ltx = packet:r_stringZ()
-	printf("TRADE LOAD [%s]: cfg_ltx = %s", obj:name(), tostring(tt.cfg_ltx))
-
 	tt.config = ini_file(tt.cfg_ltx)
 
 	a = packet:r_stringZ()
-	printf("TRADE LOAD [%s]: current_buy_condition = %s", obj:name(), tostring(a))
 	if a ~= "" then
 		tt.current_buy_condition = a
-		obj:buy_condition(tt.config, a)
+		npc:buy_condition(tt.config, a)
 	end
 
 	a = packet:r_stringZ()
-	printf("TRADE LOAD [%s]: current_sell_condition = %s", obj:name(), tostring(a))
 	if a ~= "" then
 		tt.current_sell_condition = a
-		obj:sell_condition(tt.config, a)
+		npc:sell_condition(tt.config, a)
 	end
 
 	a = packet:r_stringZ()
-	printf("TRADE LOAD [%s]: current_buy_supplies = %s", obj:name(), tostring(a))
 	if a ~= "" then
 		tt.current_buy_supplies = a
 	end
 
-	local cur_tm = time_global()
+	local time_now = time_global()
 
 	a = packet:r_s32()
 	if a ~= -1 then
-		tt.update_time = cur_tm + a
+		tt.next_update_time = time_now + a
 	end
 
 	a = packet:r_s32()
 	if a ~= -1 then
-		tt.resuply_time = cur_tm + a
+		tt.resupply_time = time_now + a
 	end
+
 	set_save_marker(packet, "load", true, "trade_manager")
 end
+]]

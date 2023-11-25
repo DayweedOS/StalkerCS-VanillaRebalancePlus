@@ -17,7 +17,7 @@ ef_weapon_type				= 7
 ;---DOF-------------------------------------------------------------------------
 zoom_dof					= 0.5, 1.0, 180
 ;-----------------------------------------------------------------------------
-upgrades                = up_gr_a_wincheaster1300, up_gr_b_wincheaster1300, up_gr_c_wincheaster1300, up_gr_d_wincheaster1300, up_gr_e_wincheaster1300, up_gr_f_wincheaster1300, up_gr_g_wincheaster1300
+upgrades                = up_gr_ab_wincheaster1300, up_gr_cd_wincheaster1300, up_gr_e_wincheaster1300, up_gr_f_wincheaster1300, up_gr_g_wincheaster1300
 installed_upgrades      =
 upgrade_scheme          = upgrade_scheme_u9d
 
@@ -154,14 +154,14 @@ scope_zoom_factor	    	= 55
 ;звуки
 snd_draw					= weapons\generic_draw
 snd_holster					= weapons\generic_holster
-snd_shoot					= weapons\n_spas12_shot
+snd_shoot					= weapons\winchester1300_shot
 snd_empty					= weapons\generic_empty
-snd_reload					= weapons\spas12_reload_end
-snd_shoot_duplet			= weapons\n_spas12_shot
+snd_reload					= weapons\winchester1300_reload_end
+snd_shoot_duplet			= weapons\winchester1300_shot
 
 snd_open_weapon            = weapons\draw_silent
-snd_add_cartridge			= weapons\spas12_reload
-snd_close_weapon        = weapons\spas12_reload_end
+snd_add_cartridge			= weapons\w1300_load
+snd_close_weapon        = weapons\winchester1300_reload_end
 
 [wpn_winchester1300_hud]:hud_base
 
@@ -177,24 +177,20 @@ fire_bone			= wpn_body
 attach_place_idx		= 0
 item_visual                   	= dynamics\weapons\wpn_winchester1300\wpn_winchester1300_hud
 
-hands_position				= -0.119500,-0.120500,0.185001
-hands_orientation			= 1.050001,1.700001,3.449997
+hands_position					= -0.119500,-0.120500, 0.185001
+hands_orientation				=  1.050001, 1.700001, 3.449997
 
+hands_position_16x9				= -0.131500,-0.138500, 0.187499
+hands_orientation_16x9			=  1.699999, 2.999999, 3.449998
 
+item_position					=  0.003519, 0.010573,-0.003368
+item_orientation				=  0.045015, 1.047468, 0.056850
 
-hands_position_16x9				= -0.131500,-0.138500,0.187499
-hands_orientation_16x9			= 1.699999,2.999999,3.449998
+aim_hud_offset_pos				= -0.110500, 0.095000, 0.050000
+aim_hud_offset_rot				=  0.040000, 0.012300,-0.020500
 
-item_position				= 0.003519,0.010573,-0.003368
-item_orientation			= 0.045015,1.047468,0.056850
-
-aim_hud_offset_pos				= -0.110000,0.093500,0.000000
-aim_hud_offset_rot				= 0.042500,0.012500,-0.02500
-
-aim_hud_offset_pos_16x9				= -0.100500,0.115500,0.000000
-aim_hud_offset_rot_16x9				= 0.067500,0.022500,-0.017500
-;aim_hud_offset_pos_16x9				= -0.044000,0.077000,0.000000
-;aim_hud_offset_rot_16x9				= 0.032500,0.002500,0.000000
+aim_hud_offset_pos_16x9			= -0.100400, 0.116700, 0.050000
+aim_hud_offset_rot_16x9			=  0.062500, 0.023500,-0.017500
 
 anm_show			= winchester1300_draw
 anm_hide			= winchester1300_holster

@@ -18,9 +18,6 @@ agr_find_flesh_up_ac_desert_eagle
 agr_find_flesh_up_bd_desert_eagle
 agr_find_flesh_up_ac_spas12
 
-;***************************************************
-;  весты на нахождение апгрейдов.
-;***************************************************
 [mar_find_flesh_up_ac_mp5]
 type = find_upgrade
 task_type = additional
@@ -64,6 +61,7 @@ target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_ac_wincheaster1300
 cost = 750
 requested_item = flesh_up_ac_wincheaster1300
 reward_upgr = wpn_wincheaster1300, up_ac_wincheaster1300
+condlist_0 = {=actor_in_bandit} reversed
 
 [esc_find_flesh_up_bd_wincheaster1300]
 type = find_upgrade
@@ -75,6 +73,7 @@ target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_bd_wincheaster1300
 cost = 750
 requested_item = flesh_up_bd_wincheaster1300
 reward_upgr = wpn_wincheaster1300, up_bd_wincheaster1300
+condlist_0 = {=actor_in_bandit} reversed
 
 [esc_find_flesh_up_ac_ak74u]
 type = find_upgrade
@@ -86,6 +85,7 @@ target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_ac_ak74u} true
 cost = 1355
 requested_item = flesh_up_ac_ak74u
 reward_upgr = wpn_ak74u, up_ac_ak74u
+condlist_0 = {=actor_in_bandit} reversed
 
 [gar_find_flesh_up_fh_scientific_outfit]
 type = find_upgrade
@@ -97,6 +97,8 @@ target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_fh_scientific_outfit} 
 cost = 9375
 requested_item = flesh_up_fh_scientific_outfit
 reward_upgr = scientific_outfit, up_fh_scientific_outfit
+condlist_0 = {=actor_in_stalker} reversed
+condlist_1 = {=actor_in_dolg} reversed
 
 [gar_find_flesh_up_bdfh_scientific_outfit]
 type = find_upgrade
@@ -108,6 +110,8 @@ target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_bdfh_scientific_outfit
 cost = 12500
 requested_item = flesh_up_bdfh_scientific_outfit
 reward_upgr = scientific_outfit, up_bdfh_scientific_outfit
+condlist_0 = {=actor_in_stalker} reversed
+condlist_1 = {=actor_in_dolg} reversed
 
 [gar_find_flesh_up_aceg_scientific_outfit]
 type = find_upgrade
@@ -119,6 +123,8 @@ target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_aceg_scientific_outfit
 cost = 12500
 requested_item = flesh_up_aceg_scientific_outfit
 reward_upgr = scientific_outfit, up_aceg_scientific_outfit
+condlist_0 = {=actor_in_stalker} reversed
+condlist_1 = {=actor_in_dolg} reversed
 
 [val_find_flesh_up_ab_svu]
 type = find_upgrade
@@ -130,6 +136,7 @@ target_cond = {=check_npc_name(val_freedom_fixer) -info_up_ab_svu} true
 cost = 3750
 requested_item = flesh_up_ab_svu
 reward_upgr = wpn_svu, up_ab_svu
+condlist_0 = {=actor_in_dolg} reversed
 
 [val_find_flesh_up_cd_svu]
 type = find_upgrade
@@ -141,6 +148,7 @@ target_cond = {=check_npc_name(val_freedom_fixer) -info_up_cd_svu} true
 cost = 3750
 requested_item = flesh_up_cd_svu
 reward_upgr = wpn_svu, up_cd_svu
+condlist_0 = {=actor_in_dolg} reversed
 
 [val_find_flesh_up_abcd_svu]
 type = find_upgrade
@@ -152,6 +160,7 @@ target_cond = {=check_npc_name(val_freedom_fixer) -info_up_abcd_svu} true
 cost = 6250
 requested_item = flesh_up_abcd_svu
 reward_upgr = wpn_svu, up_abcd_svu
+condlist_0 = {=actor_in_dolg} reversed
 
 [agr_find_flesh_up_ab_pkm]
 type = find_upgrade
@@ -163,6 +172,8 @@ target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_ab_pkm} true
 cost = 7500
 requested_item = flesh_up_ab_pkm
 reward_upgr = wpn_pkm, up_ab_pkm
+condlist_0 = {=actor_in_freedom} reversed
+condlist_1 = {=actor_in_bandit} reversed
 
 [agr_find_flesh_up_cd_pkm]
 type = find_upgrade
@@ -174,6 +185,8 @@ target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_cd_pkm} true
 cost = 7500
 requested_item = flesh_up_cd_pkm
 reward_upgr = wpn_pkm, up_cd_pkm
+condlist_0 = {=actor_in_freedom} reversed
+condlist_1 = {=actor_in_bandit} reversed
 
 [agr_find_flesh_up_abcd_pkm]
 type = find_upgrade
@@ -185,6 +198,8 @@ target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_abcd_pkm} true
 cost = 12500
 requested_item = flesh_up_abcd_pkm
 reward_upgr = wpn_pkm, up_abcd_pkm
+condlist_0 = {=actor_in_freedom} reversed
+condlist_1 = {=actor_in_bandit} reversed
 
 [agr_find_flesh_up_ac_desert_eagle]
 type = find_upgrade
@@ -196,6 +211,7 @@ target_cond = {=check_npc_name(agr_stalker_base_mechanic) -info_up_ac_desert_eag
 cost = 1125
 requested_item = flesh_up_ac_desert_eagle
 reward_upgr = wpn_desert_eagle, up_ac_desert_eagle
+condlist_0 = {=actor_in_bandit} reversed
 
 [agr_find_flesh_up_bd_desert_eagle]
 type = find_upgrade
@@ -207,6 +223,7 @@ target_cond = {=check_npc_name(agr_stalker_base_mechanic) -info_up_bd_desert_eag
 cost = 1125
 requested_item = flesh_up_bd_desert_eagle
 reward_upgr = wpn_desert_eagle, up_bd_desert_eagle
+condlist_0 = {=actor_in_bandit} reversed
 
 [agr_find_flesh_up_ac_spas12]
 type = find_upgrade
@@ -218,3 +235,4 @@ target_cond = {=check_npc_name(agr_stalker_base_mechanic) -info_up_ac_spas12} tr
 cost = 1125
 requested_item = flesh_up_ac_spas12
 reward_upgr = wpn_spas12, up_ac_spas12
+condlist_0 = {=actor_in_bandit} reversed
