@@ -18,12 +18,12 @@
 		<snd_config>characters_voice\human_02\csky\</snd_config>
 
 		<supplies>
-			[spawn] \n
-			device_torch \n
-			hand_radio \n
-			wpn_ak74_up2 = 1, scope, launcher \n
-			ammo_5.45x39_ap \n
-			grenade_f1 = 3 \n
+            [spawn] \n
+            device_torch \n
+            hand_radio \n
+            wpn_ak74_up2 = 1, scope, launcher \n
+            ammo_5.45x39_ap \n
+            grenade_f1 = 3, prob=0.4 \n
 		</supplies>
 
 		<mechanic_mode>1</mechanic_mode>
@@ -85,7 +85,7 @@
 			ammo_9x39_ap \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 = 3 \n
+			grenade_f1 = 3, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_1.xml"
@@ -115,7 +115,7 @@
 			ammo_5.45x39_ap \n
 			wpn_walther \n
 			ammo_9x19_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 2, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_1.xml"
@@ -145,7 +145,7 @@
 			ammo_5.56x45_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 2, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_1.xml"
@@ -175,7 +175,7 @@
 			ammo_5.45x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 2, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_1.xml"
@@ -205,7 +205,7 @@
 			ammo_5.56x45_ap \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 2, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_1.xml"

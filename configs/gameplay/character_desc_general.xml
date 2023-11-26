@@ -68,6 +68,7 @@
 			[spawn] \n
 			wpn_ak74u \n
 			ammo_5.45x39_fmj \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -97,11 +98,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_2_mask</visual>
 		<supplies>
 			[spawn] \n
-			wpn_ak74u \n
+			wpn_ak74 \n
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -133,7 +134,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -165,7 +166,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -197,7 +198,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -227,11 +228,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_2_mask</visual>
 		<supplies>
 			[spawn] \n
-			wpn_ak74 \n
-			ammo_5.45x39_fmj \n
+			wpn_abakan \n
+			ammo_5.45x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -259,11 +260,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_2_mask</visual>
 		<supplies>
 			[spawn] \n
-			wpn_abakan \n
-			ammo_5.45x39_fmj \n
+			wpn_abakan_up2 = 1, scope \n
+			ammo_5.45x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -291,11 +292,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
 		<supplies>
 			[spawn] \n
-			wpn_ak74 \n
-			ammo_5.45x39_fmj \n
+			wpn_abakan \n
+			ammo_5.45x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -323,11 +324,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
 		<supplies>
 			[spawn] \n
-			wpn_abakan \n
+			wpn_abakan_up2 = 1, scope \n
 			ammo_5.45x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -357,11 +358,75 @@
 		<visual>actors\stalker_dolg\stalker_dolg_3</visual>
 		<supplies>
 			[spawn] \n
-			wpn_abakan_up2 = 1, scope \n
-			ammo_5.45x39_ap \n
+			wpn_vintorez = 1 \n
+			ammo_9x39_pab9 \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+		</supplies>
+
+#include "gameplay\character_criticals_4.xml"
+#include "gameplay\character_dialogs.xml"
+
+	</specific_character>
+
+	<specific_character id="sim_default_duty_3_default_1" team_default = "1">
+
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_npc_u_dolg_3</icon>
+
+		<class>sim_default_duty_3</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_03\dolg\</snd_config>
+
+		<rank>750</rank>
+		<reputation>0</reputation>
+
+		<money min="2500" max="5000" infinitive="0"/>
+
+		<visual>actors\stalker_dolg\stalker_dolg_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza = 1 \n
+			ammo_9x39_pab9 \n
+			wpn_pm \n
+			ammo_9x18_fmj \n
+			grenade_f1 = 2, prob=0.4 \n
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+		</supplies>
+
+#include "gameplay\character_criticals_4.xml"
+#include "gameplay\character_dialogs.xml"
+
+	</specific_character>
+
+	<specific_character id="sim_default_duty_3_default_2" team_default = "1">
+
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_npc_u_dolg_3</icon>
+
+		<class>sim_default_duty_3</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_03\dolg\</snd_config>
+
+		<rank>750</rank>
+		<reputation>0</reputation>
+
+		<money min="2500" max="5000" infinitive="0"/>
+
+		<visual>actors\stalker_dolg\stalker_dolg_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_pab9 \n
+			wpn_pm \n
+			ammo_9x18_fmj \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -391,11 +456,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
 		<supplies>
 			[spawn] \n
-			wpn_groza = 1, scope \n
+			wpn_vintorez = 1 \n
 			ammo_9x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -423,11 +488,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
 		<supplies>
 			[spawn] \n
-			wpn_groza = 1, scope \n
+			wpn_val = 1 \n
 			ammo_9x39_ap \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -455,11 +520,11 @@
 		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
 		<supplies>
 			[spawn] \n
-			wpn_abakan_up2 = 1, scope, launcher \n
-			ammo_5.45x39_ap \n
+			wpn_groza = 1, scope \n
+			ammo_9x39_ap \n
 			wpn_walther \n
 			ammo_9x19_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -491,7 +556,7 @@
 			ammo_pkm_100 \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -644,7 +709,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -676,7 +741,7 @@
 			ammo_12x76_zhekan \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -708,7 +773,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -740,7 +805,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -774,7 +839,7 @@
 			ammo_5.56x45_ss190 \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -806,7 +871,7 @@
 			ammo_5.56x45_ss190 \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -838,7 +903,7 @@
 			ammo_12x76_zhekan \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -870,7 +935,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -904,7 +969,7 @@
 			ammo_5.45x39_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -936,7 +1001,7 @@
 			ammo_5.45x39_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -968,7 +1033,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1000,7 +1065,7 @@
 			ammo_7.62x54_7h1 \n
 			wpn_walther \n
 			ammo_9x19_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1034,7 +1099,7 @@
 			ammo_7.62x54_7h1 \n
 			wpn_usp \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1066,7 +1131,7 @@
 			ammo_5.56x45_ap \n
 			wpn_usp \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1156,7 +1221,6 @@
 			[spawn] \n
 			wpn_bm16 \n
 			ammo_12x70_buck \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1188,7 +1252,6 @@
 			[spawn] \n
 			wpn_toz34 \n
 			ammo_12x70_buck \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1220,7 +1283,6 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1252,7 +1314,6 @@
 			ammo_9x19_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1286,7 +1347,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1317,7 +1378,7 @@
 			wpn_mp5 \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1349,7 +1410,7 @@
 			ammo_12x76_zhekan \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1383,7 +1444,7 @@
 			ammo_12x76_zhekan \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1415,7 +1476,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1448,8 +1509,8 @@
 			wpn_val \n
 			ammo_9x39_ap \n
 			wpn_desert_eagle \n
-			ammo_11.43x23_fmj \n
-			grenade_rgd5 \n
+			ammo_11.43x23_hydro \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1480,8 +1541,8 @@
 			wpn_val \n
 			ammo_9x39_ap \n
 			wpn_desert_eagle \n
-			ammo_11.43x23_fmj \n
-			grenade_rgd5 \n
+			ammo_11.43x23_hydro \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1695,7 +1756,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 		</supplies>
@@ -1726,7 +1787,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm_9x19 \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 		</supplies>
@@ -1757,6 +1818,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 		</supplies>
@@ -1787,7 +1849,7 @@
 			ammo_9x19_fmj \n
 			wpn_pm_up \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 		</supplies>
@@ -1882,7 +1944,7 @@
 			ammo_5.56x45_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1914,7 +1976,7 @@
 			ammo_5.56x45_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1948,7 +2010,7 @@
 			ammo_5.56x45_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -1980,7 +2042,7 @@
 			ammo_5.56x45_ap \n
 			wpn_usp \n
 			ammo_11.43x23_fmj \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2014,7 +2076,7 @@
 			ammo_5.56x45_ap \n
 			wpn_sig220 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2046,7 +2108,7 @@
 			ammo_5.56x45_ap \n
 			wpn_usp \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2080,7 +2142,7 @@
 			ammo_5.56x45_ap \n
 			wpn_sig220 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2112,7 +2174,7 @@
 			ammo_5.56x45_ap \n
 			wpn_usp \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 = 2 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2146,7 +2208,6 @@
 			ammo_12x70_buck \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2207,7 +2268,6 @@
 			ammo_12x70_buck \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2270,7 +2330,7 @@
 			ammo_9x19_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2302,7 +2362,7 @@
 			ammo_12x70_buck \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2334,7 +2394,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2366,7 +2426,7 @@
 			ammo_9x19_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2400,7 +2460,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2431,7 +2491,7 @@
 			wpn_mp5 \n
 			ammo_9x19_fmj \n
 			wpn_hpsa \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2463,7 +2523,7 @@
 			ammo_9x19_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2495,7 +2555,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2529,7 +2589,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_pmm \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2561,7 +2621,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_pmm \n
-			grenade_rgd5 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2595,7 +2655,7 @@
 			wpn_beretta \n
 			ammo_12x76_dart \n
 			ammo_9x19_pbp \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2627,7 +2687,7 @@
 			wpn_colt1911 \n
 			ammo_5.45x39_ap \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2779,7 +2839,7 @@
 			ammo_12x76_zhekan \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2811,7 +2871,7 @@
 			ammo_9x19_fmj \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2843,7 +2903,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2874,7 +2934,7 @@
 			wpn_mp5 \n
 			ammo_9x19_fmj \n
 			wpn_hpsa \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2908,7 +2968,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2940,7 +3000,7 @@
 			ammo_12x76_dart \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -2972,7 +3032,7 @@
 			ammo_5.56x45_ss190 \n
 			wpn_hpsa \n
 			ammo_9x19_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3004,7 +3064,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3038,7 +3098,7 @@
 			ammo_5.56x45_ap \n
 			wpn_fort_up \n
 			ammo_9x18_fmj \n
-			grenade_f1 = 3 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3070,7 +3130,7 @@
 			ammo_9x39_ap \n
 			wpn_beretta \n
 			ammo_9x19_fmj \n
-			grenade_f1 = 3 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3104,7 +3164,7 @@
 			ammo_9x39_ap \n
 			wpn_colt1911_up2 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3136,7 +3196,7 @@
 			ammo_12x76_dart \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -3206,7 +3266,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.2 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3240,7 +3300,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3272,7 +3332,7 @@
 			ammo_5.45x39_fmj \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3306,7 +3366,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3340,7 +3400,7 @@
 			ammo_9x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3372,7 +3432,7 @@
 			ammo_9x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3404,7 +3464,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3438,7 +3498,7 @@
 			ammo_7.62x54_7h1 \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_rgd5 \n
+			grenade_rgd5 = 1, prob=0.4 \n
 #include "gameplay\character_food.xml"
 		</supplies>
 
@@ -3582,7 +3642,7 @@
 			ammo_5.45x39_ap \n
 			wpn_fort \n
 			ammo_9x18_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"
@@ -3611,7 +3671,7 @@
 			ammo_5.56x45_ap \n
 			wpn_walther \n
 			ammo_9x19_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 1, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"
@@ -3642,7 +3702,7 @@
 			ammo_9x39_ap \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 2, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"
@@ -3673,7 +3733,7 @@
 			ammo_9x39_ap \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
-			grenade_f1 \n
+			grenade_f1 = 3, prob=0.4 \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"
