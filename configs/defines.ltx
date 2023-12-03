@@ -18,7 +18,7 @@ lean_hud_offset_rot		= 0,0,0
 burn_immunity			= 1.0
 strike_immunity			= 1.0
 shock_immunity			= 1.0
-wound_immunity			= 1.0		
+wound_immunity			= 1.0
 wound_2_immunity		= 1.0
 radiation_immunity		= 1.0
 telepatic_immunity		= 1.0
@@ -30,7 +30,7 @@ fire_wound_immunity		= 1.0
 burn_immunity			= 0.0
 strike_immunity			= 0.0
 shock_immunity			= 0.0
-wound_immunity			= 0.0		
+wound_immunity			= 0.0
 wound_2_immunity		= 0.0
 radiation_immunity		= 0.0
 telepatic_immunity		= 0.0
@@ -52,10 +52,10 @@ zoom_rotate_time            = 0.25
 immunities_sect				= sect_zero_immunities
 
 [weapon_probability]
-hit_probability_gd_novice	= 0.20
-hit_probability_gd_stalker	= 0.30
-hit_probability_gd_veteran	= 0.40
-hit_probability_gd_master	= 0.50
+hit_probability_gd_novice	= 1.00
+hit_probability_gd_stalker	= 1.00
+hit_probability_gd_veteran	= 1.00
+hit_probability_gd_master	= 1.00
 
 
 [default_weapon_params]
@@ -92,7 +92,7 @@ ph_skeleton_skin_friction_end	= 2.0   ;Финальное значение трения для оболочки
 ph_skeleton_skin_ddelay			= 6.0		;Время изменения значения трения с момента создания шелла, сек.
 ph_skeleton_skin_ddelay_after_wound = 2.0 ;Время изменения значения трения с момента создания шелла, сек.(для персонажа после ранения)
 ph_pelvis_factor_low_pose_detect =0.3	;длинна луча на коллизию с землёй из центра пелвиса
-										;если коллизиться, то персонаж находиться в нижней позе(или ранен)(в этом случае для него задаються другие параметры 
+										;если коллизиться, то персонаж находиться в нижней позе(или ранен)(в этом случае для него задаються другие параметры
 										;трения и отсутствует домножение импульса для первого хита)
 ph_character_have_wounded_state = false; имеет ли персонаж состояние раненый
 
