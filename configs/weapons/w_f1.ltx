@@ -10,7 +10,7 @@ cform					= skeleton
 visual					= dynamics\weapons\wpn_grenades\wpn_f1.ogf
 inv_name				= st_grenade_f1
 inv_name_short			= st_grenade_f1
-inv_weight				= 0.3	;.1
+inv_weight				= 0.32
 description				= st_grenade_f1_descr
 ef_weapon_type			= 10
 default_to_ruck			= false
@@ -32,26 +32,26 @@ single_handed			= 1
 
 slot					= 3
 hud						= grenade_f1_hud
-force_min				= 10	; ~30% от максимума
-force_const				= 25;20
-force_max				= 30
-force_grow_speed		= 15;2 ;30
+force_min               = 12
+force_const             = 24
+force_max               = 32
+force_grow_speed        = 16
 
-destroy_time			= 2500;3500
+destroy_time			= 3200
 
-cost					= 500
+cost					= 960
 
 ;-------------------------------------------------------------------------------
-blast					= 2.20
-blast_r					= 5
-blast_impulse			= 150
+blast                   = 2.50
+blast_r                 = 9.00
+blast_impulse           = 320
 ;delete
-blast_impulse_factor	 = 1
+blast_impulse_factor    = 1
 
-frags					= 12
-frags_r					= 20
-frag_hit				= 0.50
-frag_hit_impulse		= 50
+frags                   = 128
+frags_r                 = 18
+frag_hit                = 0.5
+frag_hit_impulse        = 10
 
 hit_type_blast			= explosion
 hit_type_frag			= fire_wound
@@ -64,11 +64,11 @@ explode_particles		 = explosions\explosion_01
 
 
 light_color		         = 1.9,1.4,0.5
-light_range		         = 25.0
+light_range		         = 18.0
 light_time 		         = 0.85
 
 ;трассы от осколков
-fragment_speed				= 50
+fragment_speed				= 32
 explode_duration			= 3		;подолжительность взрыва (с)
 
 ;звуки
@@ -85,9 +85,9 @@ position_offset			 = 0.0,0.0,0.0
 angle_offset			 = 1.570790,1.570790,3.92699
 
 
-throw_point				 = 0,0.3,0.2
+throw_point				 = 0,0.0,0.0
 throw_dir				 = 0,0,1
-wm_size                  = 0.1
+wm_size                  = 0.002
 
 wallmark_section		 =explosion_marks
 
@@ -124,4 +124,3 @@ anm_throw				= f1_throw
 
 throw_point			= 0.0,0.4,0.3
 throw_dir			= 0,0,1
-

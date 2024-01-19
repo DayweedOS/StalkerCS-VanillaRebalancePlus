@@ -68,14 +68,16 @@ kill_msg_height				= 19
 fire_dispersion_base			= 1.5   ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_relax_speed         = 2.0	;скорость возврата в исходное положение
-cam_relax_speed_ai      = 360
-cam_dispersion          = 10.0	;увеличения угла (в градусах) с каждым выстрелом
-cam_max_angle			= 15		;максимальный угол отдачи
-cam_max_angle_horz		= 15	;(degree) maximum shot horizontal degree
-cam_step_angle_horz		= 0.5	;(degree) size of step camera moved in horizontal position while shooting
+cam_relax_speed_ai              = 18.0
+cam_relax_speed                 = 0.0
+cam_dispersion                  = 4.8
+cam_dispersion_inc              = 0.0
+cam_dispertion_frac             = 1.0
+cam_max_angle                   = 180.0
+cam_max_angle_horz              = 60.0
+cam_step_angle_horz             = 48.0
 
-fire_dispersion_condition_factor 	= 5	;увеличение дисперсии в процентах при максимальном износе
+fire_dispersion_condition_factor 	= 4	;увеличение дисперсии в процентах при максимальном износе
 misfire_probability 			= 0.0	;вероятность осечки при максимальном износе
 condition_shot_dec 			= 0.0	;увеличение износа при каждом выстреле
 ;-------------------------------------------------------------------------------
@@ -97,12 +99,11 @@ smoke_particles		   	= weapons\generic_weapon02;generic_rpg_shot
 
 ; ttc
 ;---------------------------------------------------------------
-hit_power       		= 3.00
-hit_impulse				= 100
 hit_type 				= explosion
-
+hit_power               = 1.00
+hit_impulse             = 450
 fire_distance           = 400
-bullet_speed			= 100 ;300			;начальная скорость пули
+bullet_speed            = 100          ;начальная скорость пули
 rpm                     = 200
 
 
@@ -118,7 +119,7 @@ strap_bone0				= bip01_spine2
 strap_bone1				= bip01_spine1
 
 
-fragment_speed	 			= 50
+fragment_speed	 			= 32
 
 explode_duration		 	= 5		;подолжительность взрыва (с)
 
@@ -203,17 +204,18 @@ kill_msg_y				= 85
 kill_msg_width				= 74
 kill_msg_height				= 19
 
-cost					= 200
+cost					= 1000
 ;---------------------------------------------------------------
-blast					= 5.00
-blast_r					= 10;15
-blast_impulse				= 350
-blast_impulse_factor 			= 1
+blast                       = 3.00
+blast_r                     = 12.00
+blast_impulse               = 360
+;delete
+blast_impulse_factor        = 1
 
-frags					= 8
-frags_r					= 25
-frag_hit				= 1.50
-frag_hit_impulse			= 275
+frags                       = 16
+frags_r                     = 24
+frag_hit                    = 0.50
+frag_hit_impulse            = 10
 
 hit_type_blast				= explosion
 hit_type_frag				= fire_wound
@@ -221,7 +223,7 @@ hit_type_frag				= fire_wound
 up_throw_factor				= 0.25
 ;---------------------------------------------------------------
 
-wm_size                  		= 0.1
+wm_size                  		= 0.002
 wallmark_section			= explosion_marks
 
 light_color		         	= 1.9,1.4,0.5
@@ -236,7 +238,7 @@ explode_particles			= explosions\explosion_04
 
 
 ;трассы от осколков
-fragment_speed	     		= 100
+fragment_speed	     		= 32
 
 explode_duration		 	= 5		;подолжительность взрыва (с)
 
@@ -248,7 +250,7 @@ snd_fly_sound				= weapons\rocket_fly
 ;свойства которые читаются, но не используются (надо убрать)
 inv_name					= "Og-7b"
 inv_name_short				= "Og-7b"
-inv_weight					= .2
+inv_weight					= 1.0
 
 inv_grid_width				= 4
 inv_grid_height				= 1
