@@ -131,8 +131,8 @@ cost                = 100
 box_size            = 1
 inv_weight          = 0.10
 
-k_pierce            = 1.00
-k_ap                = 1.00
+k_pierce            = 0.30
+k_ap                = 0.30
 k_hit               = 1.00
 k_impulse           = 1.00
 
@@ -388,21 +388,22 @@ inv_grid_height = 1
 inv_grid_x      = 13
 inv_grid_y      = 9
 
-cost            = 10
-box_size        = 10
-inv_weight      = .45
+cost                = 20
+box_size            = 10
+inv_weight          = .40
+buck_shot           = 8
 
-k_dist          = 0.5
-k_disp          = 3
-k_hit           = 0.3
-k_impulse       = 0.5
-k_pierce        = 0.0
-k_ap            = 0.0
-impair          = 1
-buck_shot       = 15
-tracer          = off
-wm_size         = 0.05
-k_air_resistance = 3
+k_dist              = 0.50
+k_disp              = 4.00
+k_air_resistance    = 3.20
+
+k_pierce            = 0.15
+k_ap                = 0.15
+k_hit               = 0.50
+k_impulse           = 0.50
+
+wm_size             = 0.05
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_12x76_zhekan]:ammo_base
 GroupControlSection = spawn_group
@@ -420,22 +421,20 @@ inv_grid_height     = 1
 inv_grid_x          = 11
 inv_grid_y          = 10
 
-cost                     = 20
-box_size        = 10
-inv_weight      = .50
+cost                = 30
+box_size            = 10
+inv_weight          = .50
 
-k_dist          = 1
-k_disp          = 0.8
-k_hit           = 1
-k_impulse       = 1
-k_pierce        = 0.3
-k_ap            = 0.3
-impair          = 1
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
-k_air_resistance = 2
+k_dist              = 0.80
+k_disp              = 1.60
+k_air_resistance    = 2.40
+
+k_pierce            = 0.30
+k_ap                = 0.30
+k_hit               = 1.50
+k_impulse           = 1.50
+
+wm_size             = 0.10
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_12x76_dart]:ammo_base
@@ -454,22 +453,20 @@ inv_grid_height     = 1
 inv_grid_x          = 13
 inv_grid_y          = 10
 
-cost                     = 50
-box_size        = 10
-inv_weight      = .50
+cost                = 40
+box_size            = 10
+inv_weight          = .50
 
-k_dist          = 1.5
-k_disp          = 0.8
-k_hit           = 1
-k_impulse       = 1
-k_pierce        = 0.5
-k_ap            = 0.5
-impair          = 1
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
-k_air_resistance = 1.5
+k_dist              = 1.00
+k_disp              = 1.00
+k_air_resistance    = 1.60
+
+k_pierce            = 0.45
+k_ap                = 0.45
+k_hit               = 1.50
+k_impulse           = 1.50
+
+wm_size             = 0.08
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_12x76_zhekan_heli]:ammo_12x76_zhekan
@@ -824,8 +821,8 @@ k_dist              = 1.00
 k_disp              = 1.00
 k_air_resistance    = 1.00
 
-k_pierce            = 0.75
-k_ap                = 0.75
+k_pierce            = 0.60
+k_ap                = 0.60
 k_hit               = 1.00
 k_impulse           = 1.00
 
