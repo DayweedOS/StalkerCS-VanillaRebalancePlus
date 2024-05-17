@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- Dialogs -->
+
+	<string id="st_tm_guide_4">
+		<text>Podczas emisji? Nigdzie.</text>
+	</string>
+	<string id="st_tm_guide_22">
+		<text>Niewaїne, zmieniіem zdanie.</text>
+	</string>
+	<string id="st_tm_guide_213">
+		<text>Nie staж mnie.</text>
+	</string>
+	<string id="st_tm_guide_214">
+		<text>Innym razem.</text>
+	</string>
+	<string id="gar_bandit_robbery_112">
+		<text>Nie s№dzк.</text>
+	</string>
+	<string id="gar_bandit_robbery_122">
+		<text>Nie dzisiaj.</text>
+	</string>
+	<string id="hello_mil_killer_112">
+		<text>Poszukujк informacji na temat sytuacji tutaj.</text>
+	</string>
+
+	<!-- Prompts -->
+
+	<string id="tips_wait_conversation_finish">
+		<text>Musisz poczekaж aї transmisja siк skoсczy.</text>
+	</string>
+	<string id="tips_wait_emission_finish">
+		<text>Musisz poczekaж aї emisja siк skoсczy.</text>
+	</string>
+	<string id="no_sleep_during_emission">
+		<text>Nie moїesz spaж podczas emisji.</text>
+	</string>
+	<string id="nothing_to_repair">
+		<text>Nie ma nic do naprawy.</text>
+	</string>
+	<string id="st_stash_emptied">
+		<text>Skrytka oprуїniona:</text>
+	</string>
+
+	<!-- NPCs -->
+
+	<string id="yan_levshas_crew">
+		<text>Czіonek oddziaіu Lewusa</text>
+	</string>
+
+	<!-- Equipment -->
+
+	<string id="ammo-7.62x54-7h1">
+		<text>Naboje 7.62x54 mm 7N1</text>
+	</string>
+	<string id="ammo-7.62x54-7h1_s">
+		<text>7.62x54 7N1</text>
+	</string>
+	<string id="ammo-7.62x54-7h1_descr">
+		<text>Standardowe naboje snajperskie kalibru 7.62. Uїywane w karabinach snajperskich SVDm 2 i SVUmk2.</text>
+	</string>
+	<string id="ammo-pkm">
+		<text>Naboje 7.62x54 mm PP</text>
+	</string>
+	<string id="ammo-pkm_s">
+		<text>7.62x54 PP</text>
+	</string>
+	<string id="ammo-pkm_descr">
+		<text>Tani nabуj kalibru 7.62 do karabinуw maszynowych. Ze wzglкdu na konstrukcjк nie nadaje siк do uїycia w karabinach snajperskich, wiкc jest uїywany tylko w karabinie maszynowymi RP-74.</text>
+	</string>
+
+	<string id="st_mar_quest_wpn_pm_1_name">
+		<text>Zmodyfikowany PMm</text>
+	</string>
+	<string id="st_mar_quest_wpn_pm_1_descr">
+		<text>Zmodyfikowany PMm, cenny dla czіonkуw Czystego Nieba.</text>
+	</string>
+	<string id="st_mar_quest_wpn_ak74u_1_name">
+		<text>Specjalny Akm 74/2U</text>
+	</string>
+	<string id="st_mar_quest_novice_outfit_1_name">
+		<text>Eskperymentalny kombinezon</text>
+	</string>
+	<string id="st_mar_quest_novice_outfit_1_descr">
+		<text>Eskperymentalny kombinezon nas№czony amonaln№ galaret№.</text>
+	</string>
+
+	<!-- Locations -->
+
+	<string id="agroprom_underground">
+		<text>Podziemia Agropromu</text>
+	</string>
+
+	<!-- Optionals -->
+
+	<string id="st_sleepingbag">
+		<text>Њpiwуr</text>
+	</string>
+	<string id="st_sleepingbag_descr">
+		<text>Przenoњny њpiwуr.</text>
+	</string>
+	<string id="st_sleepingbag_sleep">
+		<text>Њpij</text>
+	</string>
+	<string id="st_sleepingbag_cancel">
+		<text>Anuluj</text>
+	</string>
+	<string id="st_sleepingbag_safety">
+		<text>Bezpieczeсstwo:</text>
+	</string>
+	<string id="st_sleepingbag_duration">
+		<text>Czas trwania:</text>
+	</string>
+	<string id="st_sleepingbag_1h">
+		<text>1h</text>
+	</string>
+	<string id="st_sleepingbag_h">
+		<text>h</text>
+	</string>
+
+	<!-- Squad Stages -->
+
+	<string id="st_stage_idle">
+		<text>(bezczynny)</text>
+	</string>
+	<string id="st_stage_wait">
+		<text>(czeka)</text>
+	</string>
+	<string id="st_stage_defence">
+		<text>(broni)</text>
+	</string>
+	<string id="st_stage_combat">
+		<text>(walczy)</text>
+	</string>
+	<string id="st_stage_post_combat">
+		<text>(po walce)</text>
+	</string>
+	<string id="st_stage_move">
+		<text>(w ruchu)</text>
+	</string>
+	<string id="st_stage_prepare">
+		<text>(w trakcie przygotowaс)</text>
+	</string>
+
+</string_table>

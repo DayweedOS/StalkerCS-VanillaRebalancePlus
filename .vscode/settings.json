@@ -1,5 +1,5 @@
 {
-    "files.encoding": "windows1251",
+    "files.encoding": "windows1250",
     "files.autoGuessEncoding": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.detectIndentation": false,
