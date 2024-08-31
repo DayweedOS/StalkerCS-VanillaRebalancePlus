@@ -65,18 +65,18 @@ kill_msg_height      = 28
 
 ;-------------------------------------------------------------------------------
 ;params of weapon recoil
-fire_dispersion_base        = 0.8    ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 0.6    ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor     = 1.2f
 
 ;отдача
 cam_relax_speed = 0
 cam_relax_speed_ai = 18
 cam_dispersion              = 1.2       ;увеличения угла (в градусах) с первым выстрелом
-cam_dispersion_inc          = 0.0       ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispersion_frac         = 1.0       ;ствол будет подыматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
+cam_dispersion_inc          = 0.1       ;увеличениe cam_dispersion с каждым выстрелом
+cam_dispersion_frac         = 1       ;ствол будет подыматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
 cam_max_angle = 180
 cam_max_angle_horz = 60
-cam_step_angle_horz         = 12.0      ;(degree) size of step camera moved in horizontal position while shooting
+cam_step_angle_horz         = 12      ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor    = 4         ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability     = 0.0003  ;вероятность осечки при максимальном износе
@@ -100,15 +100,15 @@ shell_point             = 0,0.216,0.174            ; position (3rd person view) 
 shell_particles            = weapons\generic_shells   ; name of the particles for shells
 shell_particles         = weapons\generic_shells
 
-PDM_disp_base           = 1.0
-PDM_disp_vel_factor     = 1.7   ;дисперсия = 1+(скорость актера/10)*disp_vel_factor*PDM_disp_vel_factor
-PDM_disp_accel_factor   = 1.7
-PDM_disp_crouch         = 1.0
-PDM_disp_crouch_no_acc  = 1.0
+PDM_disp_base               = 1.0
+PDM_disp_vel_factor         = 1.0
+PDM_disp_accel_factor       = 1.0
+PDM_disp_crouch             = 1.0
+PDM_disp_crouch_no_acc      = 1.0
 
 ; ttc
-hit_power            = 0.45
-hit_impulse          = 80    ; size of physic impulse by bullet
+hit_power            = .33
+hit_impulse          = 66    ; size of physic impulse by bullet
 hit_type             = fire_wound            ; [] type of the wound
 
 fire_distance           = 600 ;1000                  ; maximum fire distance that bullet can fly
