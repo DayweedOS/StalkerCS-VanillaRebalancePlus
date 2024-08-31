@@ -129,7 +129,7 @@ light_var_color             = 0.05
 light_var_range             = 0.5
 light_time              = 0.75
 
-ph_mass                 = 1
+ph_mass                 = 5
 
 scope_status                = 1
 silencer_status             = 0
@@ -198,13 +198,12 @@ cform                           = skeleton
 class                           = G_RPG7
 $prefetch               = 32
 
-inv_weight              = 0
 kill_msg_x              = 0
 kill_msg_y              = 85
 kill_msg_width              = 74
 kill_msg_height             = 19
 
-cost                    = 1000
+cost                    = 500
 ;---------------------------------------------------------------
 blast                       = 3.00
 blast_r                     = 12.00
@@ -212,7 +211,7 @@ blast_impulse               = 360
 ;delete
 blast_impulse_factor        = 1
 
-frags                       = 16
+frags                       = 64
 frags_r                     = 24
 frag_hit                    = 0.50
 frag_hit_impulse            = 10
@@ -220,7 +219,7 @@ frag_hit_impulse            = 10
 hit_type_blast              = explosion
 hit_type_frag               = fire_wound
 
-up_throw_factor             = 0.25
+up_throw_factor             = 0
 ;---------------------------------------------------------------
 
 wm_size                         = 0.002
@@ -236,12 +235,10 @@ jump_height                 = 0
 
 explode_particles           = explosions\explosion_04
 
-
 ;трассы от осколков
 fragment_speed              = 32
 
 explode_duration            = 5     ;подолжительность взрыва (с)
-
 
 ;звуки
 snd_explode                 = weapons\rpg7_explode
@@ -250,7 +247,7 @@ snd_fly_sound               = weapons\rocket_fly
 ;свойства которые читаются, но не используются (надо убрать)
 inv_name                    = "Og-7b"
 inv_name_short              = "Og-7b"
-inv_weight                  = 1.0
+inv_weight                  = .5
 
 inv_grid_width              = 4
 inv_grid_height             = 1
@@ -273,7 +270,7 @@ engine_impulse_up           = 133,906   ;137.34 ;137.34 = 2*9.81*7 - значение эт
                                         ;при меньших значениях ракета будет опускаться, при больших подниматься
 lights_enabled              = true      ;свет вокруг ракеты, во время полета
 trail_light_color           = 0.6,0.5,0.3
-trail_light_range           = 15.0
+trail_light_range           = 1.0
 
 engine_particles            = weapons\rpg_trail_00
 ;fly_particles              = weapons\rpg_trail_01
