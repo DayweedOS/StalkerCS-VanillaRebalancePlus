@@ -7,14 +7,16 @@ visual                  = dynamics\weapons\wpn_mounted\wpn_mounted_pkm_trenoga.o
 
 ;-------------------------------------------------------------------------------
 
-fire_dispersion_base            = .5
+fire_dispersion_base            = 4
 
 cam_relax_speed = 0
 cam_relax_speed_ai = 18
-cam_dispersion              = 0.5
+cam_dispersion = 2.4
+cam_dispersion_inc = 0
+cam_dispersion_frac = 1
 cam_max_angle = 180
 cam_max_angle_horz = 60
-cam_step_angle_horz         = 1.8
+cam_step_angle_horz = 24
 
 fire_dispersion_condition_factor    = 5
 misfire_probability         = 0.0001
@@ -23,17 +25,17 @@ condition_shot_dec          = 0.00003
 ;-------------------------------------------------------------------------------
 
 hit_power               = 0
-hit_impulse             = 1
+hit_impulse             = 1.6
 hit_type                = fire_wound
 
-fire_distance               = 1000
-bullet_speed                = 825
-rpm                 = 650
+fire_distance               = 900
+bullet_speed                = 450
+rpm                         = 600
 
 light_color             = 0.9, 0.9, 0.5
 light_range             = 6
 light_var_color             = 0.05
-light_var_range             = 0.5
+light_var_range             = 7.5
 light_time              = 0.3
 
 flame_particles             = weapons\generic_weapon08
@@ -55,24 +57,28 @@ visual                  = dynamics\weapons\wpn_mounted\wpn_mounted_pkm_trenoga.o
 
 cam_relax_speed = 0
 cam_relax_speed_ai = 18
+cam_dispersion = 2.4
+cam_dispersion_inc = 0
+cam_dispersion_frac = 1
 cam_max_angle = 180
+cam_max_angle_horz = 60
+cam_step_angle_horz = 24
 snd_shoot               = weapons\pkm_shot
 use_aim_bullet = false
 
 ammo_class              = ammo_pkm_100
-fire_dispersion_base            = 2                     ; 0.5
-fire_dispersion_null            = 2                     ; 0.5
-rpm                 = 650
+fire_dispersion_base            = 4
 
-hit_power               = 0.6
-hit_impulse             = 1
-fire_distance               = 1000
-bullet_speed                = 825
+hit_power                   = .5
+hit_impulse                 = 1.6
+fire_distance               = 900
+bullet_speed                = 450
+rpm                         = 600
 
 light_color             = 0.9, 0.9, 0.5
 light_range             = 6
 light_var_color             = 0.05
-light_var_range             = 0.5
+light_var_range             = 7.5
 light_time              = 0.3
 
 flame_particles             = weapons\generic_weapon_btr
