@@ -60,10 +60,10 @@ weapon_bone2                                = bip01_r_finger11
 
 damage                                                = actor_damage
 
-hit_probability_gd_novice	= 1.0
-hit_probability_gd_stalker	= 1.0
-hit_probability_gd_veteran	= 1.0
-hit_probability_gd_master	= 1.0
+hit_probability_gd_novice   = 1.0
+hit_probability_gd_stalker  = 1.0
+hit_probability_gd_veteran  = 1.0
+hit_probability_gd_master   = 1.0
 
 hit_sounds                                        = actor_hit_snds
 ;actor condition
@@ -127,7 +127,7 @@ radiation_immunity      = 0.25
 telepatic_immunity      = 0.25
 chemical_burn_immunity  = 0.25
 explosion_immunity      = 0.25
-fire_wound_immunity 	= 0.125
+fire_wound_immunity     = 0.125
 
 
 [actor_immunities_gd_stalker]
@@ -139,7 +139,7 @@ radiation_immunity      = 0.50
 telepatic_immunity      = 0.50
 chemical_burn_immunity  = 0.50
 explosion_immunity      = 0.50
-fire_wound_immunity 	= 0.25
+fire_wound_immunity     = 0.25
 
 [actor_immunities_gd_veteran]
 burn_immunity           = 0.75                                ;коэффициенты иммунитета
@@ -157,31 +157,31 @@ burn_immunity           = 1.00                                ;коэффициенты имму
 strike_immunity         = 1.00
 shock_immunity          = 1.00
 wound_immunity          = 1.00
-radiation_immunity		= 1.00
-telepatic_immunity 		= 1.00
-chemical_burn_immunity 	= 1.00
-explosion_immunity 		= 1.00
-fire_wound_immunity 	= 0.50
+radiation_immunity      = 1.00
+telepatic_immunity      = 1.00
+chemical_burn_immunity  = 1.00
+explosion_immunity      = 1.00
+fire_wound_immunity     = 0.50
 
 [actor_condition]
-satiety_v				= 0.000015 	;скорость уменьшения сытости со временем
-radiation_v				= 0.0001	;скорость уменьшения радиации
-satiety_power_v			= 0.000055	;увеличение силы при уменьшении сытости
-satiety_health_v		= 0.0001    ;увеличение здоровья при уменьшении сытости
-satiety_critical		= 0.0       ;критическое значения сытости (в процентах от 0..1) когда здоровье начианает уменьшаться
-radiation_health_v		= 0.004     ;уменьшение здоровья при воздействии радиации
-morale_v				= 0.0001	;скорость восстановления морали
-psy_health_v			= 0.001		;скорость восстановления psy-здоровья
-alcohol_v				= -0.0003
-health_hit_part			= 1.0		;процент хита, уходящий на отнимание здоровья
-power_hit_part			= 0.1		;процент хита, уходящий на отнимание силы
-max_power_leak_speed	= 0.0		;накопление усталости (макс граница, до которой восстанавливается сила) в секунду игрового времени
-max_walk_weight			= 999
+satiety_v               = 0.000015  ;скорость уменьшения сытости со временем
+radiation_v             = 0.0001    ;скорость уменьшения радиации
+satiety_power_v         = 0.000055  ;увеличение силы при уменьшении сытости
+satiety_health_v        = 0.0001    ;увеличение здоровья при уменьшении сытости
+satiety_critical        = 0.0       ;критическое значения сытости (в процентах от 0..1) когда здоровье начианает уменьшаться
+radiation_health_v      = 0.004     ;уменьшение здоровья при воздействии радиации
+morale_v                = 0.0001    ;скорость восстановления морали
+psy_health_v            = 0.001     ;скорость восстановления psy-здоровья
+alcohol_v               = -0.0003
+health_hit_part         = 1.0       ;процент хита, уходящий на отнимание здоровья
+power_hit_part          = 0.1       ;процент хита, уходящий на отнимание силы
+max_power_leak_speed    = 0.0       ;накопление усталости (макс граница, до которой восстанавливается сила) в секунду игрового времени
+max_walk_weight         = 999
 
-bleeding_v 				= 0.002	 ;0.0005	;потеря крови при номинальной ране в секунду
+bleeding_v              = 0.002  ;0.0005    ;потеря крови при номинальной ране в секунду
 
-wound_incarnation_v		= 0.0001 ;0.003     ;скорость заживления раны
-min_wound_size 			= 0.0256	;минимальный размер раны, после которого она считается зажившей
+wound_incarnation_v     = 0.0001 ;0.003     ;скорость заживления раны
+min_wound_size          = 0.0256    ;минимальный размер раны, после которого она считается зажившей
 
 ;--when actor in sleep
 satiety_v_sleep          = 0.00001
@@ -202,7 +202,7 @@ health_restore_v              = 0.0003
 ;;;;;;;;
 ;actor_condition only
 
-jump_power 				= 0.012 ;умешьшение силы с прыжком без учета веса ноши
+jump_power              = 0.012 ;умешьшение силы с прыжком без учета веса ноши
 jump_weight_power       = 0.048                ;0.045                                        ;умешьшение силы с прыжком с учетом веса ноши, для максимального допустимого веса
 overweight_jump_k                        =        5;10                ;10                                        ;коэффициент влияние перегрузки прыжок с весом (умножается на jump_weight_power)
 
@@ -229,11 +229,11 @@ cant_sprint_power_end   =        0.20        ;порог силы больше которого актер с
 can_sleep_callback                        = dream.can_sleep_callback
 sleep_video_name_callback        = dream.sleep_video_name_callback
 
-radio_zone_max_power	= 0.166			;пределы зон для датчиков и для инвентаря (% защит броников)
-fire_zone_max_power		= 0.166
-acid_zone_max_power		= 0.166
-psi_zone_max_power		= 0.166
-electra_zone_max_power	= 0.166
+radio_zone_max_power    = 0.166         ;пределы зон для датчиков и для инвентаря (% защит броников)
+fire_zone_max_power     = 0.166
+acid_zone_max_power     = 0.166
+psi_zone_max_power      = 0.166
+electra_zone_max_power  = 0.166
 
 [actor_damage]
 ;bone_name                 = <hit_scale>,<fwd_damage_anim_index>,<wound_scale>
@@ -315,7 +315,7 @@ wound_2              =actor\hurt1,actor\hurt2,actor\hurt3,actor\hurt4
 physic_strike        =actor\pain1,actor\pain2,actor\pain3; ,actor\hurt4
 
 [actor_hud]
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_01
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_01
 
 position                = -0.044000,-0.156000,0.100000
 orientation             = -0.500000,1.000000,-2.000000
@@ -325,65 +325,65 @@ ancor_0        = lead_gun ;r_hand
 ancor_1        = l_hand
 
 [actor_hud_01]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_01
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_01
 [actor_hud_02]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_02
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_02
 [actor_hud_03]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_03
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_03
 [actor_hud_04]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_04
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_04
 [actor_hud_05]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_05
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_05
 [actor_hud_06]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_06
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_06
 [actor_hud_07]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_07
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_07
 [actor_hud_exo]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_exo
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_exo
 [actor_hud_sci]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_sci
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_sci
 [actor_hud_bandit]:actor_hud
-visual         			= dynamics\weapons\wpn_hand\wpn_hand_bandit
+visual                  = dynamics\weapons\wpn_hand\wpn_hand_bandit
 
 [tttmp]
 ;описание распознаваемых детектором зон
-zone_class_1		= zone_mosquito_bald
-zone_sound_1_		= detectors\DA-2_beep1
+zone_class_1        = zone_mosquito_bald
+zone_sound_1_       = detectors\DA-2_beep1
 
-zone_freq_1		= 0.1, 40 ; min,max
+zone_freq_1     = 0.1, 40 ; min,max
 
-zone_class_2		= zone_mincer
-zone_sound_2_		= detectors\DA-2_beep1
-zone_freq_2		= 0.1, 20
+zone_class_2        = zone_mincer
+zone_sound_2_       = detectors\DA-2_beep1
+zone_freq_2     = 0.1, 20
 
-zone_class_3		= zone_radioactive
-zone_sound_3_		= detectors\geiger_1
-zone_sound_3_1		= detectors\geiger_2
-zone_sound_3_2		= detectors\geiger_3
-zone_sound_3_3		= detectors\geiger_4
-zone_sound_3_4		= detectors\geiger_5
-zone_sound_3_5		= detectors\geiger_6
-zone_sound_3_6		= detectors\geiger_1
-zone_sound_3_7		= detectors\geiger_1
-zone_sound_3_8		= detectors\geiger_1
-zone_freq_3		= 0.1,20
+zone_class_3        = zone_radioactive
+zone_sound_3_       = detectors\geiger_1
+zone_sound_3_1      = detectors\geiger_2
+zone_sound_3_2      = detectors\geiger_3
+zone_sound_3_3      = detectors\geiger_4
+zone_sound_3_4      = detectors\geiger_5
+zone_sound_3_5      = detectors\geiger_6
+zone_sound_3_6      = detectors\geiger_1
+zone_sound_3_7      = detectors\geiger_1
+zone_sound_3_8      = detectors\geiger_1
+zone_freq_3     = 0.1,20
 
-zone_class_4		= zone_gravi_zone
-zone_sound_4_		= detectors\DA-2_beep1
-zone_freq_4		= 0.5, 30
+zone_class_4        = zone_gravi_zone
+zone_sound_4_       = detectors\DA-2_beep1
+zone_freq_4     = 0.5, 30
 
-zone_class_5		= zone_field_radioactive
-zone_sound_5_		= detectors\geiger_1
-zone_sound_5_1		= detectors\geiger_2
-zone_sound_5_2		= detectors\geiger_3
-zone_sound_5_3		= detectors\geiger_4
-zone_sound_5_4		= detectors\geiger_5
-zone_sound_5_5		= detectors\geiger_6
-zone_sound_5_6		= detectors\geiger_1
-zone_sound_5_7		= detectors\geiger_1
-zone_sound_5_8		= detectors\geiger_1
-zone_freq_5		= 0.1,20
+zone_class_5        = zone_field_radioactive
+zone_sound_5_       = detectors\geiger_1
+zone_sound_5_1      = detectors\geiger_2
+zone_sound_5_2      = detectors\geiger_3
+zone_sound_5_3      = detectors\geiger_4
+zone_sound_5_4      = detectors\geiger_5
+zone_sound_5_5      = detectors\geiger_6
+zone_sound_5_6      = detectors\geiger_1
+zone_sound_5_7      = detectors\geiger_1
+zone_sound_5_8      = detectors\geiger_1
+zone_freq_5     = 0.1,20
 
-zone_class_6		= zone_mine_electric
-zone_sound_6_		= detectors\DA-2_beep1
-zone_freq_6		= 0.1, 40 ; min,max
+zone_class_6        = zone_mine_electric
+zone_sound_6_       = detectors\DA-2_beep1
+zone_freq_6     = 0.1, 40 ; min,max

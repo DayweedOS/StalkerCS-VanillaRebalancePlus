@@ -1,75 +1,75 @@
 [up_sect_a_pm]
-cost		      		= 120
-value					= +25
-rpm						= 62.5
+cost                    = 120
+value                   = +25
+rpm                     = 62.5
 
 [up_sect_b_pm]
-cost		      		= 120
-value					= -20
+cost                    = 120
+value                   = -20
 
-cam_dispersion          = -0.1		;0.5
-cam_dispersion_inc		= -0.1		;0.5
-cam_step_angle_horz		= -0.2		;1.0
+cam_dispersion          = -0.1      ;0.5
+cam_dispersion_inc      = -0.1      ;0.5
+cam_step_angle_horz     = -0.2      ;1.0
 
 [up_sect_c_pm]
-cost		      		= 120
-value					= -20
-inv_weight				= -0.1
-fire_dispersion_base	= -0.1 ;0.9
+cost                    = 120
+value                   = -20
+inv_weight              = -0.1
+fire_dispersion_base    = -0.1 ;0.9
 
 [up_sect_d_pm]
-cost		      		= 120
-value					= +20
-bullet_speed		 	= 40
-hit_power           	= 0.54, 0.54, 0.54, 0.54
+cost                    = 120
+value                   = +20
+bullet_speed            = 40
+hit_power               = 0.54, 0.54, 0.54, 0.54
 
 [up_sect_e_pm]
-cost		      		= 120
-value					= +20
-fire_dispersion_base	= -0.18 ;0.9
+cost                    = 120
+value                   = +20
+fire_dispersion_base    = -0.18 ;0.9
 
 [up_sect_f_pm]
-cost		      		= 120
-value					= +20
-fire_dispersion_base	= -0.18 ;0.9
+cost                    = 120
+value                   = +20
+fire_dispersion_base    = -0.18 ;0.9
 
-cam_dispersion          = -0.1		;0.5
-cam_dispersion_inc		= -0.1		;0.5
-cam_step_angle_horz		= -0.2		;1.0
+cam_dispersion          = -0.1      ;0.5
+cam_dispersion_inc      = -0.1      ;0.5
+cam_step_angle_horz     = -0.2      ;1.0
 
 [up_sect_g_pm]
-cost		      		= 120
-value					= "9x19"
-ammo_class		 		= ammo_9x19_fmj, ammo_9x19_pbp
+cost                    = 120
+value                   = "9x19"
+ammo_class              = ammo_9x19_fmj, ammo_9x19_pbp
 
 [up_sect_h_pm]
-cost		      		= 120
-value					= +4
-ammo_mag_size		 	= 4
+cost                    = 120
+value                   = +4
+ammo_mag_size           = 4
 
 [up_sect_ac_pm]
-cost		      		= 180
-value					= -50
-;value2					= st_upgr_silencer_disable
+cost                    = 180
+value                   = -50
+;value2                 = st_upgr_silencer_disable
 
-cam_dispersion          = -0.25		;0.5
-cam_dispersion_inc		= -0.25		;0.5
-cam_step_angle_horz		= -0.5		;1.0
+cam_dispersion          = -0.25     ;0.5
+cam_dispersion_inc      = -0.25     ;0.5
+cam_step_angle_horz     = -0.5      ;1.0
 
-;silencer_status			= 0
+;silencer_status            = 0
 
 [up_sect_bd_pm]
-cost		      		= 180
-value					= +30
-;value2					= st_upgr_silencer_disable
-bullet_speed		 	= 60
-hit_power           	= 0.6, 0.6, 0.6, 0.6
-;silencer_status			= 0
+cost                    = 180
+value                   = +30
+;value2                 = st_upgr_silencer_disable
+bullet_speed            = 60
+hit_power               = 0.6, 0.6, 0.6, 0.6
+;silencer_status            = 0
 
 [up_a_pm]
 scheme_index            = 0, 0
 known                   = 1
-;;invented                = 1                							; 0
+;;invented                = 1                                           ; 0
 effects                 = up_gr_ac_pm
 section                 = up_sect_a_pm
 property                = prop_rpm
@@ -115,7 +115,7 @@ scheme_index            = 0, 2
 known                   = 1
 effects                 = up_gr_ac_pm
 section                 = up_sect_c_pm
-property                = prop_weight      
+property                = prop_weight
 
 precondition_functor    = inventory_upgrades.precondition_functor_a
 precondition_parameter  = a & b
@@ -154,7 +154,7 @@ icon                    = ui_wp_upgrade_04
 [up_e_pm]
 scheme_index            = 0, 4
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_e_pm
 property                = prop_dispersion
 
@@ -174,7 +174,7 @@ icon                    = ui_wp_upgrade_05
 [up_f_pm]
 scheme_index            = 0, 5
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_f_pm
 property                = prop_dispersion
 
@@ -195,7 +195,7 @@ icon                    = ui_wp_upgrade_09
 [up_g_pm]
 scheme_index            = 0, 6
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_g_pm
 property                = prop_calibre
 
@@ -215,7 +215,7 @@ icon                    = ui_wp_upgrade_10
 [up_h_pm]
 scheme_index            = 0, 7
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_h_pm
 property                = prop_ammo_size
 
@@ -236,7 +236,7 @@ icon                    = ui_wp_upgrade_06
 [up_ac_pm]
 scheme_index            = 1, 0
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_ac_pm
 property                = prop_recoil
 
@@ -258,7 +258,7 @@ icon                    = ui_wp_upgrade_07
 [up_bd_pm]
 scheme_index            = 1, 1
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_bd_pm
 property                = prop_bullet_speed
 

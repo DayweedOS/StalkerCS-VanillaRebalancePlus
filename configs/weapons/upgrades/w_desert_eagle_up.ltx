@@ -1,70 +1,70 @@
 [up_sect_a_desert_eagle]
-cost		      		= 750
-value					= +25
-rpm						= 50
+cost                    = 750
+value                   = +25
+rpm                     = 50
 
 [up_sect_b_desert_eagle]
-cost		      		= 750
-value					= -20
+cost                    = 750
+value                   = -20
 
-cam_dispersion			= -0.24		;1.2
-cam_dispersion_inc		= -0.24		;1.2
-cam_step_angle_horz		= -0.2		;1
+cam_dispersion          = -0.24     ;1.2
+cam_dispersion_inc      = -0.24     ;1.2
+cam_step_angle_horz     = -0.2      ;1
 
 [up_sect_c_desert_eagle]
-cost		      		= 750
-value					= -20
-inv_weight				= -0.34
-fire_dispersion_base	= -0.1 ;0.7
+cost                    = 750
+value                   = -20
+inv_weight              = -0.34
+fire_dispersion_base    = -0.1 ;0.7
 
 [up_sect_d_desert_eagle]
-cost		      		= 750
-value					= +20
-bullet_speed		 	= 60
-hit_power           	= 0.59, 0.59, 0.59, 0.59
+cost                    = 750
+value                   = +20
+bullet_speed            = 60
+hit_power               = 0.59, 0.59, 0.59, 0.59
 
 [up_sect_e_desert_eagle]
-cost		      		= 750
-value					= +20
-fire_dispersion_base	= -0.14 ;0.7
+cost                    = 750
+value                   = +20
+fire_dispersion_base    = -0.14 ;0.7
 
 [up_sect_f_desert_eagle]
-cost		      		= 750
-value					= +20
-fire_dispersion_base	= -0.14 ;0.7
+cost                    = 750
+value                   = +20
+fire_dispersion_base    = -0.14 ;0.7
 
-cam_dispersion          = -0.1		;0.5
-cam_dispersion_inc		= -0.1		;0.5
-cam_step_angle_horz		= -0.2		;1.0
+cam_dispersion          = -0.1      ;0.5
+cam_dispersion_inc      = -0.1      ;0.5
+cam_step_angle_horz     = -0.2      ;1.0
 
 [up_sect_g_desert_eagle]
-cost		      		= 750
-value					= +4
-ammo_mag_size		 	= 4
+cost                    = 750
+value                   = +4
+ammo_mag_size           = 4
 
 [up_sect_ac_desert_eagle]
-cost		      		= 1125
-value					= -50
-;value2					= st_upgr_silencer_disable
+cost                    = 1125
+value                   = -50
+;value2                 = st_upgr_silencer_disable
 
-cam_dispersion			= -0.6		;1.2
-cam_dispersion_inc		= -0.6		;1.2
-cam_step_angle_horz		= -0.5		;1
+cam_dispersion          = -0.6      ;1.2
+cam_dispersion_inc      = -0.6      ;1.2
+cam_step_angle_horz     = -0.5      ;1
 
-;silencer_status			= 0
+;silencer_status            = 0
 
 [up_sect_bd_desert_eagle]
-cost		      		= 1125
-value					= +30
-;value2					= st_upgr_silencer_disable
-bullet_speed		 	= 90
-hit_power           	= 0.65, 0.65, 0.65, 0.65
-;silencer_status			= 0
+cost                    = 1125
+value                   = +30
+;value2                 = st_upgr_silencer_disable
+bullet_speed            = 90
+hit_power               = 0.65, 0.65, 0.65, 0.65
+;silencer_status            = 0
 
 [up_a_desert_eagle]
 scheme_index            = 0, 0
 known                   = 1
-;;invented                = 1                							; 0
+;;invented                = 1                                           ; 0
 effects                 = up_gr_ac_desert_eagle
 section                 = up_sect_a_desert_eagle
 property                = prop_rpm
@@ -110,7 +110,7 @@ scheme_index            = 0, 2
 known                   = 1
 effects                 = up_gr_ac_desert_eagle
 section                 = up_sect_c_desert_eagle
-property                = prop_weight      
+property                = prop_weight
 
 precondition_functor    = inventory_upgrades.precondition_functor_a
 precondition_parameter  = a & b
@@ -149,7 +149,7 @@ icon                    = ui_wp_upgrade_04
 [up_e_desert_eagle]
 scheme_index            = 0, 4
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_e_desert_eagle
 property                = prop_dispersion
 
@@ -169,7 +169,7 @@ icon                    = ui_wp_upgrade_05
 [up_f_desert_eagle]
 scheme_index            = 0, 5
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_f_desert_eagle
 property                = prop_dispersion
 
@@ -190,7 +190,7 @@ icon                    = ui_wp_upgrade_09
 [up_g_desert_eagle]
 scheme_index            = 0, 6
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_g_desert_eagle
 property                = prop_ammo_size
 
@@ -211,7 +211,7 @@ icon                    = ui_wp_upgrade_06
 [up_ac_desert_eagle]
 scheme_index            = 1, 0
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_ac_desert_eagle
 property                = prop_recoil
 
@@ -233,7 +233,7 @@ icon                    = ui_wp_upgrade_07
 [up_bd_desert_eagle]
 scheme_index            = 1, 1
 known                   = 1
-effects                 = 
+effects                 =
 section                 = up_sect_bd_desert_eagle
 property                = prop_bullet_speed
 

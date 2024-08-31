@@ -66,8 +66,8 @@
 #include "smart_cover.ltx"
 
 [zone_pick_dof]
-near 	= -70.0
-far 	= 70.0
+near    = -70.0
+far     = 70.0
 
 [sound]
 occlusion_scale = 0.4
@@ -113,41 +113,41 @@ max_belt    = 5 ;16
 slots     = 11
 slots_count   = 12
 
-slot_persistent_1  	= true   ;knife
-slot_active_1  		= true
+slot_persistent_1   = true   ;knife
+slot_active_1       = true
 
-slot_persistent_2  	= false  ;pistol
-slot_active_2  		= true
+slot_persistent_2   = false  ;pistol
+slot_active_2       = true
 
-slot_persistent_3  	= false  ;automatic
-slot_active_3  		= true
+slot_persistent_3   = false  ;automatic
+slot_active_3       = true
 
-slot_persistent_4  	= true   ;grenades
-slot_active_4  		= true
+slot_persistent_4   = true   ;grenades
+slot_active_4       = true
 
-slot_persistent_5  	= true   ;binocular
-slot_active_5  		= true
+slot_persistent_5   = true   ;binocular
+slot_active_5       = true
 
-slot_persistent_6  	= true   ;bolt
-slot_active_6  		= true
+slot_persistent_6   = true   ;bolt
+slot_active_6       = true
 
-slot_persistent_7  	= false  ;outfit
-slot_active_7  		= false
+slot_persistent_7   = false  ;outfit
+slot_active_7       = false
 
-slot_persistent_8  	= true   ;pda
-slot_active_8  		= false
+slot_persistent_8   = true   ;pda
+slot_active_8       = false
 
-slot_persistent_9  	= false  ;detector
-slot_active_9  		= false
+slot_persistent_9   = false  ;detector
+slot_active_9       = false
 
-slot_persistent_10  	= true  ;torch
-slot_active_10  	= false
+slot_persistent_10      = true  ;torch
+slot_active_10      = false
 
-slot_persistent_11  	= false ;artefact
-slot_active_11  	= true
+slot_persistent_11      = false ;artefact
+slot_active_11      = true
 
-slot_persistent_12  	= false ;flare
-slot_active_12  	= false
+slot_persistent_12      = false ;flare
+slot_active_12      = false
 
 
 [lights_hanging_lamp]
@@ -213,8 +213,8 @@ cross_color     = 0.7,0.7,0.7,0.5   ;цвет прицела
 disp_scale      = 0.08          ;масштаб прицела (относительно радиан)
 
 [hud_hitmark]
-hit_mark_texture 	= ui\ui_hud_hit_mark; ui\ui_empty
-grenade_mark_texture 	= ui\ui_hud_grenade_mark
+hit_mark_texture    = ui\ui_hud_hit_mark; ui\ui_empty
+grenade_mark_texture    = ui\ui_hud_grenade_mark
 ;ui\ui_hud_hit_mark
 ;ui\ui_hud_hit_mark_01
 ;ui\ui_hud_hit_mark_02
@@ -460,7 +460,7 @@ snd_new_contact         = detectors\contact_1
 snd_new_contact1        = detectors\contact_8
 
 [hud_sound]
-hud_sound_vol_k		= 0.85f
+hud_sound_vol_k     = 0.85f
 
 [attachable_item]
 GroupControlSection   = spawn_group
@@ -611,10 +611,10 @@ shape_transp_color    = 0, 255, 0, 24
 shape_edge_color    = 32, 32, 32, 255
 
 [anomal_zone]:space_restrictor
-GroupControlSection	= spawn_group_zone
-$spawn 			= "ai\anomal_zone"
-$def_sphere					= 2
-$prefetch 		= 16
+GroupControlSection = spawn_group_zone
+$spawn          = "ai\anomal_zone"
+$def_sphere                 = 2
+$prefetch       = 16
 script_binding      = bind_anomaly_zone.bind
 
 shape_transp_color    = 240, 217, 182, 58
