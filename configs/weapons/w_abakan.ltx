@@ -71,8 +71,8 @@ fire_dispersion_base    = 0.7        ;угол (в градусах) базовой дисперсии оружия
 control_inertion_factor = 1.4f
 
 ;отдача
-cam_relax_speed          = 10     ;скорость возврата в исходное положение
-cam_relax_speed_ai       = 360
+cam_relax_speed = 0
+cam_relax_speed_ai = 18
 cam_dispersion           = 0.1     ;увеличения угла (в градусах) с первым выстрелом
 cam_dispersion_inc       = 0.6      ;увеличениe cam_dispersion с каждvм вvстрелом
 cam_dispersion_frac      = 0.7    ;ствол будет подvматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
@@ -80,8 +80,6 @@ cam_max_angle            = 10.0       ;максимальнvй угол отдачи
 cam_max_angle_horz       = 5.0      ;(degree) maximum shot horizontal degree
 cam_step_angle_horz      = 0.6    ;(degree) size of step camera moved in horizontal position while shooting
 
-zoom_cam_relax_speed         = 10       ; scope & ironsight
-zoom_cam_relax_speed_ai      = 360
 zoom_cam_dispersion          = 0.1
 zoom_cam_dispersion_inc      = 0.5
 zoom_cam_dispersion_frac     = 0.7
