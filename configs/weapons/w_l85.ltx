@@ -1,11 +1,10 @@
-[wpn_l85]:identity_immunities,weapon_probability,default_weapon_params
+[wpn_l85]:weapon_rebalanced
 GroupControlSection     = spawn_group
 discovery_dependency    =
 $spawn                  = "weapons\l85"      ; option for Level Editor
 $npc                    = on                                ; option for Level Editor
 $prefetch               = 8
 scheduled               = off                                ; option for ALife Simulator
-cform                   = skeleton
 class                   = WP_AK74
 min_radius              = 30
 max_radius              = 100
@@ -14,9 +13,6 @@ description             = st_wpn_l85_descr
 ef_main_weapon_type     = 2
 ef_weapon_type          = 6
 
-default_to_ruck         = false
-sprint_allowed          = true
-control_inertion_factor = 1.0
 
 ;-------------------------------------------------------------------------------
 
@@ -41,7 +37,6 @@ ammo_class              = ammo_5.56x45_ss190, ammo_5.56x45_ap
 grenade_class           = ammo_m209
 fire_modes              = 1, -1
 launch_speed            = 0
-hand_dependence         = 1
 single_handed           = 0
 
 slot                    = 2                ; // secondary
@@ -70,11 +65,6 @@ control_inertion_factor = 1.4f
 cam_step_angle_horz = 7
 cam_dispersion = 0.7
 cam_dispersion_inc = 0.25
-cam_dispersion_frac = 1
-cam_max_angle = 180
-cam_max_angle_horz = 60
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability     = 0.03        ;вероятность осечки при максимальном износе
@@ -103,16 +93,12 @@ PDM_disp_accel_factor   = 1.8
 ; ttc
 hit_power               = .39
 hit_impulse             = 78
-hit_type                = fire_wound
 rpm                     = 600
 
-fire_distance           = 999
 bullet_speed            = 600
 rpm                     = 550
-rpm_empty_click         = 200
 ; end ttc
 
-use_aim_bullet = false
 time_to_aim             = 3.5
 
 hud                     = wpn_l85_hud
@@ -141,8 +127,6 @@ scope_status            = 1
 silencer_status         = 2
 grenade_launcher_status = 0
 
-zoom_enabled            = true                                                ; (on,off)zoom mode (right mouse button)
-zoom_rotate_time    = 0.25
 scope_zoom_factor = 37.5
 
 scope_texture               = wpn_crosshair_l85
