@@ -1,11 +1,10 @@
-[wpn_pb]:identity_immunities,weapon_probability,default_weapon_params
+[wpn_pb]:weapon_rebalanced
 GroupControlSection         = spawn_group
 discovery_dependency        =
 $spawn                      = "weapons\pb"      ; option for Level Editor
 $npc                                = on                            ; option for Level Editor
 $prefetch                       = 8
 scheduled                   = off                   ; option for ALife Simulator
-cform                       = skeleton
 class                       = WP_PM
 min_radius                  = 0
 max_radius                  = 50
@@ -32,13 +31,10 @@ ammo_elapsed            = 8
 ammo_mag_size           = 8
 ammo_class              = ammo_9x18_fmj, ammo_9x18_pmm
 
-hand_dependence         = 1
 single_handed           = 1
 
 slot                    = 1
 animation_slot          = 1                                 ; type of the animation that will be used
-default_to_ruck         = false
-sprint_allowed          = true
 control_inertion_factor = 1
 
 inv_name                = st_wpn_pb
@@ -60,13 +56,8 @@ kill_msg_height         = 22
 fire_dispersion_base    = 0.5           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 cam_dispersion          = 0.3               ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 0.3               ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispersion_frac     = 1.0               ;ствол будет подыматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
-cam_max_angle = 180
-cam_max_angle_horz = 60
 cam_step_angle_horz     = 1.0               ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
@@ -77,21 +68,15 @@ condition_shot_dec          = 0.002     ;увеличение износа при каждом выстреле
 ; ttc
 hit_power                   = 0.5, 0.5, 0.5, 0.5
 hit_impulse                 = 80
-hit_type                    = fire_wound
 
 PDM_disp_base               = 0.8
 PDM_disp_vel_factor         = 0.2
 PDM_disp_accel_factor       = 0.2
-PDM_disp_crouch             = 1.0
-PDM_disp_crouch_no_acc      = 1.0
 
-use_aim_bullet = false
 time_to_aim                     = 1.0
 
-fire_distance               = 30
 bullet_speed                = 180
 rpm                         = 250
-rpm_empty_click             = 200
 ; end ttc
 
 
@@ -134,9 +119,6 @@ scope_status                    = 0
 silencer_status             = 1
 grenade_launcher_status     = 0
 
-zoom_enabled                    = true
-zoom_rotate_time                = 0.25
-scope_zoom_factor = 75
 
 ;звуки
 snd_draw                            = weapons\pm_draw

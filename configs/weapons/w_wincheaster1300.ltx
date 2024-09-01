@@ -1,11 +1,10 @@
-[wpn_wincheaster1300]:zero_immunities,weapon_probability,default_weapon_params
+[wpn_wincheaster1300]:weapon_rebalanced
 GroupControlSection         = spawn_group
 discovery_dependency        =
 $spawn                      = "weapons\winchester1300"                  ; option for Level Editor
 $npc                        = on                ; option for Level Editor
 $prefetch                   = 8
 scheduled                   = off              ; option for ALife Simulator
-cform                       = skeleton
 class                       = WP_SHOTG
 min_radius                  = 0
 max_radius                  = 50
@@ -44,13 +43,8 @@ fire_dispersion_base        = 1.0  ;угол (в градусах) базовой дисперсии оружия (
 control_inertion_factor     = 1.2f
 
 ;отдача
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 cam_dispersion          = 3.0   ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 3.0   ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispersion_frac     = 0.7
-cam_max_angle = 180
-cam_max_angle_horz = 60
 cam_step_angle_horz     = 3.0   ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor = 10   ;увеличение дисперсии в процентах при максимальном износе
@@ -65,7 +59,6 @@ orientation                 = 0, -4, 0      ;значение устанавливается в градусах
 shell_point             = 0.0, 0.180, 0.647
 fire_point              = 0.0, 0.158, 0.647
 fire_point2             = 0.0, 0.158, 0.647
-hand_dependence             = 1
 single_handed               = 0
 
 slot                        = 2     ; // secondary
@@ -87,21 +80,16 @@ kill_msg_height     = 20
 
 flame_particles         = weapons\generic_weapon05
 smoke_particles         = weapons\generic_shoot_00
-rpm_empty_click         = 200
 
 PDM_disp_base           = 1.0
 PDM_disp_vel_factor     = 1.7
 PDM_disp_accel_factor   = 1.7
-PDM_disp_crouch             = 1.0
-PDM_disp_crouch_no_acc      = 1.0
 
 ; ttc
 
 hit_power                   = 1.00, 1.00, 1.00, 1.00
 hit_impulse                 = 120
-hit_type                    = fire_wound
 
-fire_distance               = 50
 bullet_speed                = 220           ;начальная скорость пули
 rpm                         = 80            ;60 = 1 секунда
 ; end ttc
@@ -132,8 +120,6 @@ scope_status                = 0
 silencer_status             = 0
 grenade_launcher_status     = 0
 
-zoom_enabled                = true
-scope_zoom_factor = 75
 
 ;звуки
 snd_draw                    = weapons\generic_draw

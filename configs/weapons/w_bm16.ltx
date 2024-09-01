@@ -1,11 +1,10 @@
-[wpn_bm16]:identity_immunities,weapon_probability,default_weapon_params
+[wpn_bm16]:weapon_rebalanced
 GroupControlSection     = spawn_group
 discovery_dependency    =
 $spawn                  = "weapons\bm16"        ; option for Level Editor
 $npc                    = on                        ; option for Level Editor
 $prefetch               = 8
 scheduled               = off                   ; option for ALife Simulator
-cform                   = skeleton
 class                   = WP_BM16
 min_radius              = 0
 max_radius              = 50
@@ -41,13 +40,8 @@ fire_dispersion_base        = 1.1   ;угол (в градусах) базовой дисперсии оружия 
 control_inertion_factor     = 1.0f
 
 ;отдача
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 cam_dispersion          = 5.5   ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 5.5   ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispersion_frac     = 0.5   ;ствол будет подыматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
-cam_max_angle = 180
-cam_max_angle_horz = 60
 cam_step_angle_horz     = 5.5   ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor = 10   ;увеличение дисперсии в процентах при максимальном износе
@@ -56,7 +50,6 @@ misfire_condition_k             = 0.05
 condition_shot_dec              = 0.003     ;увеличение износа при каждом выстреле
 ;-------------------------------------------------------------------------------
 
-hand_dependence         = 1
 single_handed           = 0
 
 slot                    = 2
@@ -86,14 +79,11 @@ fire_point2             = 0.000000,0.136000,0.390000        ;l
 
 flame_particles = weapons\generic_weapon05
 smoke_particles = weapons\generic_shoot_00
-rpm_empty_click = 200
 
 ; ttc
 hit_power       = 1.05, 1.05, 1.05, 1.05
 hit_impulse     = 150
-hit_type        = fire_wound
 
-fire_distance           = 35
 bullet_speed            = 170
 rpm                     = 1000
 ; end ttc
@@ -101,8 +91,6 @@ rpm                     = 1000
 PDM_disp_base           = 1.0
 PDM_disp_vel_factor     = 1.1
 PDM_disp_accel_factor   = 1.1
-PDM_disp_crouch             = 1.0
-PDM_disp_crouch_no_acc      = 1.0
 
 hud                             = wpn_bm16_hud
 
@@ -131,8 +119,6 @@ scope_status                        = 0
 silencer_status                 = 0
 grenade_launcher_status         = 0
 
-zoom_enabled                        = true
-scope_zoom_factor = 75
 
 ;звуки
 snd_draw                            = weapons\generic_draw

@@ -1,11 +1,10 @@
-[wpn_val]:identity_immunities,weapon_probability,default_weapon_params
+[wpn_val]:weapon_rebalanced
 GroupControlSection     = spawn_group
 discovery_dependency    =
 $spawn                      = "weapons\val"                ; option for Level Editor
 $npc                    = off                                ; option for Level Editor
 $prefetch               = 8
 scheduled               = off                                ; option for ALife Simulator
-cform                   = skeleton
 class                      = WP_VAL
 min_radius              = 30
 max_radius              = 100
@@ -14,8 +13,6 @@ description             = st_wpn_val_descr
 ef_main_weapon_type        = 2
 ef_weapon_type          = 6
 
-default_to_ruck         = false
-sprint_allowed          = true
 control_inertion_factor = 1.0
 
 ;-------------------------------------------------------------------------------
@@ -39,7 +36,6 @@ ammo_mag_size           = 20
 ammo_class              = ammo_9x39_pab9, ammo_9x39_ap ;ammo_9x39_sp5
 fire_modes              = 1, -1
 launch_speed            = 0
-hand_dependence         = 1
 single_handed           = 0
 
 slot                    = 2                ; // secondary
@@ -65,13 +61,9 @@ fire_dispersion_base    = 0.20   ;угол (в градусах) базовой дисперсии оружия (ор
 control_inertion_factor = 1.2f
 
 ;отдача
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 cam_dispersion                  = 0.8
 cam_dispersion_inc              = 0.0
 cam_dispertion_frac             = 1.0
-cam_max_angle = 180
-cam_max_angle_horz = 60
 cam_step_angle_horz             = 8.0
 
 fire_dispersion_condition_factor = 4        ;увеличение дисперсии в процентах при максимальном износе
@@ -97,21 +89,15 @@ shell_particles         = weapons\generic_shells
 PDM_disp_base           = 1.0
 PDM_disp_vel_factor     = 1.5
 PDM_disp_accel_factor   = 1.5
-PDM_disp_crouch         = 1.0
-PDM_disp_crouch_no_acc  = 1.0
 
 ; ttc
 hit_power       = 0.67
 hit_impulse     = 120
-hit_type        = fire_wound
 
-fire_distance           = 480
 bullet_speed            = 270
 rpm                     = 900
-rpm_empty_click         = 200
 ; end ttc
 
-use_aim_bullet = false
 time_to_aim             = 1.0
 
 hud                     = wpn_val_hud
@@ -141,13 +127,9 @@ scope_status            = 2
 silencer_status         = 1
 grenade_launcher_status = 0
 
-zoom_enabled            = true                                                ; (on,off)zoom mode (right mouse button)
-zoom_rotate_time        = 0.25
-scope_zoom_factor = 75
 
 scope_texture           = wpn_crosshair
 
-zoom_enabled            = true
 scope_name              = wpn_addon_scope
 scope_texture           = wpn_crosshair
 scope_x                 = 37                 ; offset in inventory icon

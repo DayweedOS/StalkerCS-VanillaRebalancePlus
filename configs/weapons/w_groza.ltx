@@ -1,11 +1,10 @@
-[wpn_groza]:identity_immunities,weapon_probability,default_weapon_params
+[wpn_groza]:weapon_rebalanced
 GroupControlSection     = spawn_group
 discovery_dependency    =
 $spawn                  = "weapons\groza"                ; option for Level Editor
 $npc                    = on                                ; option for Level Editor
 $prefetch               = 8
 scheduled               = off                                ; option for ALife Simulator
-cform                   = skeleton
 class                   = WP_AK74
 min_radius              = 30
 max_radius              = 100
@@ -14,8 +13,6 @@ description             = st_wpn_groza_descr
 ef_main_weapon_type     = 2
 ef_weapon_type          = 6
 
-default_to_ruck         = false
-sprint_allowed          = true
 control_inertion_factor = 1.0
 
 ;-------------------------------------------------------------------------------
@@ -39,7 +36,6 @@ ammo_class              = ammo_9x39_pab9, ammo_9x39_ap ;ammo_9x39_sp5
 grenade_class           = ammo_vog-25, ammo_vog-25p
 fire_modes              = 1, -1
 launch_speed            = 10
-hand_dependence         = 1
 single_handed           = 0
 
 slot                    = 2                ; // secondary
@@ -65,13 +61,8 @@ fire_dispersion_base    = 0.7        ;угол (в градусах) базовой дисперсии оружия
 control_inertion_factor = 1.2f
 
 ;отдача
-cam_relax_speed = 0
-cam_relax_speed_ai = 18
 cam_dispersion          = 0.6        ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 0.6       ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispersion_frac     = 0.7       ;ствол будет подыматься на cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac)
-cam_max_angle = 180
-cam_max_angle_horz = 60
 cam_step_angle_horz     = 1.7        ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
@@ -97,23 +88,17 @@ shell_particles         = weapons\generic_shells
 PDM_disp_base           = 1.0
 PDM_disp_vel_factor     = 1.5
 PDM_disp_accel_factor   = 1.5
-PDM_disp_crouch         = 1.0
-PDM_disp_crouch_no_acc  = 1.0
 
 ; ttc
 hit_power               = 0.4, 0.4, 0.4, 0.4
 hit_impulse             = 100
-hit_type                = fire_wound
 
-fire_distance           = 100
 bullet_speed            = 250
 rpm                     = 650
-rpm_empty_click         = 200
 
 grenade_vel             = 76
 ; end ttc
 
-use_aim_bullet = false
 time_to_aim             = 3.0
 
 hud                     = wpn_groza_hud
@@ -143,9 +128,6 @@ scope_status            = 2
 silencer_status         = 2
 grenade_launcher_status = 1
 
-zoom_enabled            = true                                                ; (on,off)zoom mode (right mouse button)
-zoom_rotate_time        = 0.25
-scope_zoom_factor = 75
 
 scope_name              = wpn_addon_scope
 scope_x                 = 63
