@@ -13,8 +13,6 @@ description             = st_wpn_vintorez_descr
 ef_main_weapon_type     = 3
 ef_weapon_type          = 8
 
-;control_inertion_factor = 1.0
-
 ;-------------------------------------------------------------------------------
 upgrades                = up_gr_a_vintorez, up_gr_b_vintorez, up_gr_c_vintorez, up_gr_d_vintorez, up_gr_e_vintorez
 installed_upgrades      =
@@ -22,10 +20,10 @@ upgrade_scheme          = upgrade_scheme_u7a
 
 ;-------------------------------------------------------------------------------
 holder_range_modifier   = 2.0                       ; во сколько раз увеличивается eye_range
-holder_fov_modifier     = 0.3              ; во сколько раз увеличивается eye_fov
+holder_fov_modifier     = 1.0              ; во сколько раз увеличивается eye_fov
 ;-------------------------------------------------------------------------------
 
-cost                    = 12000
+cost                    = 14000
 weapon_class            = sniper_rifle        ; Type of the weapon
 
 ammo_limit              = 180
@@ -58,13 +56,12 @@ kill_msg_height         = 25
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base    = 0.25        ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base    = 0.3        ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor = 1.2f
 
-;отдача
-cam_dispersion          = 0.45        ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 0.45        ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 0.45        ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion          = 0.8
+cam_dispersion_inc      = 0.15
+cam_step_angle_horz     = 8
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability     = 0.005        ;вероятность осечки при максимальном износе
@@ -86,15 +83,15 @@ shell_point             = -0.020000,0.167000,0.082000
 shell_dir               = 0.0, 0.0, 0.4
 shell_particles         = weapons\generic_shells
 
-PDM_disp_base           = 1.0
-PDM_disp_vel_factor     = 1.45
-PDM_disp_accel_factor   = 1.45
+PDM_disp_base           = 1.2
+PDM_disp_vel_factor     = 1.4
+PDM_disp_accel_factor   = 1.4
 
 ; ttc
-hit_power               = 0.35, 0.35, 0.35, 0.35
-hit_impulse             = 100
+hit_power               = 0.75
+hit_impulse             = 112
 
-bullet_speed            = 250
+bullet_speed            = 320
 rpm                     = 600
 ; end ttc
 
