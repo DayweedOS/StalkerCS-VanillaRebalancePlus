@@ -21,7 +21,7 @@ upgrade_scheme          = upgrade_scheme_u3
 
 ;-------------------------------------------------------------------------------
 holder_range_modifier   = 1.0     ; во сколько раз увеличивается eye_range
-holder_fov_modifier     = 0.7     ; во сколько раз увеличивается eye_fov
+holder_fov_modifier     = 1.2     ; во сколько раз увеличивается eye_fov
 ;-------------------------------------------------------------------------------
 
 cost                    = 200
@@ -36,13 +36,13 @@ ammo_class              = ammo_12x70_buck,ammo_12x76_zhekan,ammo_12x76_dart
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base        = 1.1   ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 1.2   ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor     = 1.0f
 
 ;отдача
-cam_dispersion          = 5.5   ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 5.5   ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 5.5   ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion          = 6
+cam_dispersion_inc      = 0
+cam_step_angle_horz     = 60
 
 fire_dispersion_condition_factor = 10   ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability             = 0.0   ;вероятность осечки при максимальном износе
@@ -81,16 +81,16 @@ flame_particles = weapons\generic_weapon05
 smoke_particles = weapons\generic_shoot_00
 
 ; ttc
-hit_power       = 1.05, 1.05, 1.05, 1.05
-hit_impulse     = 150
+hit_power       = 1.1
+hit_impulse     = 110
 
-bullet_speed            = 170
-rpm                     = 1000
+bullet_speed            = 210
+rpm                     = 999
 ; end ttc
 
-PDM_disp_base           = 1.0
-PDM_disp_vel_factor     = 1.1
-PDM_disp_accel_factor   = 1.1
+PDM_disp_base           = 0.6
+PDM_disp_vel_factor     = 1.0
+PDM_disp_accel_factor   = 1.0
 
 hud                             = wpn_bm16_hud
 
