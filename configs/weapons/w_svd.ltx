@@ -23,11 +23,11 @@ installed_upgrades      =
 upgrade_scheme          = upgrade_scheme_u8
 
 ;--- scope weapons -----------------------------------------------------------------
-holder_range_modifier   = 2.15               ; во сколько раз увеличивается eye_range
+holder_range_modifier   = 3               ; во сколько раз увеличивается eye_range
 holder_fov_modifier     = 0.3              ; во сколько раз увеличивается eye_fov
 ;-------------------------------------------------------------------------------
 
-cost                    = 15500
+cost                    = 16000
 weapon_class            = sniper_rifle
 
 ammo_limit              = 60
@@ -57,13 +57,13 @@ kill_msg_height         = 23
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base    = 0.15 ;0.03    ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base    = 0.15
 control_inertion_factor = 2.2f
 
 ;отдача
-cam_dispersion          = 2.5   ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 2.5   ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 0.25  ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion          = 2.4
+cam_dispersion_inc      = 0
+cam_step_angle_horz     = 24
 
 fire_dispersion_condition_factor = 5    ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability         = 0.005 ;вероятность осечки при максимальном износе
@@ -84,19 +84,19 @@ shell_point                 = 0.0, 0.129, 0.192
 shell_dir                   = 0.0, 0.0, 0.4
 shell_particles         = weapons\generic_shells
 
-PDM_disp_base           = 1.0
-PDM_disp_vel_factor     = 2.0
-PDM_disp_accel_factor   = 1.0
+PDM_disp_base           = 1.6
+PDM_disp_vel_factor     = 1.6
+PDM_disp_accel_factor   = 1.6
 
 ; ttc
-hit_power                   = 1.0, 1.0, 1.0, 1.0
-hit_impulse                 = 125
+hit_power                   = 1.2
+hit_impulse                 = 120
 
-bullet_speed            = 700   ;начальная скорость пули
-rpm                     = 120
+bullet_speed            = 800   ;начальная скорость пули
+rpm                     = 200
 ; end ttc
 
-time_to_aim                 = 1.0
+time_to_aim                 = 3
 
 hud                     = wpn_svd_hud
 
@@ -111,11 +111,11 @@ startup_ammo            = 10
 visual                  = dynamics\weapons\wpn_svd\wpn_svd.ogf
 
 light_disabled              = false
-light_color                 = 0.6,0.5,0.3
-light_range                 = 4.0
-light_var_color         = 0.05
-light_var_range         = 0.5
-light_time                  = 0.2
+light_color                 = 0.8,0.5,0.2
+light_range                 = 8
+light_var_color             = 0.1
+light_var_range             = 1
+light_time                  = 0.3
 
 ph_mass                     = 3
 

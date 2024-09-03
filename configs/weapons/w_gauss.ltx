@@ -2,8 +2,8 @@
 GroupControlSection     = spawn_group
 discovery_dependency    =
 $spawn                  = "weapons\gauss"   ; option for Level Editor
-$npc                            = on                ; option for Level Editor
-$prefetch                   = 8
+$npc                    = on                ; option for Level Editor
+$prefetch               = 8
 scheduled               = off               ; option for ALife Simulator
 class                   = WP_SVD
 min_radius              = 0
@@ -18,8 +18,8 @@ control_inertion_factor = 1.0
 ;-------------------------------------------------------------------------------
 
 ;-------------------------------------------------------------------------------
-holder_range_modifier   = 2.85           ; во сколько раз увеличивается eye_range
-holder_fov_modifier     = 0.3              ; во сколько раз увеличивается eye_fov
+holder_range_modifier   = 5.0           ; во сколько раз увеличивается eye_range
+holder_fov_modifier     = 0.5              ; во сколько раз увеличивается eye_fov
 ;-------------------------------------------------------------------------------
 
 cost                    = 25000
@@ -52,15 +52,15 @@ kill_msg_height         = 23
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base    = 0.01 ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
-control_inertion_factor = 1.4f
+fire_dispersion_base    = 0.001
+control_inertion_factor = 1.0f
 
 ;отдача
-cam_dispersion          = 0.01  ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 0.01  ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 0.01  ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion          = 3.2
+cam_dispersion_inc      = 0
+cam_step_angle_horz     = 32
 
-fire_dispersion_condition_factor = 5    ;увеличение дисперсии в процентах при максимальном износе
+fire_dispersion_condition_factor = 10    ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability     = 0.0001 ;вероятность осечки при максимальном износе
 misfire_condition_k     = 0.05
 condition_shot_dec      = 0.00001 ;увеличение износа при каждом выстреле
@@ -80,16 +80,17 @@ shell_point             = 0.0, 0.129, 0.192
 shell_dir               = 0.0, 0.0, 0.4
 shell_particles         = weapons\generic_shells
 
-PDM_disp_base           = 2.0
-PDM_disp_vel_factor     = 2.0
-PDM_disp_accel_factor   = 2.0
+PDM_disp_base           = 1.0
+PDM_disp_vel_factor     = 1.0
+PDM_disp_accel_factor   = 1.0
 
 ; ttc
-hit_power                   = 2.0, 2.0, 2.0, 2.0
-hit_impulse                 = 100
+hit_power                   = 2
+hit_impulse                 = 800
 
-bullet_speed            = 15000 ;начальная скорость пули
-rpm                     = 25;30
+fire_distance           = 8000
+bullet_speed            = 99999
+rpm                     = 30
 ; end ttc
 
 time_to_aim             = 1.0
@@ -107,11 +108,11 @@ startup_ammo            = 10
 visual                  = dynamics\weapons\wpn_gauss\wpn_gauss.ogf
 
 light_disabled              = false
-light_color                 = 1.3,1.5,2
-light_range                 = 4.0
-light_var_color         = 0.05
-light_var_range         = 0.5
-light_time                  = 0.5
+light_color             = 1.0,1.2,2.0
+light_range             = 24
+light_var_color         = 0.25
+light_var_range         = 2
+light_time              = 1
 
 ph_mass                     = 3
 ;cost                           = 900
@@ -121,7 +122,7 @@ scope_status                = 1
 silencer_status         = 0
 grenade_launcher_status = 0
 
-scope_zoom_factor = 5
+scope_zoom_factor = 15
 
 scope_texture               = wpn_crosshair_l85
 scope_name                  = wpn_addon_scope
@@ -193,12 +194,11 @@ $spawn                  = "weapons\gauss_aes"
 hud                             = wpn_gauss_hud
 
 ; ttc
-hit_power                   = 0.14, 0.14, 0.14, 0.14
-hit_impulse                 = 60
+hit_power                   = .64
+hit_impulse                 = 32
 hit_type                    = telepatic
 
-bullet_speed                = 100000    ;начальная скорость пули
-rpm                     = 20
+scope_zoom_factor = 5
 
 ammo_limit              = 100
 ammo_current            = 100
