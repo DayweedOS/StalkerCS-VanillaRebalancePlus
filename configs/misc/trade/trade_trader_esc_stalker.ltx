@@ -5,272 +5,406 @@ buy_condition = trade_generic_buy
 sell_condition = {=actor_in_stalker} trade_friend_sell, trade_generic_sell
 buy_supplies = {=is_stalker_at_expansion_3_or_higher} supplies_exp_3, {=is_stalker_at_expansion_2} supplies_exp_2, {=is_stalker_at_expansion_1} supplies_exp_1, supplies_generic
 
-[trade_generic_buy]:trade_nothing
-af_baloon                       = 0.7, 0.55
-af_blood                        = 0.7, 0.55
-af_cristall                     = 0.7, 0.55
-af_cristall_flower              = 0.7, 0.55
-af_dummy_battery                = 0.7, 0.55
-af_dummy_dummy                  = 0.7, 0.55
-af_dummy_glassbeads             = 0.7, 0.55
-af_electra_flash                = 0.7, 0.55
-af_electra_moonlight            = 0.7, 0.55
-af_electra_sparkler             = 0.7, 0.55
-af_eye                          = 0.7, 0.55
-af_fire                         = 0.7, 0.55
-af_fireball                     = 0.7, 0.55
-af_fuzz_kolobok                 = 0.7, 0.55
-af_glass                        = 0.7, 0.55
-af_gold_fish                    = 0.7, 0.55
-af_gravi                        = 0.7, 0.55
-af_ice                          = 0.7, 0.55
-af_medusa                       = 0.7, 0.55
-af_mincer_meat                  = 0.7, 0.55
-af_night_star                   = 0.7, 0.55
-af_soul                         = 0.7, 0.55
-af_vyvert                       = 0.7, 0.55
-
-ammo_11.43x23_fmj               = 0.2,  0.1
-ammo_11.43x23_hydro             = 0.3,  0.2
-ammo_12x70_buck                 = 0.1,  0.1
-ammo_12x76_dart                 = 0.3,  0.2
-ammo_12x76_zhekan               = 0.2,  0.1
-ammo_5.45x39_ap                 = 0.3,  0.2
-ammo_5.45x39_fmj                = 0.2,  0.1
-ammo_5.56x45_ap                 = 0.3,  0.2
-ammo_5.56x45_ss190              = 0.2,  0.2
-ammo_7.62x54_7h1                = 0.15, 0.15
-ammo_7.62x54_7h14               = 0.15, 0.15
-ammo_7.62x54_ap                 = 0.15, 0.15
-ammo_9x18_fmj                   = 0.1,  0.1
-ammo_9x18_pmm                   = 0.2,  0.1
-ammo_9x19_fmj                   = 0.2,  0.1
-ammo_9x19_pbp                   = 0.1,  0.1
-ammo_9x39_ap                    = 0.3,  0.2
-ammo_9x39_pab9                  = 0.2,  0.1
-ammo_9x39_sp5                   = 0.15, 0.15
-ammo_gauss                      = 0.15, 0.15 ; SRP
-ammo_m209                       = 0.5,  0.2
-ammo_og-7b                      = 0.5,  0.2
-;ammo_pkm_100                   ;NO TRADE
-ammo_vog-25                     = 0.5,  0.2
-ammo_vog-25p                    = 0.5,  0.2 ; SRP
-grenade_f1                      = 0.3,  0.2
-grenade_rgd5                    = 0.2,  0.2
-
-wpn_abakan                      = 0.15, 0.1
-wpn_ak74                        = 0.15, 0.1
-wpn_ak74u                       = 0.15, 0.1
-wpn_beretta                     = 0.15, 0.1
-wpn_bm16                        = 0.15, 0.1
-wpn_colt1911                    = 0.15, 0.1
-wpn_desert_eagle                = 0.15, 0.1
-wpn_fn2000                      = 0.15, 0.1
-wpn_fort                        = 0.15, 0.1
-wpn_g36                         = 0.15, 0.1
-wpn_gauss                       = 0.15, 0.1 ; SRP
-wpn_groza                       = 0.15, 0.1
-wpn_hpsa                        = 0.15, 0.1
-wpn_l85                         = 0.15, 0.1
-wpn_lr300                       = 0.15, 0.1
-wpn_mp5                         = 0.15, 0.1
-wpn_pb                          = 0.15, 0.1
-;wpn_pkm                        ;NO TRADE
-wpn_pm                          = 0.15, 0.1
-wpn_rg-6                        = 0.15, 0.1
-wpn_rpg7                        = 0.15, 0.1
-wpn_sig220                      = 0.15, 0.1
-wpn_sig550                      = 0.15, 0.1
-wpn_spas12                      = 0.15, 0.1
-wpn_svd                         = 0.15, 0.1
-wpn_svu                         = 0.15, 0.1
-wpn_toz34                       = 0.15, 0.1
-wpn_usp                         = 0.15, 0.1
-wpn_val                         = 0.15, 0.1
-wpn_vintorez                    = 0.15, 0.1
-wpn_walther                     = 0.15, 0.1
-wpn_wincheaster1300             = 0.15, 0.1
-
-wpn_addon_grenade_launcher      = 0.2, 0.1
-wpn_addon_grenade_launcher_m203 = 0.2, 0.1
-wpn_addon_scope                 = 0.2, 0.1
-wpn_addon_scope_susat           = 0.2, 0.1
-wpn_addon_silencer              = 0.2, 0.1
-
-bandit_outfit                   = 0.5, 0.3
-cs_heavy_outfit                 = 0.5, 0.3
-cs_light_outfit                 = 0.5, 0.3
-dolg_heavy_outfit               = 0.5, 0.3
-dolg_outfit                     = 0.5, 0.3
-exo_outfit                      = 0.5, 0.3
-military_outfit                 = 0.5, 0.3
-novice_outfit                   = 0.5, 0.3
-scientific_outfit               = 0.5, 0.3
-specops_outfit                  = 0.5, 0.3
-stalker_outfit                  = 0.5, 0.3
-svoboda_exo_outfit              = 0.5, 0.3
-svoboda_heavy_outfit            = 0.5, 0.3
-svoboda_light_outfit            = 0.5, 0.3
-
-antirad                         = 0.5, 0.2
-bandage                         = 0.5, 0.2
-medkit                          = 0.5, 0.2
-medkit_army                     = 0.5, 0.2
-medkit_scientic                 = 0.5, 0.2
-
-detector_advanced               = 0.5, 0.2
-detector_elite                  = 0.5, 0.2
-detector_simple                 = 0.5, 0.2
-
-stalker_outfit_up_stalk         = 0.01, 0.01
-wpn_abakan_up2                  = 0.2,  0.1
-wpn_ak74_up                     = 0.2,  0.1
-wpn_ak74_up2                    = 0.2,  0.1
-wpn_colt1911_up2                = 0.2,  0.1
-wpn_desert_eagle_up             = 0.2,  0.1 ; SRP
-wpn_fort_up                     = 0.2,  0.1
-wpn_g36_up2                     = 0.2,  0.1 ; SRP
-wpn_lr300_up2                   = 0.2,  0.1
-wpn_pm_9x19                     = 0.2,  0.1
-wpn_pm_up                       = 0.2,  0.1
-wpn_sig550_up2                  = 0.2,  0.1
-wpn_vintorez_up                 = 0.2,  0.1
-wpn_walther_up2                 = 0.2,  0.1 ; SRP
-
 [supplies_generic]
-ammo_12x70_buck                 = 10, 0.5
-ammo_12x76_zhekan               = 10, 0.5
-ammo_9x18_fmj                   = 10, 0.5
+af_baloon                       = 5, 1
+af_blood                        = 5, 1
+af_cristall                     = 5, 1
+af_cristall_flower              = 5, 1
+af_dummy_battery                = 5, 1
+af_dummy_dummy                  = 5, 1
+af_dummy_glassbeads             = 5, 1
+af_electra_flash                = 5, 1
+af_electra_moonlight            = 5, 1
+af_electra_sparkler             = 5, 1
+af_eye                          = 5, 1
+af_fire                         = 5, 1
+af_fireball                     = 5, 1
+af_fuzz_kolobok                 = 5, 1
+af_glass                        = 5, 1
+af_gold_fish                    = 5, 1
+af_gravi                        = 5, 1
+af_ice                          = 5, 1
+af_medusa                       = 5, 1
+af_mincer_meat                  = 5, 1
+af_night_star                   = 5, 1
+af_soul                         = 5, 1
+af_vyvert                       = 5, 1
 
-wpn_bm16                        = 1, 0.8
-wpn_pm                          = 5, 0.5
-wpn_toz34                       = 1, 0.8
-wpn_wincheaster1300             = 1, 0.5
+ammo_11.43x23_fmj               = 40, 1
+ammo_11.43x23_hydro             = 40, 1
+ammo_12x70_buck                 = 40, 1
+ammo_12x76_dart                 = 40, 1
+ammo_12x76_zhekan               = 40, 1
+ammo_5.45x39_ap                 = 40, 1
+ammo_5.45x39_fmj                = 40, 1
+ammo_5.56x45_ap                 = 40, 1
+ammo_5.56x45_ss190              = 40, 1
+ammo_7.62x54_7h1                = 40, 1
+ammo_7.62x54_7h14               = 40, 1
+ammo_7.62x54_ap                 = 40, 1
+ammo_9x18_fmj                   = 40, 1
+ammo_9x18_pmm                   = 40, 1
+ammo_9x19_fmj                   = 40, 1
+ammo_9x19_pbp                   = 40, 1
+ammo_9x39_ap                    = 40, 1
+ammo_9x39_pab9                  = 40, 1
+ammo_9x39_sp5                   = 40, 1
+ammo_gauss                      = 40, 1
+ammo_m209                       = 40, 1
+ammo_og-7b                      = 40, 1
+ammo_pkm_100                    = 40, 1
+ammo_vog-25                     = 40, 1
+ammo_vog-25p                    = 40, 1
+grenade_f1                      = 40, 1
+grenade_rgd5                    = 40, 1
 
-novice_outfit                   = 2, 0.8
-
-bandage                         = 5, 0.5
-medkit                          = 5, 0.5
-
-conserva                        = 5, 0.7
-vodka                           = 5, 0.5
-
-;hand_radio                     = 1, 1 ; not used -> pointless to spawn
-
-[supplies_exp_1]:supplies_generic
-ammo_9x18_fmj                   = 10, 0.8
-grenade_rgd5                    = 5,  0.5
-
-wpn_ak74                        = 2, 0.5
-wpn_ak74u                       = 2, 0.7
-wpn_fort                        = 2, 0.7
-wpn_mp5                         = 2, 0.7
-
-;wpn_addon_scope                = 1, 0.8 ; refuses to sell -> pointless to spawn
-
-stalker_outfit                  = 2, 0.8
-
-medkit                          = 10, 0.5
-
-detector_simple                 = 2, 0.8
-
-[supplies_exp_2]:supplies_exp_1
-ammo_5.45x39_fmj                = 15, 0.5
-ammo_5.56x45_ss190              = 10, 0.5
-ammo_9x19_fmj                   = 15, 0.5
-grenade_rgd5                    = 2,  0.5
-
-wpn_ak74                        = 2, 0.8
-wpn_ak74u                       = 2, 0.8
-wpn_hpsa                        = 2, 0.5
-wpn_l85                         = 2, 0.5
-
-detector_advanced               = 1, 0.8
-
-[supplies_exp_3]:supplies_exp_2
-ammo_11.43x23_fmj               = 10, 0.5
-ammo_5.45x39_fmj                = 15, 0.7
-ammo_5.56x45_ss190              = 15, 0.7
-
-wpn_beretta                     = 1, 0.5
-wpn_colt1911                    = 1, 0.5
-wpn_lr300                       = 1, 0.5
-
-scientific_outfit               = 2, 0.5
-
-detector_advanced               = 2, 0.5
-
-[trade_generic_sell]:trade_nothing
-ammo_11.43x23_fmj               = 1.5, 1.5
-ammo_12x70_buck                 = 1.5, 1.5
-ammo_12x76_zhekan               = 1.5, 1.5
-ammo_5.45x39_fmj                = 1.5, 1.5
-ammo_5.56x45_ss190              = 1.5, 1.5
-ammo_9x18_fmj                   = 1.5, 1.5
-ammo_9x19_fmj                   = 1.5, 1.5
-grenade_rgd5                    = 1.5, 1.5
-
-wpn_ak74                        = 1.5, 1.5
-wpn_ak74u                       = 1.5, 1.5
-wpn_beretta                     = 1.5, 1.5
-wpn_bm16                        = 1.5, 1.5
-wpn_colt1911                    = 1.5, 1.5
-wpn_fort                        = 1.5, 1.5
-wpn_hpsa                        = 1.5, 1.5
-wpn_l85                         = 1.5, 1.5
-wpn_lr300                       = 1.5, 1.5
-wpn_mp5                         = 1.5, 1.5
-wpn_pm                          = 1.5, 1.5
-wpn_toz34                       = 1.5, 1.5
-wpn_wincheaster1300             = 1.5, 1.5
-
-novice_outfit                   = 1.5, 1.5
-
-bandage                         = 1.5, 1.5
-medkit                          = 1.5, 1.5
-
-conserva                        = 1.5, 1.5
-vodka                           = 1.5, 1.5
-
-detector_advanced               = 1.5, 1.5
-detector_simple                 = 1.5, 1.5
-
-[trade_friend_sell]:trade_generic_sell
-ammo_11.43x23_fmj               = 1, 1
-ammo_12x70_buck                 = 1, 1
-ammo_12x76_zhekan               = 1, 1
-ammo_5.45x39_fmj                = 1, 1
-ammo_5.56x45_ss190              = 1, 1
-ammo_9x18_fmj                   = 1, 1
-ammo_9x19_fmj                   = 1, 1
-grenade_rgd5                    = 1, 1
-
+wpn_abakan                      = 1, 1
 wpn_ak74                        = 1, 1
 wpn_ak74u                       = 1, 1
 wpn_beretta                     = 1, 1
 wpn_bm16                        = 1, 1
 wpn_colt1911                    = 1, 1
+wpn_desert_eagle                = 1, 1
+wpn_fn2000                      = 1, 1
 wpn_fort                        = 1, 1
+wpn_g36                         = 1, 1
+wpn_gauss                       = 1, 1
+wpn_groza                       = 1, 1
 wpn_hpsa                        = 1, 1
 wpn_l85                         = 1, 1
 wpn_lr300                       = 1, 1
 wpn_mp5                         = 1, 1
+wpn_pb                          = 1, 1
+wpn_pkm                         = 1, 1
 wpn_pm                          = 1, 1
+wpn_rg-6                        = 1, 1
+wpn_rpg7                        = 1, 1
+wpn_sig220                      = 1, 1
+wpn_sig550                      = 1, 1
+wpn_spas12                      = 1, 1
+wpn_svd                         = 1, 1
+wpn_svu                         = 1, 1
 wpn_toz34                       = 1, 1
+wpn_usp                         = 1, 1
+wpn_val                         = 1, 1
+wpn_vintorez                    = 1, 1
+wpn_walther                     = 1, 1
 wpn_wincheaster1300             = 1, 1
 
+wpn_addon_grenade_launcher      = 5, 1
+wpn_addon_grenade_launcher_m203 = 5, 1
+wpn_addon_scope                 = 5, 1
+wpn_addon_scope_susat           = 5, 1
+wpn_addon_silencer              = 5, 1
+
+bandit_outfit                   = 1, 1
+cs_heavy_outfit                 = 1, 1
+cs_light_outfit                 = 1, 1
+dolg_heavy_outfit               = 1, 1
+dolg_outfit                     = 1, 1
 exo_outfit                      = 1, 1
+military_outfit                 = 1, 1
 novice_outfit                   = 1, 1
 scientific_outfit               = 1, 1
+specops_outfit                  = 1, 1
 stalker_outfit                  = 1, 1
+svoboda_exo_outfit              = 1, 1
+svoboda_heavy_outfit            = 1, 1
+svoboda_light_outfit            = 1, 1
 
-antirad                         = 1, 1
-bandage                         = 1, 1
-medkit                          = 1, 1
-
-conserva                        = 1, 1
-vodka                           = 1, 1
+antirad                         = 50, 1
+bandage                         = 50, 1
+medkit                          = 50, 1
+medkit_army                     = 50, 1
+medkit_scientic                 = 50, 1
 
 detector_advanced               = 1, 1
 detector_elite                  = 1, 1
 detector_simple                 = 1, 1
+
+stalker_outfit_up_stalk         = 1, 1
+wpn_abakan_up2                  = 1, 1
+wpn_ak74_up                     = 1, 1
+wpn_ak74_up2                    = 1, 1
+wpn_colt1911_up2                = 1, 1
+wpn_desert_eagle_up             = 1, 1
+wpn_fort_up                     = 1, 1
+wpn_g36_up2                     = 1, 1
+wpn_lr300_up2                   = 1, 1
+wpn_pm_9x19                     = 1, 1
+wpn_pm_up                       = 1, 1
+wpn_sig550_up2                  = 1, 1
+wpn_vintorez_up                 = 1, 1
+wpn_walther_up2                 = 1, 1
+
+[supplies_exp_1]:supplies_generic
+
+[supplies_exp_2]:supplies_exp_1
+
+[supplies_exp_3]:supplies_exp_2
+
+[trade_generic_sell]:trade_nothing
+af_baloon                       = 0, 0
+af_blood                        = 0, 0
+af_cristall                     = 0, 0
+af_cristall_flower              = 0, 0
+af_dummy_battery                = 0, 0
+af_dummy_dummy                  = 0, 0
+af_dummy_glassbeads             = 0, 0
+af_electra_flash                = 0, 0
+af_electra_moonlight            = 0, 0
+af_electra_sparkler             = 0, 0
+af_eye                          = 0, 0
+af_fire                         = 0, 0
+af_fireball                     = 0, 0
+af_fuzz_kolobok                 = 0, 0
+af_glass                        = 0, 0
+af_gold_fish                    = 0, 0
+af_gravi                        = 0, 0
+af_ice                          = 0, 0
+af_medusa                       = 0, 0
+af_mincer_meat                  = 0, 0
+af_night_star                   = 0, 0
+af_soul                         = 0, 0
+af_vyvert                       = 0, 0
+
+ammo_11.43x23_fmj               = 0, 0
+ammo_11.43x23_hydro             = 0, 0
+ammo_12x70_buck                 = 0, 0
+ammo_12x76_dart                 = 0, 0
+ammo_12x76_zhekan               = 0, 0
+ammo_5.45x39_ap                 = 0, 0
+ammo_5.45x39_fmj                = 0, 0
+ammo_5.56x45_ap                 = 0, 0
+ammo_5.56x45_ss190              = 0, 0
+ammo_7.62x54_7h1                = 0, 0
+ammo_7.62x54_7h14               = 0, 0
+ammo_7.62x54_ap                 = 0, 0
+ammo_9x18_fmj                   = 0, 0
+ammo_9x18_pmm                   = 0, 0
+ammo_9x19_fmj                   = 0, 0
+ammo_9x19_pbp                   = 0, 0
+ammo_9x39_ap                    = 0, 0
+ammo_9x39_pab9                  = 0, 0
+ammo_9x39_sp5                   = 0, 0
+ammo_gauss                      = 0, 0
+ammo_m209                       = 0, 0
+ammo_og-7b                      = 0, 0
+ammo_pkm_100                    = 0, 0
+ammo_vog-25                     = 0, 0
+ammo_vog-25p                    = 0, 0
+grenade_f1                      = 0, 0
+grenade_rgd5                    = 0, 0
+
+wpn_abakan                      = 0, 0
+wpn_ak74                        = 0, 0
+wpn_ak74u                       = 0, 0
+wpn_beretta                     = 0, 0
+wpn_bm16                        = 0, 0
+wpn_colt1911                    = 0, 0
+wpn_desert_eagle                = 0, 0
+wpn_fn2000                      = 0, 0
+wpn_fort                        = 0, 0
+wpn_g36                         = 0, 0
+wpn_gauss                       = 0, 0
+wpn_groza                       = 0, 0
+wpn_hpsa                        = 0, 0
+wpn_l85                         = 0, 0
+wpn_lr300                       = 0, 0
+wpn_mp5                         = 0, 0
+wpn_pb                          = 0, 0
+wpn_pkm                         = 0, 0
+wpn_pm                          = 0, 0
+wpn_rg-6                        = 0, 0
+wpn_rpg7                        = 0, 0
+wpn_sig220                      = 0, 0
+wpn_sig550                      = 0, 0
+wpn_spas12                      = 0, 0
+wpn_svd                         = 0, 0
+wpn_svu                         = 0, 0
+wpn_toz34                       = 0, 0
+wpn_usp                         = 0, 0
+wpn_val                         = 0, 0
+wpn_vintorez                    = 0, 0
+wpn_walther                     = 0, 0
+wpn_wincheaster1300             = 0, 0
+
+wpn_addon_grenade_launcher      = 0, 0
+wpn_addon_grenade_launcher_m203 = 0, 0
+wpn_addon_scope                 = 0, 0
+wpn_addon_scope_susat           = 0, 0
+wpn_addon_silencer              = 0, 0
+
+bandit_outfit                   = 0, 0
+cs_heavy_outfit                 = 0, 0
+cs_light_outfit                 = 0, 0
+dolg_heavy_outfit               = 0, 0
+dolg_outfit                     = 0, 0
+exo_outfit                      = 0, 0
+military_outfit                 = 0, 0
+novice_outfit                   = 0, 0
+scientific_outfit               = 0, 0
+specops_outfit                  = 0, 0
+stalker_outfit                  = 0, 0
+svoboda_exo_outfit              = 0, 0
+svoboda_heavy_outfit            = 0, 0
+svoboda_light_outfit            = 0, 0
+
+antirad                         = 0, 0
+bandage                         = 0, 0
+medkit                          = 0, 0
+medkit_army                     = 0, 0
+medkit_scientic                 = 0, 0
+
+detector_advanced               = 0, 0
+detector_elite                  = 0, 0
+detector_simple                 = 0, 0
+
+stalker_outfit_up_stalk         = 0, 0
+wpn_abakan_up2                  = 0, 0
+wpn_ak74_up                     = 0, 0
+wpn_ak74_up2                    = 0, 0
+wpn_colt1911_up2                = 0, 0
+wpn_desert_eagle_up             = 0, 0
+wpn_fort_up                     = 0, 0
+wpn_g36_up2                     = 0, 0
+wpn_lr300_up2                   = 0, 0
+wpn_pm_9x19                     = 0, 0
+wpn_pm_up                       = 0, 0
+wpn_sig550_up2                  = 0, 0
+wpn_vintorez_up                 = 0, 0
+wpn_walther_up2                 = 0, 0
+
+[trade_friend_sell]:trade_generic_sell
+
+[trade_generic_buy]:trade_nothing
+af_baloon                       = 1, 1
+af_blood                        = 1, 1
+af_cristall                     = 1, 1
+af_cristall_flower              = 1, 1
+af_dummy_battery                = 1, 1
+af_dummy_dummy                  = 1, 1
+af_dummy_glassbeads             = 1, 1
+af_electra_flash                = 1, 1
+af_electra_moonlight            = 1, 1
+af_electra_sparkler             = 1, 1
+af_eye                          = 1, 1
+af_fire                         = 1, 1
+af_fireball                     = 1, 1
+af_fuzz_kolobok                 = 1, 1
+af_glass                        = 1, 1
+af_gold_fish                    = 1, 1
+af_gravi                        = 1, 1
+af_ice                          = 1, 1
+af_medusa                       = 1, 1
+af_mincer_meat                  = 1, 1
+af_night_star                   = 1, 1
+af_soul                         = 1, 1
+af_vyvert                       = 1, 1
+
+ammo_11.43x23_fmj               = 1, 1
+ammo_11.43x23_hydro             = 1, 1
+ammo_12x70_buck                 = 1, 1
+ammo_12x76_dart                 = 1, 1
+ammo_12x76_zhekan               = 1, 1
+ammo_5.45x39_ap                 = 1, 1
+ammo_5.45x39_fmj                = 1, 1
+ammo_5.56x45_ap                 = 1, 1
+ammo_5.56x45_ss190              = 1, 1
+ammo_7.62x54_7h1                = 1, 1
+ammo_7.62x54_7h14               = 1, 1
+ammo_7.62x54_ap                 = 1, 1
+ammo_9x18_fmj                   = 1, 1
+ammo_9x18_pmm                   = 1, 1
+ammo_9x19_fmj                   = 1, 1
+ammo_9x19_pbp                   = 1, 1
+ammo_9x39_ap                    = 1, 1
+ammo_9x39_pab9                  = 1, 1
+ammo_9x39_sp5                   = 1, 1
+ammo_gauss                      = 1, 1
+ammo_m209                       = 1, 1
+ammo_og-7b                      = 1, 1
+ammo_pkm_100                    = 1, 1
+ammo_vog-25                     = 1, 1
+ammo_vog-25p                    = 1, 1
+grenade_f1                      = 1, 1
+grenade_rgd5                    = 1, 1
+
+wpn_abakan                      = 1, 1
+wpn_ak74                        = 1, 1
+wpn_ak74u                       = 1, 1
+wpn_beretta                     = 1, 1
+wpn_bm16                        = 1, 1
+wpn_colt1911                    = 1, 1
+wpn_desert_eagle                = 1, 1
+wpn_fn2000                      = 1, 1
+wpn_fort                        = 1, 1
+wpn_g36                         = 1, 1
+wpn_gauss                       = 1, 1
+wpn_groza                       = 1, 1
+wpn_hpsa                        = 1, 1
+wpn_l85                         = 1, 1
+wpn_lr300                       = 1, 1
+wpn_mp5                         = 1, 1
+wpn_pb                          = 1, 1
+wpn_pkm                         = 1, 1
+wpn_pm                          = 1, 1
+wpn_rg-6                        = 1, 1
+wpn_rpg7                        = 1, 1
+wpn_sig220                      = 1, 1
+wpn_sig550                      = 1, 1
+wpn_spas12                      = 1, 1
+wpn_svd                         = 1, 1
+wpn_svu                         = 1, 1
+wpn_toz34                       = 1, 1
+wpn_usp                         = 1, 1
+wpn_val                         = 1, 1
+wpn_vintorez                    = 1, 1
+wpn_walther                     = 1, 1
+wpn_wincheaster1300             = 1, 1
+
+wpn_addon_grenade_launcher      = 1, 1
+wpn_addon_grenade_launcher_m203 = 1, 1
+wpn_addon_scope                 = 1, 1
+wpn_addon_scope_susat           = 1, 1
+wpn_addon_silencer              = 1, 1
+
+bandit_outfit                   = 1, 1
+cs_heavy_outfit                 = 1, 1
+cs_light_outfit                 = 1, 1
+dolg_heavy_outfit               = 1, 1
+dolg_outfit                     = 1, 1
+exo_outfit                      = 1, 1
+military_outfit                 = 1, 1
+novice_outfit                   = 1, 1
+scientific_outfit               = 1, 1
+specops_outfit                  = 1, 1
+stalker_outfit                  = 1, 1
+svoboda_exo_outfit              = 1, 1
+svoboda_heavy_outfit            = 1, 1
+svoboda_light_outfit            = 1, 1
+
+antirad                         = 1, 1
+bandage                         = 1, 1
+medkit                          = 1, 1
+medkit_army                     = 1, 1
+medkit_scientic                 = 1, 1
+
+detector_advanced               = 1, 1
+detector_elite                  = 1, 1
+detector_simple                 = 1, 1
+
+stalker_outfit_up_stalk         = 1, 1
+wpn_abakan_up2                  = 1, 1
+wpn_ak74_up                     = 1, 1
+wpn_ak74_up2                    = 1, 1
+wpn_colt1911_up2                = 1, 1
+wpn_desert_eagle_up             = 1, 1
+wpn_fort_up                     = 1, 1
+wpn_g36_up2                     = 1, 1
+wpn_lr300_up2                   = 1, 1
+wpn_pm_9x19                     = 1, 1
+wpn_pm_up                       = 1, 1
+wpn_sig550_up2                  = 1, 1
+wpn_vintorez_up                 = 1, 1
+wpn_walther_up2                 = 1, 1
