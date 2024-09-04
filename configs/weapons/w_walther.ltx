@@ -54,12 +54,12 @@ kill_msg_height         = 23
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base    = 0.8           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base    = 0.7           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_dispersion          = 0.5           ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 0.5           ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 0.5           ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion          = 0.5
+cam_dispersion_inc      = 0
+cam_step_angle_horz     = 5
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability         = 0.002         ;вероятность осечки при максимальном износе
@@ -67,17 +67,17 @@ condition_shot_dec          = 0.0005        ;увеличение износа при каждом выстре
 
 ;-------------------------------------------------------------------------------
 ; ttc
-hit_power                       = 0.5, 0.5, 0.5, 0.5
-hit_impulse                     = 75
+hit_power                       = 0.55
+hit_impulse                     = 55
 
-PDM_disp_base                   = 1.0
-PDM_disp_vel_factor             = 0.8
-PDM_disp_accel_factor       = 0.8
+PDM_disp_base               = 0.4
+PDM_disp_vel_factor         = 0.4
+PDM_disp_accel_factor       = 0.4
 
 time_to_aim                     = 1.0
 
-bullet_speed                = 200
-rpm                         = 300
+bullet_speed                = 240
+rpm                         = 480
 ; end ttc
 
 

@@ -53,12 +53,12 @@ kill_msg_height         = 25
 
 ;-------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base        = 0.7           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 0.6           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_dispersion              = 1.0               ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc          = 1.0               ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz         = 1.0               ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion              = 0.4
+cam_dispersion_inc          = 0
+cam_step_angle_horz         = 4
 
 fire_dispersion_condition_factor = 5        ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability             = 0.005         ;вероятность осечки при максимальном износе
@@ -66,17 +66,17 @@ condition_shot_dec          = 0.00130       ;увеличение износа при каждом выстре
 
 ;-------------------------------------------------------------------------------
 ; ttc
-hit_power                   = 0.5, 0.5, 0.5, 0.5
-hit_impulse                 = 100
+hit_power                   = 0.7
+hit_impulse                 = 70
 
-PDM_disp_base               = 1.0
-PDM_disp_vel_factor         = 0.3
-PDM_disp_accel_factor       = 0.3
+PDM_disp_base               = 0.4
+PDM_disp_vel_factor         = 0.4
+PDM_disp_accel_factor       = 0.4
 
 time_to_aim                 = 1.0
 
-bullet_speed                = 150
-rpm                         = 350
+bullet_speed                = 300
+rpm                         = 510
 ; end ttc
 
 
@@ -234,10 +234,10 @@ inv_name_short          = st_wpn_223_pistol
 
 fire_dispersion_base    = 0.2           ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
-cam_dispersion          = 2.0               ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 2.0               ;увеличениe cam_dispersion с каждым выстрелом
-cam_step_angle_horz     = 2.0
+cam_dispersion          = 1.2
+cam_dispersion_inc      = 0
+cam_step_angle_horz     = 12
 
-hit_power               = 1.0, 1.0, 1.0, 1.0
+hit_power               = 0.9
 
 bullet_speed            = 700
