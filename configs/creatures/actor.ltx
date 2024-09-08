@@ -83,8 +83,8 @@ camera_height_factor                        = 0.92 ;0.85
 disp_base                    = 2            ;угол (в градусах) разлета пуль, когда актер стоит на месте
 disp_aim                     = 0
 disp_vel_factor              = 1.5          ;на сколько увеличится дисперсия при скрости в 10 м/с (не обязательно при беге)
-disp_jump_factor             = 1.5
-disp_accel_factor            = 1.5          ;еще на сколько увеличится, если актер бежит (+ скорость)
+disp_jump_factor             = 0
+disp_accel_factor            = 0          ;еще на сколько увеличится, если актер бежит (+ скорость)
 disp_crouch_factor           = 0            ;уменьшение если актер сидит
 disp_crouch_no_acc_factor    = 0            ;уменьшение если актер сидит + no acceleration
 
@@ -119,49 +119,49 @@ transparency_threshold                 = 0.4                                ; 0.
 still_visible_time                        = 5000                                ; время, которое объект всё ещё считается видимым, даже если он уже не во фрустуме
 
 [actor_immunities_gd_novice]
-burn_immunity           = 0.25                               ;коэффициенты иммунитета
-strike_immunity         = 0.25
+chemical_burn_immunity  = 0.25
 shock_immunity          = 0.25
-wound_immunity          = 0.25
+burn_immunity           = 0.25
 radiation_immunity      = 0.25
 telepatic_immunity      = 0.25
-chemical_burn_immunity  = 0.25
-explosion_immunity      = 0.25
-fire_wound_immunity     = 0.25
+wound_immunity          = 0.25
+strike_immunity         = 0.25
+explosion_immunity      = 0.1875
+fire_wound_immunity     = 0.125
 
 
 [actor_immunities_gd_stalker]
-burn_immunity           = 0.50                                ;коэффициенты иммунитета
-strike_immunity         = 0.50
+chemical_burn_immunity  = 0.50
 shock_immunity          = 0.50
-wound_immunity          = 0.50
+burn_immunity           = 0.50
 radiation_immunity      = 0.50
 telepatic_immunity      = 0.50
-chemical_burn_immunity  = 0.50
-explosion_immunity      = 0.50
-fire_wound_immunity     = 0.50
+wound_immunity          = 0.50
+strike_immunity         = 0.50
+explosion_immunity      = 0.375
+fire_wound_immunity     = 0.25
 
 [actor_immunities_gd_veteran]
-burn_immunity           = 0.75                                ;коэффициенты иммунитета
-strike_immunity         = 0.75
+chemical_burn_immunity  = 0.75
 shock_immunity          = 0.75
-wound_immunity          = 0.75
+burn_immunity           = 0.75
 radiation_immunity      = 0.75
 telepatic_immunity      = 0.75
-chemical_burn_immunity  = 0.75
-explosion_immunity      = 0.75
-fire_wound_immunity     = 0.75
+wound_immunity          = 0.75
+strike_immunity         = 0.75
+explosion_immunity      = 0.5625
+fire_wound_immunity     = 0.375
 
 [actor_immunities_gd_master]
-burn_immunity           = 1.00                                ;коэффициенты иммунитета
-strike_immunity         = 1.00
+chemical_burn_immunity  = 1.00
 shock_immunity          = 1.00
-wound_immunity          = 1.00
+burn_immunity           = 1.00
 radiation_immunity      = 1.00
 telepatic_immunity      = 1.00
-chemical_burn_immunity  = 1.00
-explosion_immunity      = 1.00
-fire_wound_immunity     = 1.00
+wound_immunity          = 1.00
+strike_immunity         = 1.00
+explosion_immunity      = 0.75
+fire_wound_immunity     = 0.5
 
 [actor_condition]
 satiety_v               = 0.000015  ;скорость уменьшения сытости со временем
