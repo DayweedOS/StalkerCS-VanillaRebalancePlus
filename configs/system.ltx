@@ -180,22 +180,21 @@ max_count     = 5
 
 [bloody_marks]
 wallmarks     = wm\wm_blood_1,wm\wm_blood_2,wm\wm_blood_3
-dist        = 2.0 ;2.4  ;(м) max расстољние отлета крови
-max_size      = 0.4 ;0.3  ;(м)радиус пљтна при хите силой nominal hit по большому объекту (по маленькому *0.5)
-min_size      = 0.06      ;(м)минимальнvй радиус пљтна
-nominal_hit     = 0.5     ;величина номинального хита, при котором разлетаетсљ максимум крови (max_size)
+dist          = 4.0       ;(м) max расстољние отлета крови
+max_size      = 0.8       ;(м)радиус пљтна при хите силой nominal hit по большому объекту (по маленькому *0.5)
+min_size      = 0.05      ;(м)минимальнvй радиус пљтна
+nominal_hit   = 0.8       ;величина номинального хита, при котором разлетаетсљ максимум крови (max_size)
 
 ;капли крови
 
-blood_drops     = wm\wm_blood_drop_1,wm\wm_blood_drop_2,wm\wm_blood_drop_3,wm\wm_blood_drop_4
-start_blood_size  = 0.4     ;размер ранv чтоб начала капать кровь
-stop_blood_size   = 0.025     ;размер ранv чтоб кровь остановилась (должно бvть меньше start_blood_size)
+blood_drops        = wm\wm_blood_drop_1,wm\wm_blood_drop_2,wm\wm_blood_drop_3,wm\wm_blood_drop_4
+start_blood_size   = 0.4       ;размер ранv чтоб начала капать кровь
+stop_blood_size    = 0.025     ;размер ранv чтоб кровь остановилась (должно бvть меньше start_blood_size)
 
 blood_drop_time     = 0.1     ;OBSOLETE
 blood_drop_time_min = 0.3     ;
 blood_drop_time_max = 2.0     ;
-blood_drop_size   = 0.1     ;размер капли (м) крови, котораљ упала
-
+blood_drop_size     = 0.1     ;размер капли (м) крови, котораљ упала
 
 [entity_fire_particles]
 fire_particles = damage_fx\burn_creatures
@@ -250,7 +249,7 @@ visual        = dynamics\equipments\item_document_1.ogf
 
 inv_name      = Document
 inv_name_short    = Document
-inv_weight      = 1 ;0.2
+inv_weight      = 0
 
 inv_grid_width    = 1
 inv_grid_height   = 1
