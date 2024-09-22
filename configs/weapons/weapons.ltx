@@ -1140,9 +1140,9 @@ ph_mass          = 5
 jump_height = 1
 
 ;трассы от осколков
-fragment_speed      = 32
+fragment_speed              = 32
 
-wm_size             = 0.002
+wm_size                    = 0.002
 ;wallmarks
 wallmark_section         = explosion_marks
 explode_duration         = 5        ;подолжительность взрыва (с)
@@ -1252,8 +1252,178 @@ force_explode_time  = 10000
 ;; Explosive Inventory Items
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-[explosive_fuelcan]:identity_immunities,delayed_action_fuse,default_weapon_params
+[explosive_grenade]:identity_immunities,delayed_action_fuse,default_weapon_params
+GroupControlSection = spawn_group
+discovery_dependency =
+$spawn              = "weapons\explosive\explosive_grenade"
+$prefetch           = 16
+class               = II_EXPLO
+cform               = skeleton
+visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
+inv_name            =
+inv_name_short      =
+inv_weight          = .32
 
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 9
+inv_grid_y          = 9
+;вещь невозможно подобрать
+can_take            = false
+
+cost                = 960
+;-------------------------------------------------------------------------------
+blast                   = 2.40
+blast_r                 = 8.00
+blast_impulse           = 320
+blast_impulse_factor    = 1
+
+frags                   = 256
+frags_r                 = 16
+frag_hit                = 0.5
+frag_hit_impulse        = 10
+
+hit_type_blast      = explosion
+hit_type_frag       = fire_wound
+
+up_throw_factor     = 0
+;-------------------------------------------------------------------------------
+wm_size                  = 0.002
+
+explode_particles        = explosions\explosion_01
+
+light_color              = 1.9,1.4,0.5
+light_range              = 16
+light_time               = 1
+
+;трассы от осколков
+fragment_speed              = 32
+
+explode_duration         = 3        ;подолжительность взрыва (с)
+
+;wallmarks
+wallmark_section         = explosion_marks
+;звуки
+snd_explode = weapons\t_rgd5_explosion
+immunities_sect         = standard_explosive_immunities_definition
+
+;time_to_explode            = 0.f
+
+[explosive_hide]:identity_immunities,delayed_action_fuse,default_weapon_params
+GroupControlSection = spawn_group
+discovery_dependency =
+$spawn              = "weapons\explosive\explosive_hide"
+$prefetch           = 16
+class               = II_EXPLO
+cform               = skeleton
+visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
+inv_name            =
+inv_name_short      =
+inv_weight          = .1
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 9
+inv_grid_y          = 9
+;вещь невозможно подобрать
+can_take            = false
+
+cost                = 500
+;-------------------------------------------------------------------------------
+blast                   = 2.40
+blast_r                 = 8.00
+blast_impulse           = 320
+blast_impulse_factor    = 1
+
+frags                   = 256
+frags_r                 = 16
+frag_hit                = 0.5
+frag_hit_impulse        = 10
+
+hit_type_blast      = explosion
+hit_type_frag       = fire_wound
+
+up_throw_factor     = 0
+;-------------------------------------------------------------------------------
+wm_size                  = 0.002
+
+explode_particles        = explosions\explosion_01
+
+light_color              = 1.9,1.4,0.5
+light_range              = 14.0
+light_time               = 0.85
+
+;трассы от осколков
+fragment_speed              = 32
+
+explode_duration         = 5        ;подолжительность взрыва (с)
+
+;wallmarks
+wallmark_section         = explosion_marks
+;звуки
+snd_explode = weapons\rpg7_explode
+immunities_sect         = standard_explosive_immunities_definition
+
+;time_to_explode            = 0.f
+
+[explosive_particle]:identity_immunities,delayed_action_fuse,default_weapon_params
+GroupControlSection = spawn_group
+discovery_dependency =
+$spawn              = "weapons\explosive\explosive_particle"
+$prefetch           = 16
+class               = II_EXPLO
+cform               = skeleton
+visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
+inv_name            =
+inv_name_short      =
+inv_weight          = .1
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 9
+inv_grid_y          = 9
+;вещь невозможно подобрать
+can_take            = false
+
+cost                = 500
+;-------------------------------------------------------------------------------
+blast               = 0.25
+blast_r             = 3
+blast_impulse       = 50
+blast_impulse_factor = 1
+
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
+
+hit_type_blast      = explosion
+hit_type_frag       = fire_wound
+
+up_throw_factor     = 0
+;-------------------------------------------------------------------------------
+wm_size                  = 0.002
+
+explode_particles        = explosions\explosion_concrete_box
+
+light_color              = 0,0,0
+light_range              = 0.0
+light_time               = 0.85
+
+;трассы от осколков
+fragment_speed              = 32
+
+explode_duration         = 2        ;подолжительность взрыва (с)
+
+;wallmarks
+wallmark_section         = explosion_marks
+;звуки
+snd_explode = weapons\f1_explode_
+immunities_sect         = standard_explosive_immunities_definition
+
+;time_to_explode            = 0.f
+
+[explosive_fuelcan]:identity_immunities,delayed_action_fuse,default_weapon_params
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\fuelcan"
@@ -1278,17 +1448,15 @@ cost                = 50
 blast               = 1.50
 blast_r             = 8
 blast_impulse       = 250
-;delete
 blast_impulse_factor = 1
 
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 150
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
 hit_type_blast      = explosion
-hit_type_frag       = burn
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1301,30 +1469,17 @@ light_range              = 30.0
 light_time               = 1.5
 
 ;трассы от осколков
-fragment_speed              = 100
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 ;wallmarks
 wallmark_section        = explosion_marks
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = explosive_fuelcan_immunities_sect
-
-[explosive_fuelcan_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 1.0
-shock_immunity          = 1.0
-wound_immunity          = 1.0
-radiation_immunity      = 1.0
-telepatic_immunity      = 1.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 1.0
-fire_wound_immunity     = 0.7
+immunities_sect         = standard_explosive_immunities_definition
 
 
 [explosive_tank]:identity_immunities,delayed_action_fuse,default_weapon_params
-
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\tank"
@@ -1348,17 +1503,15 @@ cost                = 50
 blast               = 1.50
 blast_r             = 8
 blast_impulse       = 250
-;delete
 blast_impulse_factor = 1
 
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 150
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
 hit_type_blast      = explosion
-hit_type_frag       = burn
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1371,7 +1524,7 @@ light_range              = 30.0
 light_time               = 1
 
 ;трассы от осколков
-fragment_speed              = 100       ;скорость осколков (м/с)
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 ;wallmarks
@@ -1379,23 +1532,10 @@ wallmark_section        = explosion_marks
 
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = explosive_tank_immunities_sect
-
-[explosive_tank_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 1.0
-shock_immunity          = 1.0
-wound_immunity          = 1.0
-radiation_immunity      = 1.0
-telepatic_immunity      = 1.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 1.0
-fire_wound_immunity     = 0.7
+immunities_sect         = standard_explosive_immunities_definition
 
 
 [explosive_barrel_low]:identity_immunities,delayed_action_fuse,default_weapon_params
-
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\barrel_low"
@@ -1419,17 +1559,15 @@ cost                = 500
 blast               = 1.50
 blast_r             = 8
 blast_impulse       = 250
-;delete
 blast_impulse_factor = 1
 
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 150
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
 hit_type_blast      = explosion
-hit_type_frag       = burn
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1442,7 +1580,7 @@ light_range              = 14.0
 light_time               = 0.85
 
 ;трассы от осколков
-fragment_speed              = 100       ;скорость осколков (м/с)
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 
@@ -1450,229 +1588,12 @@ explode_duration         = 5        ;подолжительность взрыва (с)
 wallmark_section         = explosion_marks
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = explosive_barrel_low_immunities_sect
+immunities_sect         = standard_explosive_immunities_definition
 
 ;time_to_explode            = 0.f
-
-[explosive_grenade]:identity_immunities,delayed_action_fuse,default_weapon_params
-
-GroupControlSection = spawn_group
-discovery_dependency =
-$spawn              = "weapons\explosive\explosive_grenade"
-$prefetch           = 16
-class               = II_EXPLO
-cform               = skeleton
-visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
-inv_name            =
-inv_name_short      =
-inv_weight          = .1
-
-inv_grid_width      = 1
-inv_grid_height     = 1
-inv_grid_x          = 9
-inv_grid_y          = 9
-;вещь невозможно подобрать
-can_take            = false
-
-cost                = 500
-;-------------------------------------------------------------------------------
-blast               = 2.50
-blast_r             = 3
-blast_impulse       = 250
-;delete
-blast_impulse_factor = 1
-
-
-frags               = 15
-frags_r             = 5
-frag_hit            = 0.75
-frag_hit_impulse    = 150
-
-hit_type_blast      = explosion
-hit_type_frag       = fire_wound
-
-up_throw_factor     = 0
-;-------------------------------------------------------------------------------
-wm_size                  = 0.002
-
-explode_particles        = explosions\explosion_01
-
-light_color              = 1.9,1.4,0.5
-light_range              = 14.0
-light_time               = 0.85
-
-;трассы от осколков
-fragment_speed              = 100       ;скорость осколков (м/с)
-
-explode_duration         = 2        ;подолжительность взрыва (с)
-
-;wallmarks
-wallmark_section         = explosion_marks
-;звуки
-snd_explode = weapons\t_rgd5_explosion
-immunities_sect         = explosive_explosive_grenade_immunities_sect
-
-;time_to_explode            = 0.f
-
-[explosive_explosive_grenade_immunities_sect]
-burn_immunity           = 0.0
-strike_immunity         = 0.0
-shock_immunity          = 0.0
-wound_immunity          = 0.0
-radiation_immunity      = 0.0
-telepatic_immunity      = 0.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 0.0
-fire_wound_immunity     = 0.0
-
-[explosive_hide]:identity_immunities,delayed_action_fuse,default_weapon_params
-
-GroupControlSection = spawn_group
-discovery_dependency =
-$spawn              = "weapons\explosive\explosive_hide"
-$prefetch           = 16
-class               = II_EXPLO
-cform               = skeleton
-visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
-inv_name            =
-inv_name_short      =
-inv_weight          = .1
-
-inv_grid_width      = 1
-inv_grid_height     = 1
-inv_grid_x          = 9
-inv_grid_y          = 9
-;вещь невозможно подобрать
-can_take            = false
-
-cost                = 500
-;-------------------------------------------------------------------------------
-blast               = 1.00
-blast_r             = 30
-blast_impulse       = 500
-;delete
-blast_impulse_factor = 1
-
-
-frags               = 15
-frags_r             = 20
-frag_hit            = 0.05
-frag_hit_impulse    = 50
-
-hit_type_blast      = explosion
-hit_type_frag       = fire_wound
-
-up_throw_factor     = 0
-;-------------------------------------------------------------------------------
-wm_size                  = 0.002
-
-explode_particles        = explosions\explosion_01
-
-light_color              = 1.9,1.4,0.5
-light_range              = 14.0
-light_time               = 0.85
-
-;трассы от осколков
-fragment_speed              = 50        ;скорость осколков (м/с)
-
-explode_duration         = 5        ;подолжительность взрыва (с)
-
-;wallmarks
-wallmark_section         = explosion_marks
-;звуки
-snd_explode = weapons\rpg7_explode
-immunities_sect         = explosive_hide_immunities_sect
-
-;time_to_explode            = 0.f
-
-[explosive_hide_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 0.0
-shock_immunity          = 0.0
-wound_immunity          = 0.0
-radiation_immunity      = 0.0
-telepatic_immunity      = 0.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 0.0
-fire_wound_immunity     = 0.0
-
-[explosive_particle]:identity_immunities,delayed_action_fuse,default_weapon_params
-
-GroupControlSection = spawn_group
-discovery_dependency =
-$spawn              = "weapons\explosive\explosive_particle"
-$prefetch           = 16
-class               = II_EXPLO
-cform               = skeleton
-visual              = dynamics\weapons\wpn_grenades\wpn_f1.ogf
-inv_name            =
-inv_name_short      =
-inv_weight          = .1
-
-inv_grid_width      = 1
-inv_grid_height     = 1
-inv_grid_x          = 9
-inv_grid_y          = 9
-;вещь невозможно подобрать
-can_take            = false
-
-cost                = 500
-;-------------------------------------------------------------------------------
-blast               = 0.25
-blast_r             = 3
-blast_impulse       = 50
-;delete
-blast_impulse_factor = 1
-
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 50
-
-hit_type_blast      = explosion
-hit_type_frag       = fire_wound
-
-up_throw_factor     = 0
-;-------------------------------------------------------------------------------
-wm_size                  = 0.002
-
-explode_particles        = explosions\explosion_concrete_box
-
-light_color              = 0,0,0
-light_range              = 0.0
-light_time               = 0.85
-
-;трассы от осколков
-fragment_speed              = 25        ;скорость осколков (м/с)
-
-explode_duration         = 2        ;подолжительность взрыва (с)
-
-;wallmarks
-wallmark_section         = explosion_marks
-;звуки
-snd_explode = weapons\f1_explode_
-immunities_sect         = explosive_barrel_low_immunities_sect
-
-;time_to_explode            = 0.f
-
-
-[explosive_barrel_low_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 1
-strike_immunity         = 1
-shock_immunity          = 1
-wound_immunity          = 1
-radiation_immunity      = 1
-telepatic_immunity      = 1
-chemical_burn_immunity  = 1
-explosion_immunity      = 1
-fire_wound_immunity     = 5
 
 
 [explosive_barrel]:identity_immunities,delayed_action_fuse,default_weapon_params
-
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\barrel"
@@ -1696,17 +1617,15 @@ cost                = 500
 blast               = 1.50
 blast_r             = 8
 blast_impulse       = 250
-;delete
 blast_impulse_factor = 1
 
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 150
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
 hit_type_blast      = explosion
-hit_type_frag       = burn
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1719,32 +1638,19 @@ light_range              = 14.0
 light_time               = 0.85
 
 ;трассы от осколков
-fragment_speed              = 100       ;скорость осколков (м/с)
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 
 
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = explosive_barrel_immunities_sect
+immunities_sect         = standard_explosive_immunities_definition
 ;wallmarks
 wallmark_section        = explosion_marks
 
-[explosive_barrel_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 1
-shock_immunity          = 1
-wound_immunity          = 1
-radiation_immunity      = 1
-telepatic_immunity      = 1
-chemical_burn_immunity  = 1
-explosion_immunity      = 1
-fire_wound_immunity     = 0.7
-
 
 [explosive_mobiltank]:identity_immunities,delayed_action_fuse,default_weapon_params
-
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\mobiltank"
@@ -1768,17 +1674,15 @@ cost                = 500
 blast               = 1.50
 blast_r             = 8
 blast_impulse       = 250
-;delete
 blast_impulse_factor = 1
 
-
-frags               = 5
-frags_r             = 15
-frag_hit            = 0.75
-frag_hit_impulse    = 150
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
 hit_type_blast      = explosion
-hit_type_frag       = burn
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1791,32 +1695,19 @@ light_range              = 30.0
 light_time               = 1
 
 ;трассы от осколков
-fragment_speed              = 100       ;скорость осколков (м/с)
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 
 
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = explosive_mobiltank_immunities_sect
+immunities_sect         = standard_explosive_immunities_definition
 ;wallmarks
 wallmark_section        = explosion_marks
 
-[explosive_mobiltank_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 1.0
-shock_immunity          = 1.0
-wound_immunity          = 1.0
-radiation_immunity      = 1.0
-telepatic_immunity      = 1.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 1.0
-fire_wound_immunity     = 0.7
-
 
 [explosive_dinamit]:identity_immunities,delayed_action_fuse,default_weapon_params
-
 GroupControlSection = spawn_group
 discovery_dependency =
 $spawn              = "weapons\explosive\dinamit"
@@ -1838,20 +1729,18 @@ can_take            = false
 
 cost                = 50
 ;-------------------------------------------------------------------------------
-blast               = 3.00
-blast_r             = 10
-blast_impulse       = 250
-;delete
+blast                = 5.00
+blast_r              = 20
+blast_impulse        = 400
 blast_impulse_factor = 1
 
+frags               = 0
+frags_r             = 0
+frag_hit            = 0
+frag_hit_impulse    = 0
 
-frags               = 100
-frags_r             = 10
-frag_hit            = 100
-frag_hit_impulse    = 100
-
-hit_type_blast      = explosion ;chemical_burn
-hit_type_frag       = chemical_burn ;burn
+hit_type_blast      = explosion
+hit_type_frag       = explosion
 
 up_throw_factor     = 0
 ;-------------------------------------------------------------------------------
@@ -1864,28 +1753,28 @@ light_range              = 30.0
 light_time               = 1.5
 
 ;трассы от осколков
-fragment_speed              = 200
+fragment_speed              = 32
 
 explode_duration         = 5        ;подолжительность взрыва (с)
 
 ;звуки
 snd_explode = weapons\f1_explode
-immunities_sect         = dinamit_immunities_sect
+immunities_sect         = standard_explosive_immunities_definition
 ;condition_to_explode        =0.f
 ;wallmarks
 wallmark_section        = explosion_marks
 
-[dinamit_immunities_sect]
-;коэффициенты для попаданий различными типами хитов
-burn_immunity           = 0.0
-strike_immunity         = 0.0
-shock_immunity          = 0.0
-wound_immunity          = 0.0
-radiation_immunity      = 0.0
-telepatic_immunity      = 0.0
-chemical_burn_immunity  = 1.0
-explosion_immunity      = 0.5
-fire_wound_immunity     = 0.05
+[standard_explosive_immunities_definition]
+burn_immunity           = 1
+strike_immunity         = 1
+shock_immunity          = 1
+wound_immunity          = 1
+radiation_immunity      = 1
+telepatic_immunity      = 1
+chemical_burn_immunity  = 1
+explosion_immunity      = 1
+fire_wound_immunity     = 1
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;  WEAPON ADDON
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
