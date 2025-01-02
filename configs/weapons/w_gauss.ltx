@@ -56,9 +56,9 @@ fire_dispersion_base    = 0.001
 control_inertion_factor = 1.0f
 
 ;отдача
-cam_dispersion          = 3.2
+cam_dispersion          = 0.8
 cam_dispersion_inc      = 0
-cam_step_angle_horz     = 32
+cam_step_angle_horz     = 8
 
 fire_dispersion_condition_factor = 8
 misfire_probability     = 0.0001 ;вероятность осечки при максимальном износе
@@ -89,7 +89,7 @@ hit_impulse                 = 800
 
 fire_distance           = 8000
 bullet_speed            = 99999
-rpm                     = 30
+rpm                     = 32
 ; end ttc
 
 time_to_aim             = 1.0
@@ -190,18 +190,10 @@ anm_idle_sprint         = gauss_idle_sprint
 
 [wpn_gauss_aes]:wpn_gauss ;Gauss "AES"
 $spawn                  = "weapons\gauss_aes"
-hud                             = wpn_gauss_hud
 
-; ttc
-hit_power                   = .64
-hit_impulse                 = 32
-hit_type                    = telepatic
-
-scope_zoom_factor = 5
-
-ammo_limit              = 100
-ammo_current            = 100
-ammo_elapsed            = 100
-
-ammo_mag_size           = 100
-ammo_class              = ammo_gauss
+rpm                     = 48
+ammo_limit              = 99
+ammo_current            = 99
+ammo_elapsed            = 99
+ammo_mag_size           = 99
+hit_type                = telepatic
